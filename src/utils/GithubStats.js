@@ -1,5 +1,5 @@
 import CONFIG from '../config/GithubConfig'
-import { PERIODOS_DIA } from '../data/github'
+import { PERIODOS_DIA } from '../data/Github'
 
 // Consulta o GitHub (só dados públicos, direto do navegador), organiza as
 // respostas e calcula as estatísticas da página de GitHub.

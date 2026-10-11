@@ -1,4 +1,4 @@
-import fotoPerfil from '../assets/images/Imagem_minha_portfolio.png'
+const fotoPerfil = '../../public/images/Imagem_minha_portfolio.png'
 
 export const perfil = {
     nome: 'Arthur Moraes',

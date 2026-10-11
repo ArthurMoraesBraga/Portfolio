@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Vinil from './Vinil'
-import logoSpotify from '../assets/images/logo_sportfy.svg'
+const logoSpotify = '../../public/images/logo_sportfy.svg'
 import { alturaEmbed, carregarIframeApi } from '../utils/spotify'
 
 // Link para abrir no Spotify, com o logo oficial (versão preta, fundo claro, 70px).

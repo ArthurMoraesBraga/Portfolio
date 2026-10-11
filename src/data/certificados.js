@@ -1,11 +1,11 @@
-import pdfRobotica from '../assets/certificados/Certificado_robotica.pdf';
-import imgRobotica from '../assets/images/Certificado_robotica.png';
-import pdfWeMakeSoftware from '../assets/certificados/Certificado-Wemakesoftware1.pdf';
-import imgWeMakeSoftware from '../assets/images/Certificado-Wemakesoftware1.png';
-import pdfDestaqueSesi from '../assets/Certificados/Aluno_Destaque_SESI_1_2_3_ano.pdf';
-import imgDestaqueSesi from '../assets/images/Certificado_sesi.png';
-import pdfSenai from '../assets/Certificados/Senai.pdf';
-import imgSenai from '../assets/images/Senai.png';
+const pdfRobotica = '../../public/certificados/Certificado_robotica.pdf';
+const imgRobotica = '../../public/images/Certificado_robotica.png';
+const pdfWeMakeSoftware = '../../public/certificados/Certificado-Wemakesoftware1.pdf';
+const imgWeMakeSoftware = '../../public/images/Certificado-Wemakesoftware1.png';
+const pdfDestaqueSesi = '../../public/Certificados/Aluno_Destaque_SESI_1_2_3_ano.pdf';
+const imgDestaqueSesi = '../../public/images/Certificado_sesi.png';
+const pdfSenai = '../../public/Certificados/Senai.pdf';
+const imgSenai = '../../public/images/Senai.png';
 export const certificados = [
     {
     id: 'fll',
