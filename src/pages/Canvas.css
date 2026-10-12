@@ -1,215 +1,548 @@
-/* Canvas: usa as variáveis e classes de src/style/global.css.
-   Reaproveitado do global: .container, .pagina, .pagina-topo, .pagina-faixa,
-   .pagina-titulo, .pagina-intro, .papel, .botao, .botao--secundario e
-   .visualmente-oculto. O foco visível (:focus-visible) e a redução de
-   movimento também já vêm do global. */
+    /* Canvas: usa as variáveis e classes de src/style/global.css.
+    Reaproveitado do global: .container, .pagina, .pagina-topo, .pagina-faixa,
+    .pagina-titulo, .pagina-intro, .papel, .botao, .botao--secundario e
+    .visualmente-oculto. O foco visível (:focus-visible) e a redução de
+    movimento também já vêm do global. */
 
-.canvas-pagina {
-    /* Único tom extra: alertas de prazo, em argila suave. */
-    --canvas-argila: #f0dccf;
-    --canvas-argila-escuro: #9a5532;
-}
+    .canvas-pagina {
+        /* Único tom extra: alertas de prazo, em argila suave. */
+        --canvas-argila: #f0dccf;
+        --canvas-argila-escuro: #9a5532;
+    }
 
-.canvas-mono {
-    font-family: var(--fonte-mono);
-    font-variant-numeric: tabular-nums;
-}
-.canvas-suave { color: var(--texto-suave); }
-.canvas-pagina p { margin: 4px 0; }
-.canvas-pagina h3 { margin: 0 0 4px; font-size: 21px; }
+    .canvas-mono {
+        font-family: var(--fonte-mono);
+        font-variant-numeric: tabular-nums;
+    }
+    .canvas-suave { color: var(--texto-suave); }
+    .canvas-pagina p { margin: 4px 0; }
+    .canvas-pagina h3 { margin: 0 0 4px; font-size: 21px; }
 
-/* Cabeçalho (usa .pagina-topo, .pagina-faixa, .pagina-titulo, .pagina-intro) */
-.canvas-atualizacao { margin: 16px 0 8px; }
+    /* Cabeçalho (usa .pagina-topo, .pagina-faixa, .pagina-titulo, .pagina-intro) */
+    .canvas-atualizacao { margin: 16px 0 8px; }
 
-.canvas-aviso {
-    margin: 8px 0;
-    padding: 10px 16px;
-    max-width: 75ch;
-    border-left: 4px solid var(--salvia-escuro);
-    border-radius: 0 12px 12px 0;
-    background: var(--salvia-claro);
-    font-size: 15px;
-}
-.canvas-aviso--atencao {
-    border-left-color: var(--canvas-argila-escuro);
-    background: var(--canvas-argila);
-}
+    .canvas-aviso {
+        margin: 8px 0;
+        padding: 10px 16px;
+        max-width: 75ch;
+        border-left: 4px solid var(--salvia-escuro);
+        border-radius: 0 12px 12px 0;
+        background: var(--salvia-claro);
+        font-size: 15px;
+    }
+    .canvas-aviso--atencao {
+        border-left-color: var(--canvas-argila-escuro);
+        background: var(--canvas-argila);
+    }
 
-/* Filtro por turma */
-.canvas-filtro {
+    /* Filtro por turma */
+    .canvas-filtro {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 12px;
+        margin-bottom: 24px;
+    }
+    .canvas-filtro label {
+        font-family: var(--fonte-mono);
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--texto-suave);
+    }
+    .canvas-filtro select {
+        min-height: 44px;
+        max-width: 100%;
+        padding: 8px 16px;
+        border: 1px solid var(--papel-borda);
+        border-radius: 999px;
+        background: var(--papel);
+        color: var(--texto);
+        font: inherit;
+        font-size: 15px;
+    }
+
+    /* Abas, em estilo de faixas de álbum */
+    .canvas-abas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 20px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid var(--papel-borda);
+    }
+    .canvas-aba {
+        min-height: 44px;
+        padding: 8px 4px;
+        margin-bottom: -1px;
+        border: 0;
+        border-bottom: 3px solid transparent;
+        background: transparent;
+        color: var(--texto-suave);
+        font: inherit;
+        font-size: 16px;
+        cursor: pointer;
+        transition: color 0.2s ease, border-color 0.2s ease;
+    }
+    .canvas-aba .canvas-mono { font-size: 12px; margin-right: 4px; }
+    .canvas-aba:hover { color: var(--texto); }
+    .canvas-aba--ativa {
+        color: var(--texto);
+        border-bottom-color: var(--salvia-escuro);
+        font-weight: 500;
+    }
+
+    /* Cartões: a textura e a borda vêm de .papel */
+    .canvas-cartao {
+        position: relative;
+        padding: 20px 22px;
+        border-radius: 6px 14px 14px 6px;
+        box-shadow: 3px 4px 0 #00000010;
+    }
+    .canvas-cartao::before {
+        content: '';
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 5px;
+        border-radius: 6px 0 0 6px;
+        background: var(--azul-claro);
+    }
+    .canvas-cartao--linha {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px 28px;
+    }
+    .canvas-notas-turma { margin-bottom: 20px; }
+
+    .canvas-grade,
+    .canvas-lista { list-style: none; margin: 0; padding: 0; }
+    .canvas-grade {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+        gap: 20px;
+    }
+    .canvas-lista { display: grid; gap: 16px; }
+
+    .canvas-lateral {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    /* Números das turmas */
+    .canvas-estatisticas {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+        margin: 16px 0;
+    }
+    .canvas-estatisticas div {
+        padding: 8px 10px;
+        border: 1px solid var(--papel-borda);
+        border-radius: 10px;
+        background: var(--creme);
+    }
+    .canvas-estatisticas dt {
+        font-size: 12px;
+        color: var(--texto-suave);
+    }
+    .canvas-estatisticas dd { margin: 0; font-size: 22px; }
+
+    /* Situação da entrega: ícone + texto, nunca só cor */
+    .canvas-situacao {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 2px 12px;
+        border: 1px solid var(--papel-borda);
+        border-radius: 999px;
+        background: var(--creme);
+        color: var(--texto);
+        font-size: 14px;
+    }
+    .canvas-situacao--pendente { background: var(--azul-claro); border-color: var(--azul); }
+    .canvas-situacao--entregue { background: var(--salvia-claro); border-color: var(--salvia); }
+    .canvas-situacao--avaliada {
+        background: var(--salvia-claro);
+        border-color: var(--salvia-escuro);
+        font-weight: 500;
+    }
+    .canvas-situacao--prazo_encerrado {
+        background: var(--canvas-argila);
+        border-color: var(--canvas-argila-escuro);
+    }
+
+    /* Botão: usa .botao .botao--secundario; aqui só o tamanho */
+    .canvas-cartao .botao {
+        margin-top: 12px;
+        min-height: 44px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Tabela de notas */
+    .canvas-tabela-wrap { overflow-x: auto; margin: 12px 0; }
+    .canvas-tabela { width: 100%; min-width: 480px; border-collapse: collapse; }
+    .canvas-tabela th,
+    .canvas-tabela td {
+        padding: 10px 12px;
+        text-align: left;
+        border-bottom: 1px solid var(--papel-borda);
+    }
+    .canvas-tabela thead th {
+        font-family: var(--fonte-mono);
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--texto-suave);
+    }
+    .canvas-tabela tbody th { font-weight: 500; }
+
+    /* Estado vazio */
+    .canvas-vazio {
+        padding: 24px;
+        text-align: center;
+        color: var(--texto-suave);
+        border: 1px dashed var(--papel-borda);
+        border-radius: 14px;
+    }
+
+    @media (max-width: 640px) {
+        .canvas-estatisticas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .canvas-abas { gap: 4px 12px; }
+    }
+    /* Seletor de semestre: exclusivo da aba 01 Turmas. */
+    .canvas-biblioteca-controles {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 8px 12px;
-    margin-bottom: 24px;
-}
-.canvas-filtro label {
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    margin: 0 0 28px;
+    padding: 18px 20px;
+    border: 1px solid var(--papel-borda);
+    border-radius: 8px;
+    background: var(--papel);
+    }
+    .canvas-biblioteca-controles label {
     font-family: var(--fonte-mono);
-    font-size: 13px;
-    letter-spacing: 0.08em;
+    font-size: 12px;
     text-transform: uppercase;
+    letter-spacing: 0.08em;
     color: var(--texto-suave);
-}
-.canvas-filtro select {
+    }
+    .canvas-biblioteca-controles select {
     min-height: 44px;
     max-width: 100%;
-    padding: 8px 16px;
+    padding: 10px 14px;
     border: 1px solid var(--papel-borda);
-    border-radius: 999px;
+    border-radius: 6px;
+    background: var(--creme);
+    color: var(--texto);
+    font: inherit;
+    }
+    .canvas-biblioteca-controles p { font-size: 13px; }
+    .canvas-biblioteca-controles select:focus-visible {
+    outline: 3px solid var(--azul-escuro);
+    outline-offset: 3px;
+    }
+    @media (max-width: 640px) {
+    .canvas-biblioteca-controles { align-items: stretch; flex-direction: column; }
+    .canvas-biblioteca-controles select { width: 100%; }
+    }
+
+    /* Pontuação unificada da matéria e cabeçalho de suas atividades. */
+    .canvas-nota-unificada {
+    display: grid;
+    gap: 8px;
+    margin: 20px 0;
+    padding: 16px;
+    border: 1px solid var(--papel-borda);
+    border-radius: 8px;
+    background: var(--creme);
+    }
+    .canvas-nota-unificada > strong {
+    font-size: clamp(20px, 3vw, 26px);
+    color: var(--salvia-escuro);
+    }
+    .canvas-pagina .canvas-nota-unificada p { margin: 0; font-size: 12px; line-height: 1.6; }
+    .canvas-materia-aberta { height: auto; margin-bottom: 24px; }
+
+    /* Ícones Feather: traços finos e cores da identidade do portfólio. */
+    .canvas-pagina .canvas-icone {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    stroke-width: 1.7;
+    vertical-align: middle;
+    }
+    .canvas-pagina .canvas-aba {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    }
+    .canvas-pagina .canvas-icone-aba {
+        width: 20px;
+        height: 20px;
+        }
+    .canvas-pagina .canvas-aba--ativa .canvas-icone-aba {
+        color: var(--salvia-escuro);
+    }
+    .canvas-pagina .canvas-situacao {
+        padding: 6px 12px;
+        gap: 8px;
+    }
+    .canvas-pagina .canvas-situacao--pendente .canvas-icone {
+        color: var(--azul-escuro);
+    }
+    .canvas-pagina .canvas-situacao--entregue .canvas-icone .canvas-pagina .canvas-situacao--avaliada .canvas-icone {
+        color: var(--salvia-escuro);
+    }
+    .canvas-pagina .canvas-situacao--prazo_encerrado .canvas-icone {
+        color: var(--canvas-argila-escuro);
+    }
+    .canvas-pagina .canvas-biblioteca-controles label .canvas-pagina .canvas-nota-rotulo .canvas-pagina .canvas-botao {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    }
+    .canvas-pagina .canvas-nota-rotulo .canvas-icone {
+        color: var(--salvia-escuro);
+    }
+    .canvas-pagina .canvas-icone-seta {
+    transition: transform 0.2s ease;
+    }
+
+    .canvas-pagina .canvas-botao:hover .canvas-icone-seta {
+    transform: translateX(3px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+    .canvas-pagina .canvas-icone-seta {
+        transition: none;
+    }
+
+    .canvas-pagina .canvas-botao:hover .canvas-icone-seta {
+        transform: none;
+    }
+    }
+
+    /* Calendário mensal e agenda do dia. */
+
+    .canvas-cal-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    }
+
+    .canvas-cal-topo h3 {
+    margin: 0;
+    font-family: var(--fonte-titulo);
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: capitalize;
+    }
+
+    .canvas-cal-topo p {
+    font-size: 13px;
+    }
+
+    .canvas-cal-navegacao {
+    display: flex;
+    gap: 8px;
+    }
+
+    .canvas-cal-navegacao button {
+    display: grid;
+    place-items: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 8px 14px;
+    border: 1px solid var(--papel-borda);
+    border-radius: 6px;
     background: var(--papel);
     color: var(--texto);
     font: inherit;
-    font-size: 15px;
-}
-
-/* Abas, em estilo de faixas de álbum */
-.canvas-abas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px 20px;
-    margin-bottom: 32px;
-    border-bottom: 1px solid var(--papel-borda);
-}
-.canvas-aba {
-    min-height: 44px;
-    padding: 8px 4px;
-    margin-bottom: -1px;
-    border: 0;
-    border-bottom: 3px solid transparent;
-    background: transparent;
-    color: var(--texto-suave);
-    font: inherit;
-    font-size: 16px;
     cursor: pointer;
-    transition: color 0.2s ease, border-color 0.2s ease;
-}
-.canvas-aba .canvas-mono { font-size: 12px; margin-right: 4px; }
-.canvas-aba:hover { color: var(--texto); }
-.canvas-aba--ativa {
-    color: var(--texto);
-    border-bottom-color: var(--salvia-escuro);
-    font-weight: 500;
-}
+    }
 
-/* Cartões: a textura e a borda vêm de .papel */
-.canvas-cartao {
-    position: relative;
-    padding: 20px 22px;
-    border-radius: 6px 14px 14px 6px;
-    box-shadow: 3px 4px 0 #00000010;
-}
-.canvas-cartao::before {
-    content: '';
-    position: absolute;
-    inset: 0 auto 0 0;
-    width: 5px;
-    border-radius: 6px 0 0 6px;
-    background: var(--azul-claro);
-}
-.canvas-cartao--linha {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 12px 28px;
-}
-.canvas-notas-turma { margin-bottom: 20px; }
+    .canvas-cal-navegacao button:hover {
+    background: var(--salvia-claro);
+    }
 
-.canvas-grade,
-.canvas-lista { list-style: none; margin: 0; padding: 0; }
-.canvas-grade {
+    .canvas-cal-grade {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-    gap: 20px;
-}
-.canvas-lista { display: grid; gap: 16px; }
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 1px;
+    padding: 1px;
+    background: var(--papel-borda);
+    border: 1px solid var(--papel-borda);
+    border-radius: 8px;
+    overflow: hidden;
+    }
 
-.canvas-lateral {
+    .canvas-cal-semana {
+    padding: 12px 4px;
+    background: var(--creme);
+    text-align: center;
+    font-family: var(--fonte-mono);
+    color: var(--texto-suave);
+    font-size: 12px;
+    }
+
+    .canvas-cal-dia {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 8px;
-}
+    min-width: 0;
+    min-height: 115px;
+    padding: 10px;
+    border: 0;
+    background: var(--papel);
+    color: var(--texto);
+    font: inherit;
+    cursor: pointer;
+    text-align: left;
+    }
 
-/* Números das turmas */
-.canvas-estatisticas {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 8px;
-    margin: 16px 0;
-}
-.canvas-estatisticas div {
-    padding: 8px 10px;
-    border: 1px solid var(--papel-borda);
-    border-radius: 10px;
+    .canvas-cal-vazio {
     background: var(--creme);
-}
-.canvas-estatisticas dt {
-    font-size: 12px;
-    color: var(--texto-suave);
-}
-.canvas-estatisticas dd { margin: 0; font-size: 22px; }
+    }
 
-/* Situação da entrega: ícone + texto, nunca só cor */
-.canvas-situacao {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 2px 12px;
-    border: 1px solid var(--papel-borda);
-    border-radius: 999px;
+    .canvas-cal-numero {
+    align-self: flex-start;
+    display: grid;
+    place-items: center;
+    min-width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-family: var(--fonte-mono);
+    font-size: 13px;
+    }
+
+    .canvas-cal-dia--hoje .canvas-cal-numero {
+    background: var(--salvia-escuro);
+    color: white;
+    }
+
+    .canvas-cal-dia:hover {
+    background: var(--azul-claro);
+    }
+
+    .canvas-cal-dia--selecionado {
+    box-shadow: inset 0 0 0 2px var(--azul-escuro);
+    background: var(--azul-claro);
+    }
+
+    .canvas-cal-previas {
+    display: grid;
+    gap: 4px;
+    }
+
+    .canvas-cal-evento {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 11px;
     background: var(--creme);
     color: var(--texto);
-    font-size: 14px;
-}
-.canvas-situacao--pendente { background: var(--azul-claro); border-color: var(--azul); }
-.canvas-situacao--entregue { background: var(--salvia-claro); border-color: var(--salvia); }
-.canvas-situacao--avaliada {
-    background: var(--salvia-claro);
-    border-color: var(--salvia-escuro);
-    font-weight: 500;
-}
-.canvas-situacao--prazo_encerrado {
-    background: var(--canvas-argila);
-    border-color: var(--canvas-argila-escuro);
-}
+    border-left: 3px solid var(--azul-escuro);
+    }
 
-/* Botão: usa .botao .botao--secundario; aqui só o tamanho */
-.canvas-cartao .botao {
-    margin-top: 12px;
-    min-height: 44px;
-    padding: 10px 20px;
-    font-size: 14px;
-}
+    .canvas-cal-evento--entregue,
+    .canvas-cal-evento--avaliada {
+    border-left-color: var(--salvia-escuro);
+    }
 
-/* Tabela de notas */
-.canvas-tabela-wrap { overflow-x: auto; margin: 12px 0; }
-.canvas-tabela { width: 100%; min-width: 480px; border-collapse: collapse; }
-.canvas-tabela th,
-.canvas-tabela td {
-    padding: 10px 12px;
-    text-align: left;
-    border-bottom: 1px solid var(--papel-borda);
-}
-.canvas-tabela thead th {
-    font-family: var(--fonte-mono);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    .canvas-cal-evento--prazo_encerrado {
+    border-left-color: var(--canvas-argila-escuro);
+    }
+
+    .canvas-cal-mais {
+    font-size: 11px;
     color: var(--texto-suave);
-}
-.canvas-tabela tbody th { font-weight: 500; }
+    }
 
-/* Estado vazio */
-.canvas-vazio {
-    padding: 24px;
-    text-align: center;
-    color: var(--texto-suave);
-    border: 1px dashed var(--papel-borda);
-    border-radius: 14px;
-}
+    .canvas-cal-contagem {
+    display: none;
+    }
 
-@media (max-width: 640px) {
-    .canvas-estatisticas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .canvas-abas { gap: 4px 12px; }
+    .canvas-cal-detalhes {
+    margin-top: 32px;
+    }
+
+    .canvas-cal-detalhes > .canvas-suave {
+    margin-bottom: 20px;
+    font-size: 13px;
+    }
+
+    .canvas-cal-sem-prazo {
+    margin-top: 28px;
+    }
+
+    .canvas-cal-sem-prazo summary {
+    padding: 16px;
+    cursor: pointer;
+    border: 1px solid var(--papel-borda);
+    border-radius: 6px;
+    background: var(--papel);
+    }
+
+    .canvas-cal-sem-prazo .canvas-lista {
+    margin-top: 16px;
+    }
+
+    .canvas-cal-dia:focus-visible {
+    outline: 3px solid var(--azul-escuro);
+    outline-offset: -3px;
+    }
+
+    .canvas-cal-navegacao button:focus-visible,
+    .canvas-cal-sem-prazo summary:focus-visible {
+    outline: 3px solid var(--azul-escuro);
+    outline-offset: 3px;
+    }
+
+    @media (max-width: 640px) {
+    .canvas-cal-dia {
+        min-height: 72px;
+        padding: 6px;
+        gap: 4px;
+    }
+
+    .canvas-cal-previas {
+        display: none;
+    }
+
+    .canvas-cal-contagem {
+        display: block;
+        align-self: center;
+        color: var(--azul-escuro);
+        font-family: var(--fonte-mono);
+        font-size: 11px;
+    }
+
+    .canvas-cal-topo h3 {
+        font-size: 23px;
+    }
+    }
+    .canvas-titulo {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        }
+
+    .canvas-logo {
+        display: block;
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
 }

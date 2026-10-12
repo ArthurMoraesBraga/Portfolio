@@ -17,7 +17,7 @@ import {
     COR_OUTRAS,
     TEXTOS,
     METODOLOGIA,
-} from '../data/github'
+} from '../data/Github'
 import {
     GitHubLimiteError,
     agruparOutras,
@@ -28,11 +28,7 @@ import {
     resumirLinguagens,
 } from '../utils/GithubStats'
 import './Github.css'
-import {
-    fetchWakaTimeStats,
-    formatDuration,
-    formatDate,
-} from '../utils/Wakatime'
+
 import Wakatime from '../components/Wakatime'
 
 
@@ -887,8 +883,12 @@ function Github() {
     return (
         <article className="pagina container github">
             <header className="pagina-topo">
-                <p className="pagina-faixa">{TEXTOS.faixa}</p>
-                <h1 className="pagina-titulo" tabIndex={-1}>
+                <p className="pagina-faixa">
+                    {TEXTOS.faixa}
+                    </p>
+                <h1 className="pagina-titulo github-titulo" tabIndex={-1}>
+                    <img src="/images/gif-git.gif" alt="" className="github-gif">
+                    </img>
                     {TEXTOS.titulo}
                 </h1>
                 <p className="pagina-intro">

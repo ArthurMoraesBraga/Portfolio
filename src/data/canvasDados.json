@@ -1,2408 +1,4342 @@
+{
+  "versao": 1,
+  "status": "ok",
+  "atualizadoEm": "2026-10-11T22:53:38.227Z",
+  "fonte": "Canvas LMS (API oficial)",
+  "turmas": [
     {
-    "versao": 1,
-    "status": "ok",
-    "atualizadoEm": "2026-10-11T14:15:57.395Z",
-    "fonte": "Canvas LMS (API oficial)",
-    "turmas": [
-        {
-        "id": "290564",
-        "nome": "Arquitetura de Computadores - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-        "codigo": "(8138100) Arquitetura de Computadores",
-        "periodo": "Graduação Presencial Síncrona - 2026/2",
-        "notaCanvas": {
-            "pontuacao": 58.33,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "294889",
-        "nome": "Computabilidade - Engenharia de Software - Campus Coração Eucarístico - PMG - Noite - 2026/2",
-        "codigo": "(433200) Computabilidade",
-        "periodo": "Graduação Presencial Síncrona - 2026/2",
-        "notaCanvas": {
-            "pontuacao": 46.24,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "292752",
-        "nome": "Desenvolvimento e Integração de Aplicações Web - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-        "codigo": "(8148100) Desenvolvimento e Integração de Aplicações Web",
-        "periodo": "Graduação Presencial Síncrona - 2026/2",
-        "notaCanvas": {
-            "pontuacao": null,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "290578",
-        "nome": "Desenvolvimento e Integração de Aplicações Web - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-        "codigo": "(8148102) Desenvolvimento e Integração de Aplicações Web",
-        "periodo": "Graduação Presencial Síncrona - 2026/2",
-        "notaCanvas": {
-            "pontuacao": 58.33,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "149917",
-        "nome": "Espaço da Coordenação - Engenharia de Software - CAMPUS CORAÇÃO EUCARÍSTICO - PMG",
-        "codigo": "Espaço da Coordenação - Engenharia de Software - CAMPUS CORAÇÃO EUCARÍSTICO - PMG",
-        "periodo": "Graduação Presencial Síncrona - 2026/2",
-        "notaCanvas": {
-            "pontuacao": null,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "256534",
-        "nome": "Extensão em foco",
-        "codigo": "Extensão em foco",
-        "periodo": "Período padrão",
-        "notaCanvas": {
-            "pontuacao": null,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "290569",
-        "nome": "Interação Humano-Computador - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-        "codigo": "(8140200) Interação Humano-Computador",
-        "periodo": "Graduação Presencial Síncrona - 2026/2",
-        "notaCanvas": {
-            "pontuacao": 67.37,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "259985",
-        "nome": "Introdução à Algoritmos - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/1",
-        "codigo": "(394202) Introdução à Algoritmos",
-        "periodo": "Graduação Presencial Síncrona - 2026/1",
-        "notaCanvas": {
-            "pontuacao": null,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "259984",
-        "nome": "Introdução à Algoritmos - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/1",
-        "codigo": "(394200) Introdução à Algoritmos",
-        "periodo": "Graduação Presencial Síncrona - 2026/1",
-        "notaCanvas": {
-            "pontuacao": 57.01,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "290605",
-        "nome": "Introdução à Pesquisa em Informática - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-        "codigo": "(8184100) Introdução à Pesquisa em Informática",
-        "periodo": "Graduação Presencial Síncrona - 2026/2",
-        "notaCanvas": {
-            "pontuacao": 100,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "292767",
-        "nome": "Metodologias de Extensão Universitária - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-        "codigo": "(8177100) Metodologias de Extensão Universitária",
-        "periodo": "Graduação Presencial Síncrona - 2026/2",
-        "notaCanvas": {
-            "pontuacao": null,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "290581",
-        "nome": "Programação Modular - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-        "codigo": "(8149101) Programação Modular",
-        "periodo": "Graduação Presencial Síncrona - 2026/2",
-        "notaCanvas": {
-            "pontuacao": null,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "290583",
-        "nome": "Programação Modular - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-        "codigo": "(8149100) Programação Modular",
-        "periodo": "Graduação Presencial Síncrona - 2026/2",
-        "notaCanvas": {
-            "pontuacao": null,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        },
-        {
-        "id": "292771",
-        "nome": "Trabalho Interdisciplinar: Desenvolvimento Centrado no Usuário - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-        "codigo": "(8183100) Trabalho Interdisciplinar: Desenvolvimento Centrado no Usuário",
-        "periodo": "Graduação Presencial Síncrona - 2026/2",
-        "notaCanvas": {
-            "pontuacao": 94.94,
-            "conceito": null
-        },
-        "atividadesDisponiveis": true
-        }
-    ],
-    "atividades": [
-        {
-        "id": "1006954",
-        "turmaId": "149917",
-        "nome": "[INTEGRAÇÃO] Aula Magna do ICEI + IPUC com Presidente da Google Cloud LATAM",
-        "prazo": "2024-08-14T11:30:00Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1006953",
-        "turmaId": "149917",
-        "nome": "[EXTENSÃO] Esquenta Tira-Dúvidas - Hackaton Desafio ODS",
-        "prazo": "2024-08-14T21:00:00Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1006951",
-        "turmaId": "149917",
-        "nome": "[EXTENSÃO] Inscrição para Agência Experimental de Software",
-        "prazo": "2024-08-23T02:59:59Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1013875",
-        "turmaId": "149917",
-        "nome": "[PESQUISA] Reunião Aberta do Grupo IMScience",
-        "prazo": "2024-08-23T17:00:00Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1013743",
-        "turmaId": "149917",
-        "nome": "[MONITORIA] Inscrição para o Segundo Edital de Monitoria",
-        "prazo": "2024-08-31T02:59:59Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1006952",
-        "turmaId": "149917",
-        "nome": "[INTEGRAÇÃO] Inscrição para Participar do Projeto Pirâmide",
-        "prazo": "2024-09-07T02:59:59Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1023589",
-        "turmaId": "149917",
-        "nome": "[INTEGRAÇÃO] 🧑‍💻 We Make Software - Mostra de TIs e TCCs - COREU ✨",
-        "prazo": "2024-09-19T22:00:00Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1042078",
-        "turmaId": "149917",
-        "nome": "[ATIVIDADES ACADÊMICAS] Inscrição na Avaliação de Desempenho Acadêmico (ADA) - 2024.2",
-        "prazo": "2024-11-04T02:59:59Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1056131",
-        "turmaId": "149917",
-        "nome": "[ICEI TALKS] Integração de Sistemas e Automação de Processos: Conectando o Futuro",
-        "prazo": "2024-11-28T22:00:00Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1039172",
-        "turmaId": "149917",
-        "nome": "[INTERNACIONALIZAÇÃO] Intercâmbio PUC Minas - 2025",
-        "prazo": "2024-12-01T02:59:59Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1244954",
-        "turmaId": "149917",
-        "nome": "Dia D da CPA – Sua voz faz a diferença",
-        "prazo": "2025-10-29T02:59:59Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1250714",
-        "turmaId": "149917",
-        "nome": "[ATIVIDADES ACADÊMICAS] Inscrição na Avaliação de Desempenho Acadêmico (ADA) - 2024.2 Copiar",
-        "prazo": "2025-11-11T02:59:59Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1332994",
-        "turmaId": "259984",
-        "nome": "Exercícios de Revisão - Prova Teórica 1",
-        "prazo": "2026-04-08T11:50:00Z",
-        "pontos": 1,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 1,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1346579",
-        "turmaId": "259984",
-        "nome": "Prova Prática 01",
-        "prazo": "2026-05-07T13:40:00Z",
-        "pontos": 4,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-05-04T14:02:14Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 4,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1315980",
-        "turmaId": "259984",
-        "nome": "Prova Teórica 2",
-        "prazo": "2026-05-20T11:50:00Z",
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 18.14,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1367279",
-        "turmaId": "259984",
-        "nome": "Exercícios de Revisão - Prova Teórica 3",
-        "prazo": "2026-06-29T02:59:59Z",
-        "pontos": 1,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 0,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1315977",
-        "turmaId": "259984",
-        "nome": "Prova Teórica 1",
-        "prazo": null,
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 21.4,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1315986",
-        "turmaId": "259984",
-        "nome": "Prova Teórica 3",
-        "prazo": null,
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 13.5,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1359159",
-        "turmaId": "259984",
-        "nome": "Trabalho Prático - PC01",
-        "prazo": null,
-        "pontos": 1,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 0,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1362410",
-        "turmaId": "259984",
-        "nome": "Trabalho Prático - PC02",
-        "prazo": null,
-        "pontos": 1,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-06-08T18:09:20Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 1,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1362411",
-        "turmaId": "259984",
-        "nome": "Trabalho Prático - PC03",
-        "prazo": null,
-        "pontos": 1,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-06-15T01:32:10Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 1,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1362413",
-        "turmaId": "259984",
-        "nome": "Trabalho Prático - PC04",
-        "prazo": null,
-        "pontos": 6,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-06-22T02:22:27Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 5,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1362635",
-        "turmaId": "259984",
-        "nome": "Prova Prática 02",
-        "prazo": null,
-        "pontos": 4,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-06-08T14:54:54Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 2.8,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1374359",
-        "turmaId": "259984",
-        "nome": "Cinema em Dados: Desenvolver Estruturas e Predições com Python [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1379732",
-        "turmaId": "259984",
-        "nome": "Reavaliação",
-        "prazo": null,
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 0,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1396100",
-        "turmaId": "259984",
-        "nome": "Decida, Repita, Organize: Desenvolver um Projeto Básico com Estrutura de Dados em Python [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1417071",
-        "turmaId": "259984",
-        "nome": "Pensamento em Fluxo Introdução à Lógica e à Construção de Algoritmos [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1422232",
-        "turmaId": "259984",
-        "nome": "Código em Jogo: Concebendo seu Primeiro Game [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1355488",
-        "turmaId": "259985",
-        "nome": "Pensamento em Fluxo Introdução à Lógica e à Construção de Algoritmos [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1374362",
-        "turmaId": "259985",
-        "nome": "Cinema em Dados: Desenvolver Estruturas e Predições com Python [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1396102",
-        "turmaId": "259985",
-        "nome": "Decida, Repita, Organize: Desenvolver um Projeto Básico com Estrutura de Dados em Python [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1422234",
-        "turmaId": "259985",
-        "nome": "Código em Jogo: Concebendo seu Primeiro Game [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1401603",
-        "turmaId": "290564",
-        "nome": "Prova 1",
-        "prazo": "2026-10-02T11:50:00Z",
-        "pontos": 30,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 17.5,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1401604",
-        "turmaId": "290564",
-        "nome": "Prova 2",
-        "prazo": "2026-11-13T11:50:00Z",
-        "pontos": 30,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1401606",
-        "turmaId": "290564",
-        "nome": "Prova 3",
-        "prazo": "2026-12-11T11:50:00Z",
-        "pontos": 30,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1401610",
-        "turmaId": "290564",
-        "nome": "Reavaliação",
-        "prazo": "2026-12-18T11:50:00Z",
-        "pontos": 30,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1401608",
-        "turmaId": "290564",
-        "nome": "ADA",
-        "prazo": null,
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414242",
-        "turmaId": "290564",
-        "nome": "Trabalho Prático - 5 pontos",
-        "prazo": null,
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1417484",
-        "turmaId": "290569",
-        "nome": "Exercício 1 - Qualidades de Uso em IHC",
-        "prazo": "2026-08-17T02:59:59Z",
-        "pontos": 1,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 0.9,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1436377",
-        "turmaId": "290569",
-        "nome": "1ª Avaliação",
-        "prazo": "2026-09-15T23:50:00Z",
-        "pontos": 18,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 11.9,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1436375",
-        "turmaId": "290569",
-        "nome": "Lista 1",
-        "prazo": "2026-09-21T02:59:59Z",
-        "pontos": 2.5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-09-20T17:51:58Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1450314",
-        "turmaId": "290569",
-        "nome": "Trabalho Final - Entrega 1",
-        "prazo": "2026-10-12T02:59:59Z",
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1431946",
-        "turmaId": "290578",
-        "nome": "ATIVIDADE 01",
-        "prazo": "2026-08-28T02:59:59Z",
-        "pontos": 2.5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-08-27T23:42:24Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 2.5,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1434352",
-        "turmaId": "290578",
-        "nome": "ATIVIDADE 02",
-        "prazo": "2026-09-18T02:59:59Z",
-        "pontos": 2.5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-09-17T14:53:14Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 2.5,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1434383",
-        "turmaId": "290578",
-        "nome": "AV1 - 25 pts",
-        "prazo": "2026-09-24T15:30:00Z",
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-09-24T15:17:26Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 12.5,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1434356",
-        "turmaId": "290578",
-        "nome": "LABORATÓRIO 1",
-        "prazo": "2026-10-16T02:59:59Z",
-        "pontos": 15,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1434353",
-        "turmaId": "290578",
-        "nome": "ATIVIDADE 03",
-        "prazo": "2026-10-23T02:59:59Z",
-        "pontos": 2.5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1434384",
-        "turmaId": "290578",
-        "nome": "AV2 - 25 pts",
-        "prazo": "2026-10-29T15:30:00Z",
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1434357",
-        "turmaId": "290578",
-        "nome": "LABORATÓRIO 2",
-        "prazo": "2026-11-06T02:59:59Z",
-        "pontos": 15,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1434355",
-        "turmaId": "290578",
-        "nome": "ATIVIDADE 04",
-        "prazo": "2026-11-27T02:59:59Z",
-        "pontos": 2.5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1434385",
-        "turmaId": "290578",
-        "nome": "ADA - 5 pts",
-        "prazo": "2026-11-28T02:59:59Z",
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1434358",
-        "turmaId": "290578",
-        "nome": "LABORATÓRIO 3",
-        "prazo": "2026-12-11T02:59:59Z",
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1450635",
-        "turmaId": "290578",
-        "nome": "Segurança em Aplicações Web [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1450674",
-        "turmaId": "290578",
-        "nome": "Arquitetura e Projeto de APIs [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1458332",
-        "turmaId": "290578",
-        "nome": "Ambientes e Frameworks Back-end [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412748",
-        "turmaId": "290581",
-        "nome": "ADA",
-        "prazo": "2026-02-03T02:59:59Z",
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412749",
-        "turmaId": "290581",
-        "nome": "Lista 00",
-        "prazo": "2026-08-24T02:59:59Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-08-18T17:55:26Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412753",
-        "turmaId": "290581",
-        "nome": "Prática 1",
-        "prazo": "2026-09-08T02:59:59Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412754",
-        "turmaId": "290581",
-        "nome": "Prática 2",
-        "prazo": "2026-09-21T15:20:00Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412750",
-        "turmaId": "290581",
-        "nome": "Atividade Avaliativa 1",
-        "prazo": "2026-09-28T15:20:00Z",
-        "pontos": 3,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-09-28T15:04:21Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412761",
-        "turmaId": "290581",
-        "nome": "Sprint 1",
-        "prazo": "2026-10-06T02:59:59Z",
-        "pontos": 10,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-09-21T15:15:09Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412755",
-        "turmaId": "290581",
-        "nome": "Prática 3",
-        "prazo": "2026-10-12T15:20:00Z",
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412751",
-        "turmaId": "290581",
-        "nome": "Atividade Avaliativa 2",
-        "prazo": "2026-11-23T15:20:00Z",
-        "pontos": 3,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412765",
-        "turmaId": "290581",
-        "nome": "Trabalho Prático",
-        "prazo": "2026-12-07T13:40:00Z",
-        "pontos": 10,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412714",
-        "turmaId": "290583",
-        "nome": "ADA",
-        "prazo": "2026-02-03T02:59:59Z",
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412726",
-        "turmaId": "290583",
-        "nome": "Sprint 2",
-        "prazo": "2026-05-12T02:59:59Z",
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412715",
-        "turmaId": "290583",
-        "nome": "Lista 1",
-        "prazo": "2026-09-14T11:50:00Z",
-        "pontos": 1,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412718",
-        "turmaId": "290583",
-        "nome": "Prova 1",
-        "prazo": "2026-09-16T11:50:00Z",
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412716",
-        "turmaId": "290583",
-        "nome": "Lista 2",
-        "prazo": "2026-10-21T11:50:00Z",
-        "pontos": 1,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412719",
-        "turmaId": "290583",
-        "nome": "Prova 2",
-        "prazo": "2026-10-26T11:50:00Z",
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412717",
-        "turmaId": "290583",
-        "nome": "Lista 3",
-        "prazo": "2026-11-30T11:50:00Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1412720",
-        "turmaId": "290583",
-        "nome": "Prova 3",
-        "prazo": "2026-12-02T11:50:00Z",
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399503",
-        "turmaId": "290605",
-        "nome": "Exercício - leitura",
-        "prazo": "2026-08-04T15:20:00Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 2,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399500",
-        "turmaId": "290605",
-        "nome": "Exercício - Redação técnica",
-        "prazo": "2026-08-20T02:59:59Z",
-        "pontos": 3,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 3,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399502",
-        "turmaId": "290605",
-        "nome": "Exercício - comunicações científicas",
-        "prazo": "2026-08-20T02:59:59Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 2,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399504",
-        "turmaId": "290605",
-        "nome": "Exercício - noções sobre projeto de pesquisa",
-        "prazo": "2026-09-03T02:59:59Z",
-        "pontos": 3,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-09-02T19:08:50Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 3,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399506",
-        "turmaId": "290605",
-        "nome": "Exercício - pesquisa bibliográfica",
-        "prazo": "2026-09-03T02:59:59Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-09-02T19:14:13Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 2,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399511",
-        "turmaId": "290605",
-        "nome": "IPI - Tarefa Seminários - ES-Coreu",
-        "prazo": "2026-09-15T02:59:59Z",
-        "pontos": 10,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-09-11T18:09:54Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399505",
-        "turmaId": "290605",
-        "nome": "Exercício - objetivos",
-        "prazo": "2026-10-03T02:59:59Z",
-        "pontos": 3,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-10-02T17:52:21Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399507",
-        "turmaId": "290605",
-        "nome": "IPI - Tarefa Projeto - Etapa 1 - ES - Coreu",
-        "prazo": "2026-10-20T02:59:59Z",
-        "pontos": 10,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399497",
-        "turmaId": "290605",
-        "nome": "Exercício - Metodologia",
-        "prazo": "2026-11-07T02:59:59Z",
-        "pontos": 3,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399499",
-        "turmaId": "290605",
-        "nome": "Exercício - Overleaf (Latex)",
-        "prazo": "2026-11-07T02:59:59Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399509",
-        "turmaId": "290605",
-        "nome": "IPI - Tarefa Projeto - Etapa 2 - ES - Coreu",
-        "prazo": "2026-11-17T02:59:59Z",
-        "pontos": 15,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399492",
-        "turmaId": "290605",
-        "nome": "ADA",
-        "prazo": "2026-11-25T02:59:59Z",
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399510",
-        "turmaId": "290605",
-        "nome": "IPI - Tarefa Projeto - Etapa 3 - ES - Coreu",
-        "prazo": "2026-12-01T02:59:59Z",
-        "pontos": 40,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1450423",
-        "turmaId": "290605",
-        "nome": "A Proposição de um Projeto de Pesquisa: por onde começar? [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1450633",
-        "turmaId": "292752",
-        "nome": "Segurança em Aplicações Web [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1450668",
-        "turmaId": "292752",
-        "nome": "Arquitetura e Projeto de APIs [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1458330",
-        "turmaId": "292752",
-        "nome": "Ambientes e Frameworks Back-end [Avaliação]",
-        "prazo": null,
-        "pontos": 0,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399985",
-        "turmaId": "292767",
-        "nome": "Atividade 1 - Estudo sobre prática extensionista",
-        "prazo": "2026-08-27T02:59:59Z",
-        "pontos": 10,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-08-26T17:14:44Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399986",
-        "turmaId": "292767",
-        "nome": "Atividade 2 - Diagnóstico do problema e público-alvo",
-        "prazo": "2026-09-19T02:59:59Z",
-        "pontos": 20,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-09-19T01:37:39Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399987",
-        "turmaId": "292767",
-        "nome": "Atividade 3 - Planejamento, execução e validação da ação extensionista",
-        "prazo": "2026-10-27T02:59:59Z",
-        "pontos": 20,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399990",
-        "turmaId": "292767",
-        "nome": "Atividade 6 - Resumo expandido ou relato de experiência",
-        "prazo": "2026-11-10T02:59:59Z",
-        "pontos": 20,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399991",
-        "turmaId": "292767",
-        "nome": "Atividade 7 - Avaliação, impacto e apresentação",
-        "prazo": "2026-11-10T02:59:59Z",
-        "pontos": 20,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1399984",
-        "turmaId": "292767",
-        "nome": "ADA",
-        "prazo": null,
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414961",
-        "turmaId": "292771",
-        "nome": "Matriz CSD e Mapa de Stakeholders",
-        "prazo": "2026-08-19T02:59:59Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-08-18T13:16:51Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 2,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414962",
-        "turmaId": "292771",
-        "nome": "Roteiro de entrevistas e lista de entrevistados",
-        "prazo": "2026-08-19T02:59:59Z",
-        "pontos": 1,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-08-19T01:33:12Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 1,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414963",
-        "turmaId": "292771",
-        "nome": "Entrevistas Qualitativas e Highlights de pesquisa",
-        "prazo": "2026-08-25T02:59:00Z",
-        "pontos": 4,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-08-25T01:50:18Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414959",
-        "turmaId": "292771",
-        "nome": "Quiz - Dinâmica da disciplina",
-        "prazo": "2026-08-31T02:59:59Z",
-        "pontos": 1,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-08-20T17:22:11Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 1,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414964",
-        "turmaId": "292771",
-        "nome": "Quiz - Ambiente de Trabalho - Git e GitHub",
-        "prazo": "2026-08-31T02:59:59Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-08-20T17:23:59Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 2,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414965",
-        "turmaId": "292771",
-        "nome": "Personas e Mapa de Empatia (PDF)",
-        "prazo": "2026-09-01T02:59:00Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-09-01T02:02:18Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414966",
-        "turmaId": "292771",
-        "nome": "Proposta de Valor e Requisitos de software (PDF)",
-        "prazo": "2026-09-08T02:59:00Z",
-        "pontos": 3,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-09-07T23:47:04Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414967",
-        "turmaId": "292771",
-        "nome": "Projeto de Interfaces [Wireframes, User Flow, Protótipo interativo, Design System] (PDF + URL)",
-        "prazo": "2026-09-22T02:59:59Z",
-        "pontos": 10,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-09-22T01:56:22Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414968",
-        "turmaId": "292771",
-        "nome": "Documentação do Projeto (PDF)",
-        "prazo": "2026-09-29T02:59:00Z",
-        "pontos": 3,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-09-29T01:27:58Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414970",
-        "turmaId": "292771",
-        "nome": "Repositório GitHub - Arquivos, Project Board e Issues (ZIP + URL)",
-        "prazo": "2026-09-29T02:59:00Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-09-29T01:29:11Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414971",
-        "turmaId": "292771",
-        "nome": "Descrição do Minimundo (PDF)",
-        "prazo": "2026-09-29T02:59:00Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-09-29T01:26:37Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414972",
-        "turmaId": "292771",
-        "nome": "Pitch Deck e Apresentação (PDF/PPT)",
-        "prazo": "2026-09-29T02:59:00Z",
-        "pontos": 4,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-09-29T01:26:15Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 3.64,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1415101",
-        "turmaId": "292771",
-        "nome": "Relatório de avaliação heurística (PDF)",
-        "prazo": "2026-09-29T02:59:59Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-09-29T01:27:03Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414973",
-        "turmaId": "292771",
-        "nome": "Planejamento da Sprint 1 - Equipe",
-        "prazo": "2026-10-08T02:59:59Z",
-        "pontos": 1,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-10-08T01:18:55Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414974",
-        "turmaId": "292771",
-        "nome": "Planejamento da Sprint 1 - Individual",
-        "prazo": "2026-10-08T02:59:59Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-10-08T02:35:00Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414975",
-        "turmaId": "292771",
-        "nome": "Modelo de dados de Objetos",
-        "prazo": "2026-10-08T02:59:59Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-10-05T14:33:17Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414976",
-        "turmaId": "292771",
-        "nome": "Entrega Sprint 1",
-        "prazo": "2026-10-27T02:59:00Z",
-        "pontos": 10,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414977",
-        "turmaId": "292771",
-        "nome": "Planejamento da Sprint 2 - Equipe",
-        "prazo": "2026-10-28T02:59:00Z",
-        "pontos": 1,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414978",
-        "turmaId": "292771",
-        "nome": "Planejamento da Sprint 2 - Individual",
-        "prazo": "2026-10-28T02:59:00Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414979",
-        "turmaId": "292771",
-        "nome": "Modelo de dados de Objetos - Revisado",
-        "prazo": "2026-10-28T02:59:00Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414980",
-        "turmaId": "292771",
-        "nome": "Entrega Sprint 2",
-        "prazo": "2026-11-10T02:59:00Z",
-        "pontos": 10,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414985",
-        "turmaId": "292771",
-        "nome": "Hospedagem da aplicação na Internet (URL)",
-        "prazo": "2026-11-24T02:59:00Z",
-        "pontos": 2,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1415070",
-        "turmaId": "292771",
-        "nome": "Teste de Usabilidade (PDF)",
-        "prazo": "2026-11-24T02:59:59Z",
-        "pontos": 3,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414981",
-        "turmaId": "292771",
-        "nome": "Documentação do Projeto (PDF)",
-        "prazo": "2026-12-01T02:59:00Z",
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414983",
-        "turmaId": "292771",
-        "nome": "Aplicação e Repositório GitHub (ZIP)",
-        "prazo": "2026-12-01T02:59:00Z",
-        "pontos": 8,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414984",
-        "turmaId": "292771",
-        "nome": "Vídeo de divulgação do projeto (MP4)",
-        "prazo": "2026-12-01T02:59:00Z",
-        "pontos": 3,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1414986",
-        "turmaId": "292771",
-        "nome": "Pitch Deck e Apresentação Final (PDF/PPT)",
-        "prazo": "2026-12-01T02:59:00Z",
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1415119",
-        "turmaId": "292771",
-        "nome": "Avaliação de Desempenho Acadêmico (ADA)",
-        "prazo": "2026-12-01T02:59:59Z",
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1408110",
-        "turmaId": "294889",
-        "nome": "Exercício 01",
-        "prazo": "2026-09-02T02:59:59Z",
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "avaliada",
-        "entregueEm": "2026-09-01T17:09:20Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1408113",
-        "turmaId": "294889",
-        "nome": "Prova 01",
-        "prazo": "2026-09-02T02:59:59Z",
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "avaliada",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": true,
-            "pontos": 11.56,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1408111",
-        "turmaId": "294889",
-        "nome": "Exercício 02",
-        "prazo": "2026-10-07T02:59:59Z",
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "entregue",
-        "entregueEm": "2026-10-06T21:37:53Z",
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1408114",
-        "turmaId": "294889",
-        "nome": "Prova 02",
-        "prazo": "2026-10-07T02:59:59Z",
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1408112",
-        "turmaId": "294889",
-        "nome": "Exercício 03",
-        "prazo": "2026-11-18T02:59:59Z",
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": true,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1408115",
-        "turmaId": "294889",
-        "nome": "Prova 03",
-        "prazo": "2026-11-18T02:59:59Z",
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1408116",
-        "turmaId": "294889",
-        "nome": "Prova de 2ª Chamada",
-        "prazo": "2026-11-25T02:59:59Z",
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1408117",
-        "turmaId": "294889",
-        "nome": "Reavaliação",
-        "prazo": "2026-12-02T02:59:59Z",
-        "pontos": 25,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        },
-        {
-        "id": "1408108",
-        "turmaId": "294889",
-        "nome": "ADA",
-        "prazo": null,
-        "pontos": 5,
-        "avaliativa": true,
-        "entregaOnline": false,
-        "entrega": "nao_entregue",
-        "entregueEm": null,
-        "atrasada": false,
-        "nota": {
-            "publicada": false,
-            "pontos": null,
-            "conceito": null
-        }
-        }
-    ]
+      "id": "290564",
+      "nome": "Arquitetura de Computadores - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
+      "codigo": "(8138100) Arquitetura de Computadores",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 58.33,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "259998",
+      "nome": "Computabilidade - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/1",
+      "codigo": "(400200) Computabilidade",
+      "periodo": "Graduação Presencial Síncrona - 2026/1",
+      "periodoInicio": "2026-02-02T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 32.56,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "294889",
+      "nome": "Computabilidade - Engenharia de Software - Campus Coração Eucarístico - PMG - Noite - 2026/2",
+      "codigo": "(433200) Computabilidade",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 46.24,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "260008",
+      "nome": "Desenvolvimento de Interfaces Web - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/1",
+      "codigo": "(405200) Desenvolvimento de Interfaces Web",
+      "periodo": "Graduação Presencial Síncrona - 2026/1",
+      "periodoInicio": "2026-02-02T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": null,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "260011",
+      "nome": "Desenvolvimento de Interfaces Web - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/1",
+      "codigo": "(405202) Desenvolvimento de Interfaces Web",
+      "periodo": "Graduação Presencial Síncrona - 2026/1",
+      "periodoInicio": "2026-02-02T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 78.42,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "292752",
+      "nome": "Desenvolvimento e Integração de Aplicações Web - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
+      "codigo": "(8148100) Desenvolvimento e Integração de Aplicações Web",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": null,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "290578",
+      "nome": "Desenvolvimento e Integração de Aplicações Web - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
+      "codigo": "(8148102) Desenvolvimento e Integração de Aplicações Web",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 58.33,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "149917",
+      "nome": "Espaço da Coordenação - Engenharia de Software - CAMPUS CORAÇÃO EUCARÍSTICO - PMG",
+      "codigo": "Espaço da Coordenação - Engenharia de Software - CAMPUS CORAÇÃO EUCARÍSTICO - PMG",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": null,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "256534",
+      "nome": "Extensão em foco",
+      "codigo": "Extensão em foco",
+      "periodo": "Período padrão",
+      "periodoInicio": null,
+      "notaCanvas": {
+        "pontuacao": null,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "260048",
+      "nome": "Filosofia: Lógica e Pensamento Crítico - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/1",
+      "codigo": "(423200) Filosofia: Lógica e Pensamento Crítico",
+      "periodo": "Graduação Presencial Síncrona - 2026/1",
+      "periodoInicio": "2026-02-02T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 77.5,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "260015",
+      "nome": "Fundamentos de Engenharia de Software - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/1",
+      "codigo": "(407200) Fundamentos de Engenharia de Software",
+      "periodo": "Graduação Presencial Síncrona - 2026/1",
+      "periodoInicio": "2026-02-02T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 97.5,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "290569",
+      "nome": "Interação Humano-Computador - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
+      "codigo": "(8140200) Interação Humano-Computador",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 67.37,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "259985",
+      "nome": "Introdução à Algoritmos - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/1",
+      "codigo": "(394202) Introdução à Algoritmos",
+      "periodo": "Graduação Presencial Síncrona - 2026/1",
+      "periodoInicio": "2026-02-02T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": null,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "259984",
+      "nome": "Introdução à Algoritmos - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/1",
+      "codigo": "(394200) Introdução à Algoritmos",
+      "periodo": "Graduação Presencial Síncrona - 2026/1",
+      "periodoInicio": "2026-02-02T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 57.01,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "260038",
+      "nome": "Introdução à Computação - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/1",
+      "codigo": "(414200) Introdução à Computação",
+      "periodo": "Graduação Presencial Síncrona - 2026/1",
+      "periodoInicio": "2026-02-02T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 59.78,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "290605",
+      "nome": "Introdução à Pesquisa em Informática - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
+      "codigo": "(8184100) Introdução à Pesquisa em Informática",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 100,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "292767",
+      "nome": "Metodologias de Extensão Universitária - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
+      "codigo": "(8177100) Metodologias de Extensão Universitária",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": null,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "290581",
+      "nome": "Programação Modular - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
+      "codigo": "(8149101) Programação Modular",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": null,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "290583",
+      "nome": "Programação Modular - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
+      "codigo": "(8149100) Programação Modular",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": null,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "292771",
+      "nome": "Trabalho Interdisciplinar: Desenvolvimento Centrado no Usuário - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
+      "codigo": "(8183100) Trabalho Interdisciplinar: Desenvolvimento Centrado no Usuário",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 94.94,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "260056",
+      "nome": "Trabalho Interdisciplinar: Desenvolvimento de Aplicações Web - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/1",
+      "codigo": "(427200) Trabalho Interdisciplinar: Desenvolvimento de Aplicações Web",
+      "periodo": "Graduação Presencial Síncrona - 2026/1",
+      "periodoInicio": "2026-02-02T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 76.78,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
     }
+  ],
+  "atividades": [
+    {
+      "id": "1006954",
+      "turmaId": "149917",
+      "nome": "[INTEGRAÇÃO] Aula Magna do ICEI + IPUC com Presidente da Google Cloud LATAM",
+      "prazo": "2024-08-14T11:30:00Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1006953",
+      "turmaId": "149917",
+      "nome": "[EXTENSÃO] Esquenta Tira-Dúvidas - Hackaton Desafio ODS",
+      "prazo": "2024-08-14T21:00:00Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1006951",
+      "turmaId": "149917",
+      "nome": "[EXTENSÃO] Inscrição para Agência Experimental de Software",
+      "prazo": "2024-08-23T02:59:59Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1013875",
+      "turmaId": "149917",
+      "nome": "[PESQUISA] Reunião Aberta do Grupo IMScience",
+      "prazo": "2024-08-23T17:00:00Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1013743",
+      "turmaId": "149917",
+      "nome": "[MONITORIA] Inscrição para o Segundo Edital de Monitoria",
+      "prazo": "2024-08-31T02:59:59Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1006952",
+      "turmaId": "149917",
+      "nome": "[INTEGRAÇÃO] Inscrição para Participar do Projeto Pirâmide",
+      "prazo": "2024-09-07T02:59:59Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1023589",
+      "turmaId": "149917",
+      "nome": "[INTEGRAÇÃO] 🧑‍💻 We Make Software - Mostra de TIs e TCCs - COREU ✨",
+      "prazo": "2024-09-19T22:00:00Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1042078",
+      "turmaId": "149917",
+      "nome": "[ATIVIDADES ACADÊMICAS] Inscrição na Avaliação de Desempenho Acadêmico (ADA) - 2024.2",
+      "prazo": "2024-11-04T02:59:59Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1056131",
+      "turmaId": "149917",
+      "nome": "[ICEI TALKS] Integração de Sistemas e Automação de Processos: Conectando o Futuro",
+      "prazo": "2024-11-28T22:00:00Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1039172",
+      "turmaId": "149917",
+      "nome": "[INTERNACIONALIZAÇÃO] Intercâmbio PUC Minas - 2025",
+      "prazo": "2024-12-01T02:59:59Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1244954",
+      "turmaId": "149917",
+      "nome": "Dia D da CPA – Sua voz faz a diferença",
+      "prazo": "2025-10-29T02:59:59Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1250714",
+      "turmaId": "149917",
+      "nome": "[ATIVIDADES ACADÊMICAS] Inscrição na Avaliação de Desempenho Acadêmico (ADA) - 2024.2 Copiar",
+      "prazo": "2025-11-11T02:59:59Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1332994",
+      "turmaId": "259984",
+      "nome": "Exercícios de Revisão - Prova Teórica 1",
+      "prazo": "2026-04-08T11:50:00Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1346579",
+      "turmaId": "259984",
+      "nome": "Prova Prática 01",
+      "prazo": "2026-05-07T13:40:00Z",
+      "pontos": 4,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-05-04T14:02:14Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 4,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315980",
+      "turmaId": "259984",
+      "nome": "Prova Teórica 2",
+      "prazo": "2026-05-20T11:50:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 18.14,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1367279",
+      "turmaId": "259984",
+      "nome": "Exercícios de Revisão - Prova Teórica 3",
+      "prazo": "2026-06-29T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315977",
+      "turmaId": "259984",
+      "nome": "Prova Teórica 1",
+      "prazo": null,
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 21.4,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315986",
+      "turmaId": "259984",
+      "nome": "Prova Teórica 3",
+      "prazo": null,
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 13.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1359159",
+      "turmaId": "259984",
+      "nome": "Trabalho Prático - PC01",
+      "prazo": null,
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1362410",
+      "turmaId": "259984",
+      "nome": "Trabalho Prático - PC02",
+      "prazo": null,
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-08T18:09:20Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1362411",
+      "turmaId": "259984",
+      "nome": "Trabalho Prático - PC03",
+      "prazo": null,
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-15T01:32:10Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1362413",
+      "turmaId": "259984",
+      "nome": "Trabalho Prático - PC04",
+      "prazo": null,
+      "pontos": 6,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-22T02:22:27Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1362635",
+      "turmaId": "259984",
+      "nome": "Prova Prática 02",
+      "prazo": null,
+      "pontos": 4,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-08T14:54:54Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2.8,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1374359",
+      "turmaId": "259984",
+      "nome": "Cinema em Dados: Desenvolver Estruturas e Predições com Python [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1379732",
+      "turmaId": "259984",
+      "nome": "Reavaliação",
+      "prazo": null,
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1396100",
+      "turmaId": "259984",
+      "nome": "Decida, Repita, Organize: Desenvolver um Projeto Básico com Estrutura de Dados em Python [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1417071",
+      "turmaId": "259984",
+      "nome": "Pensamento em Fluxo Introdução à Lógica e à Construção de Algoritmos [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1422232",
+      "turmaId": "259984",
+      "nome": "Código em Jogo: Concebendo seu Primeiro Game [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1355488",
+      "turmaId": "259985",
+      "nome": "Pensamento em Fluxo Introdução à Lógica e à Construção de Algoritmos [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1374362",
+      "turmaId": "259985",
+      "nome": "Cinema em Dados: Desenvolver Estruturas e Predições com Python [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1396102",
+      "turmaId": "259985",
+      "nome": "Decida, Repita, Organize: Desenvolver um Projeto Básico com Estrutura de Dados em Python [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1422234",
+      "turmaId": "259985",
+      "nome": "Código em Jogo: Concebendo seu Primeiro Game [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1322541",
+      "turmaId": "259998",
+      "nome": "Prova 1",
+      "prazo": "2026-04-10T11:50:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 15,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1322545",
+      "turmaId": "259998",
+      "nome": "Prova 2",
+      "prazo": "2026-05-22T11:50:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 5.75,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1332858",
+      "turmaId": "259998",
+      "nome": "PROGRAMAÇÃO COMPETITIVA I",
+      "prazo": "2026-06-15T02:59:00Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-14T23:57:00Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 4.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1333238",
+      "turmaId": "259998",
+      "nome": "PROGRAMAÇÃO COMPETITIVA II",
+      "prazo": "2026-06-15T02:59:00Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-14T23:32:20Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 3.45,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1322549",
+      "turmaId": "259998",
+      "nome": "Prova 3",
+      "prazo": "2026-06-19T11:50:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 9.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1357907",
+      "turmaId": "259998",
+      "nome": "Prova substitutiva",
+      "prazo": "2026-06-26T11:50:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1326391",
+      "turmaId": "259998",
+      "nome": "Reavaliação",
+      "prazo": "2026-07-03T11:50:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1367511",
+      "turmaId": "259998",
+      "nome": "Avaliação de Desempenho Acadêmico (ADA)",
+      "prazo": null,
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318003",
+      "turmaId": "260011",
+      "nome": "Semana 2 - Quiz - Ambiente de Trabalho",
+      "prazo": "2026-03-22T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-05T19:13:52Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318010",
+      "turmaId": "260011",
+      "nome": "Semana 3 - Quiz - Linguagem HTML",
+      "prazo": "2026-03-22T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-15T22:32:40Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318013",
+      "turmaId": "260011",
+      "nome": "Semana 1 - Atividade prática",
+      "prazo": "2026-03-24T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-05T13:27:37Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318019",
+      "turmaId": "260011",
+      "nome": "Semana 2 - Atividade prática",
+      "prazo": "2026-03-25T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-14T00:45:07Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318020",
+      "turmaId": "260011",
+      "nome": "Semana 3 - Atividade Prática",
+      "prazo": "2026-03-25T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-19T20:32:53Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318004",
+      "turmaId": "260011",
+      "nome": "Semana 5 - Quiz - Layouts Responsivos",
+      "prazo": "2026-04-11T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-23T22:27:21Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1.6,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318005",
+      "turmaId": "260011",
+      "nome": "Semana 4 - Quiz - Linguagem CSS",
+      "prazo": "2026-04-11T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-24T18:59:43Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318021",
+      "turmaId": "260011",
+      "nome": "Semana 4 - Atividade Prática",
+      "prazo": "2026-04-11T02:59:59Z",
+      "pontos": 4,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-25T20:30:38Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 4,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318007",
+      "turmaId": "260011",
+      "nome": "Semana 6 - Quiz - Framework Bootstrap",
+      "prazo": "2026-04-16T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-09T13:02:30Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318022",
+      "turmaId": "260011",
+      "nome": "Semana 5 - Atividade Prática",
+      "prazo": "2026-04-17T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-02T18:38:20Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318023",
+      "turmaId": "260011",
+      "nome": "Semana 6 - Atividade Prática",
+      "prazo": "2026-04-17T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-10T20:04:28Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318001",
+      "turmaId": "260011",
+      "nome": "Semana 7 - Quiz - Introdução à Linguagem JavaScript",
+      "prazo": "2026-04-19T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-15T17:31:22Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318024",
+      "turmaId": "260011",
+      "nome": "Semana 7 - Atividade Prática",
+      "prazo": "2026-04-26T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-16T13:12:47Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318000",
+      "turmaId": "260011",
+      "nome": "Semana 8 - Quiz - JavaScript Object Notation (JSON)",
+      "prazo": "2026-04-28T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-22T19:07:08Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1344069",
+      "turmaId": "260011",
+      "nome": "PROVA 1",
+      "prazo": "2026-04-30T13:30:00Z",
+      "pontos": 15,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-30T13:02:43Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 12.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318025",
+      "turmaId": "260011",
+      "nome": "Semana 8 - Atividade Prática",
+      "prazo": "2026-05-06T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-24T19:16:59Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318008",
+      "turmaId": "260011",
+      "nome": "Semana 9 - Quiz - Document Object Model (DOM)",
+      "prazo": "2026-05-10T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-30T17:13:39Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318002",
+      "turmaId": "260011",
+      "nome": "Semana 11 - Quiz - Forms, WebStorage e URLSearchParams",
+      "prazo": "2026-05-21T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-05-13T21:11:44Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318006",
+      "turmaId": "260011",
+      "nome": "Semana 12 - Quiz - APIs e Requisições assíncronas com Fetch API",
+      "prazo": "2026-05-24T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-05-21T12:26:53Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318026",
+      "turmaId": "260011",
+      "nome": "Semana 9 - Atividade Prática",
+      "prazo": "2026-05-25T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-05-11T17:32:56Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318014",
+      "turmaId": "260011",
+      "nome": "Semana 11 - Atividade Prática",
+      "prazo": "2026-05-28T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-05-25T12:41:22Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318027",
+      "turmaId": "260011",
+      "nome": "Trabalho Prático 1 - Exibição e navegação dinâmicas",
+      "prazo": "2026-06-01T02:59:59Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-05-27T16:51:06Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 10,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318015",
+      "turmaId": "260011",
+      "nome": "Semana 12 - Atividade Prática",
+      "prazo": "2026-06-04T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318016",
+      "turmaId": "260011",
+      "nome": "Semana 13 - Atividade Prática",
+      "prazo": "2026-06-14T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-09T18:55:57Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318028",
+      "turmaId": "260011",
+      "nome": "Trabalho Prático 2 - Solução completa",
+      "prazo": "2026-06-27T02:59:59Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-25T18:20:37Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 21.8,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318017",
+      "turmaId": "260011",
+      "nome": "Semana 14 - Atividade Prática",
+      "prazo": "2026-07-01T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318018",
+      "turmaId": "260011",
+      "nome": "Semana 15 - Atividade Prática",
+      "prazo": "2026-07-02T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1369751",
+      "turmaId": "260011",
+      "nome": "PROVA 2",
+      "prazo": "2026-07-02T14:00:00Z",
+      "pontos": 15,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-07-02T12:09:41Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 6,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1317999",
+      "turmaId": "260011",
+      "nome": "Semana 16 - Quiz - Protocolo HTTP",
+      "prazo": "2026-07-03T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1318012",
+      "turmaId": "260011",
+      "nome": "Avaliação de Desempenho Acadêmico (ADA)",
+      "prazo": null,
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1326863",
+      "turmaId": "260015",
+      "nome": "Estudo de Artigo em sala",
+      "prazo": "2026-03-11T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1319291",
+      "turmaId": "260015",
+      "nome": "Prova 01",
+      "prazo": "2026-04-08T02:59:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 25,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1319292",
+      "turmaId": "260015",
+      "nome": "Prova 02",
+      "prazo": "2026-05-23T02:59:59Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 25,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1361190",
+      "turmaId": "260015",
+      "nome": "Trabalho Final",
+      "prazo": "2026-06-23T02:59:59Z",
+      "pontos": 15,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-23T01:40:06Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 15,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1319293",
+      "turmaId": "260015",
+      "nome": "Prova 03",
+      "prazo": "2026-07-01T02:59:59Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 25,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1319294",
+      "turmaId": "260015",
+      "nome": "Reavaliação",
+      "prazo": "2026-07-03T13:40:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1348567",
+      "turmaId": "260015",
+      "nome": "Equipe SCRUM - Artigos e Eleição",
+      "prazo": null,
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1349692",
+      "turmaId": "260015",
+      "nome": "Lista de Exercício - Scrum/Ágil",
+      "prazo": null,
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1349693",
+      "turmaId": "260015",
+      "nome": "Lista de Exercício - SCRUM",
+      "prazo": null,
+      "pontos": 0.5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1349694",
+      "turmaId": "260015",
+      "nome": "Lista de Exercício - UP e RUP",
+      "prazo": null,
+      "pontos": 0.5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1349696",
+      "turmaId": "260015",
+      "nome": "Lista de Exercício - Tipos de Requisitos",
+      "prazo": null,
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1365544",
+      "turmaId": "260015",
+      "nome": "ADA",
+      "prazo": null,
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1319505",
+      "turmaId": "260038",
+      "nome": "Dinâmica - História da Computação",
+      "prazo": "2026-03-03T02:59:59Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1321360",
+      "turmaId": "260038",
+      "nome": "Quiz 1 - Representação de Dados e Sistemas Numéricos",
+      "prazo": "2026-03-24T15:20:00Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-24T14:56:50Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 3,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1321397",
+      "turmaId": "260038",
+      "nome": "Quiz 2 - Lógica",
+      "prazo": "2026-04-07T15:20:00Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-07T14:58:47Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 3,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1321439",
+      "turmaId": "260038",
+      "nome": "Entrega: Trabalho Sistemas Numéricos e Lógica",
+      "prazo": "2026-04-14T15:20:00Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1322558",
+      "turmaId": "260038",
+      "nome": "Prova 1",
+      "prazo": "2026-04-28T13:40:00Z",
+      "pontos": 30,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 26.25,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1336681",
+      "turmaId": "260038",
+      "nome": "Quiz 4 - Iniciação aos Sistemas Computacionais",
+      "prazo": "2026-05-24T02:59:59Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1329863",
+      "turmaId": "260038",
+      "nome": "Quiz 3 - Bd e Linguagens de Programação",
+      "prazo": "2026-06-01T02:59:59Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-05-27T18:26:21Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 3,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1354993",
+      "turmaId": "260038",
+      "nome": "Quiz 5 - Game Design",
+      "prazo": "2026-06-09T02:59:59Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-08T18:14:20Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 3,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1355531",
+      "turmaId": "260038",
+      "nome": "Quiz 6 - Inteligencia Artificial",
+      "prazo": "2026-06-09T02:59:59Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-02T23:30:37Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 3,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1359865",
+      "turmaId": "260038",
+      "nome": "Atividade Prática – O Caso do Projeto Orion",
+      "prazo": "2026-06-09T15:20:00Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1322576",
+      "turmaId": "260038",
+      "nome": "Prova 2",
+      "prazo": "2026-06-16T13:40:00Z",
+      "pontos": 30,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 20.46,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1359785",
+      "turmaId": "260038",
+      "nome": "Quiz 7 - Iniciação aos Sistemas de Software",
+      "prazo": "2026-06-17T02:59:59Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-16T15:56:13Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1360342",
+      "turmaId": "260038",
+      "nome": "Prática Investigativa: Desvendando o Conhecimento em Computação",
+      "prazo": "2026-06-24T02:59:59Z",
+      "pontos": 7,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-23T21:40:41Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 6,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1369550",
+      "turmaId": "260038",
+      "nome": "Lista de exercícios 2",
+      "prazo": "2026-06-29T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1367540",
+      "turmaId": "260038",
+      "nome": "Prova substitutiva",
+      "prazo": "2026-06-30T13:40:00Z",
+      "pontos": 30,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1326376",
+      "turmaId": "260038",
+      "nome": "Reavaliação",
+      "prazo": "2026-07-07T13:40:00Z",
+      "pontos": 30,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1316966",
+      "turmaId": "260038",
+      "nome": "Avaliação de Desempenho Acadêmico (ADA)",
+      "prazo": null,
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1321373",
+      "turmaId": "260038",
+      "nome": "Quiz zero - História da Computação",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-07T20:30:23Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1361957",
+      "turmaId": "260038",
+      "nome": "Iniciação aos Sistemas de Software [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1413367",
+      "turmaId": "260038",
+      "nome": "Jogos Digitais e Futuro da Computação [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1424617",
+      "turmaId": "260038",
+      "nome": "Iniciação aos Sistemas Computacionais [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1432234",
+      "turmaId": "260038",
+      "nome": "Bits, Lógica e Sistemas de Numeração [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1450372",
+      "turmaId": "260038",
+      "nome": "Linguagens de Programação e Banco de Dados [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1338142",
+      "turmaId": "260048",
+      "nome": "Estudo dirigido mód.1 tx Platão",
+      "prazo": "2026-03-25T11:30:00Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 10,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1352375",
+      "turmaId": "260048",
+      "nome": "Estudo dirigido Mód.2e3 Questão Kant",
+      "prazo": "2026-04-22T13:30:00Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1349738",
+      "turmaId": "260048",
+      "nome": "Estudo dirigido Módulos 2e3 Q. Horkheimer",
+      "prazo": "2026-05-06T13:30:00Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1349746",
+      "turmaId": "260048",
+      "nome": "Prova parcial",
+      "prazo": "2026-05-20T11:30:00Z",
+      "pontos": 30,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 20.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1368531",
+      "turmaId": "260048",
+      "nome": "Trabalho sobre Filosofia da Tecnologia (5 respostas e apresentação)",
+      "prazo": "2026-06-17T11:40:00Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 10,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1368540",
+      "turmaId": "260048",
+      "nome": "Pontos de participação",
+      "prazo": "2026-06-17T11:40:00Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 7,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1368542",
+      "turmaId": "260048",
+      "nome": "Prova final (individual, sem consulta, matéria toda)",
+      "prazo": null,
+      "pontos": 30,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 20,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315568",
+      "turmaId": "260056",
+      "nome": "Quiz - Dinâmica da disciplina",
+      "prazo": "2026-03-02T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-02-26T21:03:53Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0.95,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315567",
+      "turmaId": "260056",
+      "nome": "Quiz - Ambiente de Trabalho",
+      "prazo": "2026-03-16T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-12T18:38:46Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315581",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Matriz CSD e Mapa de Stakeholders",
+      "prazo": "2026-03-16T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1.4,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315582",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Personas e Proposta de Valor",
+      "prazo": "2026-03-23T02:59:59Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 3,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315569",
+      "turmaId": "260056",
+      "nome": "Quiz - Engenharia de Software",
+      "prazo": "2026-03-30T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-26T17:07:57Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315580",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Histórias de Usuários e Proposta de Valor",
+      "prazo": "2026-03-30T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-03-30T13:11:16Z",
+      "atrasada": true,
+      "nota": {
+        "publicada": true,
+        "pontos": 3,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315587",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Projeto de Interfaces",
+      "prazo": "2026-04-06T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-16T17:11:51Z",
+      "atrasada": true,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315570",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Apresentação do projeto (PDF)",
+      "prazo": "2026-04-13T02:59:00Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-13T01:41:39Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 3.3,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315588",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Repositório GitHub (ZIP)",
+      "prazo": "2026-04-13T02:59:00Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-16T17:14:42Z",
+      "atrasada": true,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": "complete"
+      }
+    },
+    {
+      "id": "1315571",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Documentação do Projeto (PDF)",
+      "prazo": "2026-04-13T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-13T01:40:53Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2.3,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315578",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Estruturas de dados - Sprint 1",
+      "prazo": "2026-04-27T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315583",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Planejamento da Sprint 1 -  EQUIPE",
+      "prazo": "2026-04-27T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1.8,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315584",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Planejamento da Sprint 1 -  INDIVIDUAL",
+      "prazo": "2026-04-27T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-04-26T20:54:44Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1347732",
+      "turmaId": "260056",
+      "nome": "Acompanhamento Parcial 1 - Sprint 1 (5pts)",
+      "prazo": "2026-05-07T15:20:00Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315585",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Planejamento da Sprint 2 -  INDIVIDUAL",
+      "prazo": "2026-05-18T02:59:00Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315586",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Planejamento da Sprint 2 - EQUIPE",
+      "prazo": "2026-05-18T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-05-18T00:36:31Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1347733",
+      "turmaId": "260056",
+      "nome": "Acompanhamento Parcial 2 - Sprint 1 (5pts)",
+      "prazo": "2026-05-21T15:20:00Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315576",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Entrega Sprint 1 - INDIVIDUAL (ZIP)",
+      "prazo": "2026-05-25T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-05-24T21:16:57Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 4,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315579",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Estruturas de dados - Sprint 2",
+      "prazo": "2026-05-25T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-05-25T02:05:02Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1356732",
+      "turmaId": "260056",
+      "nome": "Acompanhamento Parcial 1 - Sprint 2 (5pts)",
+      "prazo": "2026-05-28T13:40:00Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1356734",
+      "turmaId": "260056",
+      "nome": "Acompanhamento Parcial 2 - Sprint 2 (5pts)",
+      "prazo": "2026-06-11T13:40:00Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 4,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315577",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Entrega Sprint 2 - INDIVIDUAL (ZIP)",
+      "prazo": "2026-06-15T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-15T00:05:37Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315572",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Entrega Final - Aplicação e Repositório GitHub (ZIP)",
+      "prazo": "2026-06-29T02:59:00Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 10,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315574",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Entrega Final - Documentação do Projeto (PDF)",
+      "prazo": "2026-06-29T02:59:00Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-06-28T20:51:44Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 7.68,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315575",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Entrega Final - Vídeo",
+      "prazo": "2026-06-29T02:59:00Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 4,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1315573",
+      "turmaId": "260056",
+      "nome": "ATIVIDADE - Entrega Final - Apresentação do projeto (PDF)",
+      "prazo": "2026-06-29T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 4.85,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1413418",
+      "turmaId": "260056",
+      "nome": "Princípios de Design de Interface [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1452678",
+      "turmaId": "260056",
+      "nome": "Processos, Métodos e Ferramentas para Projetos de Software [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1401603",
+      "turmaId": "290564",
+      "nome": "Prova 1",
+      "prazo": "2026-10-02T11:50:00Z",
+      "pontos": 30,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 17.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1401604",
+      "turmaId": "290564",
+      "nome": "Prova 2",
+      "prazo": "2026-11-13T11:50:00Z",
+      "pontos": 30,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1401606",
+      "turmaId": "290564",
+      "nome": "Prova 3",
+      "prazo": "2026-12-11T11:50:00Z",
+      "pontos": 30,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1401610",
+      "turmaId": "290564",
+      "nome": "Reavaliação",
+      "prazo": "2026-12-18T11:50:00Z",
+      "pontos": 30,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1401608",
+      "turmaId": "290564",
+      "nome": "ADA",
+      "prazo": null,
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414242",
+      "turmaId": "290564",
+      "nome": "Trabalho Prático - 5 pontos",
+      "prazo": null,
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1417484",
+      "turmaId": "290569",
+      "nome": "Exercício 1 - Qualidades de Uso em IHC",
+      "prazo": "2026-08-17T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 0.9,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1436377",
+      "turmaId": "290569",
+      "nome": "1ª Avaliação",
+      "prazo": "2026-09-15T23:50:00Z",
+      "pontos": 18,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 11.9,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1436375",
+      "turmaId": "290569",
+      "nome": "Lista 1",
+      "prazo": "2026-09-21T02:59:59Z",
+      "pontos": 2.5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-09-20T17:51:58Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1450314",
+      "turmaId": "290569",
+      "nome": "Trabalho Final - Entrega 1",
+      "prazo": "2026-10-12T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1431946",
+      "turmaId": "290578",
+      "nome": "ATIVIDADE 01",
+      "prazo": "2026-08-28T02:59:59Z",
+      "pontos": 2.5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-08-27T23:42:24Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1434352",
+      "turmaId": "290578",
+      "nome": "ATIVIDADE 02",
+      "prazo": "2026-09-18T02:59:59Z",
+      "pontos": 2.5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-09-17T14:53:14Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1434383",
+      "turmaId": "290578",
+      "nome": "AV1 - 25 pts",
+      "prazo": "2026-09-24T15:30:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-09-24T15:17:26Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 12.5,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1434356",
+      "turmaId": "290578",
+      "nome": "LABORATÓRIO 1",
+      "prazo": "2026-10-16T02:59:59Z",
+      "pontos": 15,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1434353",
+      "turmaId": "290578",
+      "nome": "ATIVIDADE 03",
+      "prazo": "2026-10-23T02:59:59Z",
+      "pontos": 2.5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1434384",
+      "turmaId": "290578",
+      "nome": "AV2 - 25 pts",
+      "prazo": "2026-10-29T15:30:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1434357",
+      "turmaId": "290578",
+      "nome": "LABORATÓRIO 2",
+      "prazo": "2026-11-06T02:59:59Z",
+      "pontos": 15,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1434355",
+      "turmaId": "290578",
+      "nome": "ATIVIDADE 04",
+      "prazo": "2026-11-27T02:59:59Z",
+      "pontos": 2.5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1434385",
+      "turmaId": "290578",
+      "nome": "ADA - 5 pts",
+      "prazo": "2026-11-28T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1434358",
+      "turmaId": "290578",
+      "nome": "LABORATÓRIO 3",
+      "prazo": "2026-12-11T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1450635",
+      "turmaId": "290578",
+      "nome": "Segurança em Aplicações Web [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1450674",
+      "turmaId": "290578",
+      "nome": "Arquitetura e Projeto de APIs [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1458332",
+      "turmaId": "290578",
+      "nome": "Ambientes e Frameworks Back-end [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412748",
+      "turmaId": "290581",
+      "nome": "ADA",
+      "prazo": "2026-02-03T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412749",
+      "turmaId": "290581",
+      "nome": "Lista 00",
+      "prazo": "2026-08-24T02:59:59Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-08-18T17:55:26Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412753",
+      "turmaId": "290581",
+      "nome": "Prática 1",
+      "prazo": "2026-09-08T02:59:59Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412754",
+      "turmaId": "290581",
+      "nome": "Prática 2",
+      "prazo": "2026-09-21T15:20:00Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412750",
+      "turmaId": "290581",
+      "nome": "Atividade Avaliativa 1",
+      "prazo": "2026-09-28T15:20:00Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-09-28T15:04:21Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412761",
+      "turmaId": "290581",
+      "nome": "Sprint 1",
+      "prazo": "2026-10-06T02:59:59Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-09-21T15:15:09Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412755",
+      "turmaId": "290581",
+      "nome": "Prática 3",
+      "prazo": "2026-10-12T15:20:00Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412751",
+      "turmaId": "290581",
+      "nome": "Atividade Avaliativa 2",
+      "prazo": "2026-11-23T15:20:00Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412765",
+      "turmaId": "290581",
+      "nome": "Trabalho Prático",
+      "prazo": "2026-12-07T13:40:00Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412714",
+      "turmaId": "290583",
+      "nome": "ADA",
+      "prazo": "2026-02-03T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412726",
+      "turmaId": "290583",
+      "nome": "Sprint 2",
+      "prazo": "2026-05-12T02:59:59Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412715",
+      "turmaId": "290583",
+      "nome": "Lista 1",
+      "prazo": "2026-09-14T11:50:00Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412718",
+      "turmaId": "290583",
+      "nome": "Prova 1",
+      "prazo": "2026-09-16T11:50:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412716",
+      "turmaId": "290583",
+      "nome": "Lista 2",
+      "prazo": "2026-10-21T11:50:00Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412719",
+      "turmaId": "290583",
+      "nome": "Prova 2",
+      "prazo": "2026-10-26T11:50:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412717",
+      "turmaId": "290583",
+      "nome": "Lista 3",
+      "prazo": "2026-11-30T11:50:00Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412720",
+      "turmaId": "290583",
+      "nome": "Prova 3",
+      "prazo": "2026-12-02T11:50:00Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399503",
+      "turmaId": "290605",
+      "nome": "Exercício - leitura",
+      "prazo": "2026-08-04T15:20:00Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399500",
+      "turmaId": "290605",
+      "nome": "Exercício - Redação técnica",
+      "prazo": "2026-08-20T02:59:59Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 3,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399502",
+      "turmaId": "290605",
+      "nome": "Exercício - comunicações científicas",
+      "prazo": "2026-08-20T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399504",
+      "turmaId": "290605",
+      "nome": "Exercício - noções sobre projeto de pesquisa",
+      "prazo": "2026-09-03T02:59:59Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-09-02T19:08:50Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 3,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399506",
+      "turmaId": "290605",
+      "nome": "Exercício - pesquisa bibliográfica",
+      "prazo": "2026-09-03T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-09-02T19:14:13Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399511",
+      "turmaId": "290605",
+      "nome": "IPI - Tarefa Seminários - ES-Coreu",
+      "prazo": "2026-09-15T02:59:59Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-09-11T18:09:54Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399505",
+      "turmaId": "290605",
+      "nome": "Exercício - objetivos",
+      "prazo": "2026-10-03T02:59:59Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-10-02T17:52:21Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399507",
+      "turmaId": "290605",
+      "nome": "IPI - Tarefa Projeto - Etapa 1 - ES - Coreu",
+      "prazo": "2026-10-20T02:59:59Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399497",
+      "turmaId": "290605",
+      "nome": "Exercício - Metodologia",
+      "prazo": "2026-11-07T02:59:59Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399499",
+      "turmaId": "290605",
+      "nome": "Exercício - Overleaf (Latex)",
+      "prazo": "2026-11-07T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399509",
+      "turmaId": "290605",
+      "nome": "IPI - Tarefa Projeto - Etapa 2 - ES - Coreu",
+      "prazo": "2026-11-17T02:59:59Z",
+      "pontos": 15,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399492",
+      "turmaId": "290605",
+      "nome": "ADA",
+      "prazo": "2026-11-25T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399510",
+      "turmaId": "290605",
+      "nome": "IPI - Tarefa Projeto - Etapa 3 - ES - Coreu",
+      "prazo": "2026-12-01T02:59:59Z",
+      "pontos": 40,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1450423",
+      "turmaId": "290605",
+      "nome": "A Proposição de um Projeto de Pesquisa: por onde começar? [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1450633",
+      "turmaId": "292752",
+      "nome": "Segurança em Aplicações Web [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1450668",
+      "turmaId": "292752",
+      "nome": "Arquitetura e Projeto de APIs [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1458330",
+      "turmaId": "292752",
+      "nome": "Ambientes e Frameworks Back-end [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399985",
+      "turmaId": "292767",
+      "nome": "Atividade 1 - Estudo sobre prática extensionista",
+      "prazo": "2026-08-27T02:59:59Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-08-26T17:14:44Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399986",
+      "turmaId": "292767",
+      "nome": "Atividade 2 - Diagnóstico do problema e público-alvo",
+      "prazo": "2026-09-19T02:59:59Z",
+      "pontos": 20,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-09-19T01:37:39Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399987",
+      "turmaId": "292767",
+      "nome": "Atividade 3 - Planejamento, execução e validação da ação extensionista",
+      "prazo": "2026-10-27T02:59:59Z",
+      "pontos": 20,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399990",
+      "turmaId": "292767",
+      "nome": "Atividade 6 - Resumo expandido ou relato de experiência",
+      "prazo": "2026-11-10T02:59:59Z",
+      "pontos": 20,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399991",
+      "turmaId": "292767",
+      "nome": "Atividade 7 - Avaliação, impacto e apresentação",
+      "prazo": "2026-11-10T02:59:59Z",
+      "pontos": 20,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399984",
+      "turmaId": "292767",
+      "nome": "ADA",
+      "prazo": null,
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414961",
+      "turmaId": "292771",
+      "nome": "Matriz CSD e Mapa de Stakeholders",
+      "prazo": "2026-08-19T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-08-18T13:16:51Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414962",
+      "turmaId": "292771",
+      "nome": "Roteiro de entrevistas e lista de entrevistados",
+      "prazo": "2026-08-19T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-08-19T01:33:12Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414963",
+      "turmaId": "292771",
+      "nome": "Entrevistas Qualitativas e Highlights de pesquisa",
+      "prazo": "2026-08-25T02:59:00Z",
+      "pontos": 4,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-08-25T01:50:18Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414959",
+      "turmaId": "292771",
+      "nome": "Quiz - Dinâmica da disciplina",
+      "prazo": "2026-08-31T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-08-20T17:22:11Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 1,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414964",
+      "turmaId": "292771",
+      "nome": "Quiz - Ambiente de Trabalho - Git e GitHub",
+      "prazo": "2026-08-31T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-08-20T17:23:59Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 2,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414965",
+      "turmaId": "292771",
+      "nome": "Personas e Mapa de Empatia (PDF)",
+      "prazo": "2026-09-01T02:59:00Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-09-01T02:02:18Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414966",
+      "turmaId": "292771",
+      "nome": "Proposta de Valor e Requisitos de software (PDF)",
+      "prazo": "2026-09-08T02:59:00Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-09-07T23:47:04Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414967",
+      "turmaId": "292771",
+      "nome": "Projeto de Interfaces [Wireframes, User Flow, Protótipo interativo, Design System] (PDF + URL)",
+      "prazo": "2026-09-22T02:59:59Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-09-22T01:56:22Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414968",
+      "turmaId": "292771",
+      "nome": "Documentação do Projeto (PDF)",
+      "prazo": "2026-09-29T02:59:00Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-09-29T01:27:58Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414970",
+      "turmaId": "292771",
+      "nome": "Repositório GitHub - Arquivos, Project Board e Issues (ZIP + URL)",
+      "prazo": "2026-09-29T02:59:00Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-09-29T01:29:11Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414971",
+      "turmaId": "292771",
+      "nome": "Descrição do Minimundo (PDF)",
+      "prazo": "2026-09-29T02:59:00Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-09-29T01:26:37Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414972",
+      "turmaId": "292771",
+      "nome": "Pitch Deck e Apresentação (PDF/PPT)",
+      "prazo": "2026-09-29T02:59:00Z",
+      "pontos": 4,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-09-29T01:26:15Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 3.64,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1415101",
+      "turmaId": "292771",
+      "nome": "Relatório de avaliação heurística (PDF)",
+      "prazo": "2026-09-29T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-09-29T01:27:03Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414973",
+      "turmaId": "292771",
+      "nome": "Planejamento da Sprint 1 - Equipe",
+      "prazo": "2026-10-08T02:59:59Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-10-08T01:18:55Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414974",
+      "turmaId": "292771",
+      "nome": "Planejamento da Sprint 1 - Individual",
+      "prazo": "2026-10-08T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-10-08T02:35:00Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414975",
+      "turmaId": "292771",
+      "nome": "Modelo de dados de Objetos",
+      "prazo": "2026-10-08T02:59:59Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-10-05T14:33:17Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414976",
+      "turmaId": "292771",
+      "nome": "Entrega Sprint 1",
+      "prazo": "2026-10-27T02:59:00Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414977",
+      "turmaId": "292771",
+      "nome": "Planejamento da Sprint 2 - Equipe",
+      "prazo": "2026-10-28T02:59:00Z",
+      "pontos": 1,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414978",
+      "turmaId": "292771",
+      "nome": "Planejamento da Sprint 2 - Individual",
+      "prazo": "2026-10-28T02:59:00Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414979",
+      "turmaId": "292771",
+      "nome": "Modelo de dados de Objetos - Revisado",
+      "prazo": "2026-10-28T02:59:00Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414980",
+      "turmaId": "292771",
+      "nome": "Entrega Sprint 2",
+      "prazo": "2026-11-10T02:59:00Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414985",
+      "turmaId": "292771",
+      "nome": "Hospedagem da aplicação na Internet (URL)",
+      "prazo": "2026-11-24T02:59:00Z",
+      "pontos": 2,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1415070",
+      "turmaId": "292771",
+      "nome": "Teste de Usabilidade (PDF)",
+      "prazo": "2026-11-24T02:59:59Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414981",
+      "turmaId": "292771",
+      "nome": "Documentação do Projeto (PDF)",
+      "prazo": "2026-12-01T02:59:00Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414983",
+      "turmaId": "292771",
+      "nome": "Aplicação e Repositório GitHub (ZIP)",
+      "prazo": "2026-12-01T02:59:00Z",
+      "pontos": 8,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414984",
+      "turmaId": "292771",
+      "nome": "Vídeo de divulgação do projeto (MP4)",
+      "prazo": "2026-12-01T02:59:00Z",
+      "pontos": 3,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1414986",
+      "turmaId": "292771",
+      "nome": "Pitch Deck e Apresentação Final (PDF/PPT)",
+      "prazo": "2026-12-01T02:59:00Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1415119",
+      "turmaId": "292771",
+      "nome": "Avaliação de Desempenho Acadêmico (ADA)",
+      "prazo": "2026-12-01T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1408110",
+      "turmaId": "294889",
+      "nome": "Exercício 01",
+      "prazo": "2026-09-02T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "avaliada",
+      "entregueEm": "2026-09-01T17:09:20Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1408113",
+      "turmaId": "294889",
+      "nome": "Prova 01",
+      "prazo": "2026-09-02T02:59:59Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "avaliada",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": true,
+        "pontos": 11.56,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1408111",
+      "turmaId": "294889",
+      "nome": "Exercício 02",
+      "prazo": "2026-10-07T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-10-06T21:37:53Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1408114",
+      "turmaId": "294889",
+      "nome": "Prova 02",
+      "prazo": "2026-10-07T02:59:59Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1408112",
+      "turmaId": "294889",
+      "nome": "Exercício 03",
+      "prazo": "2026-11-18T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1408115",
+      "turmaId": "294889",
+      "nome": "Prova 03",
+      "prazo": "2026-11-18T02:59:59Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1408116",
+      "turmaId": "294889",
+      "nome": "Prova de 2ª Chamada",
+      "prazo": "2026-11-25T02:59:59Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1408117",
+      "turmaId": "294889",
+      "nome": "Reavaliação",
+      "prazo": "2026-12-02T02:59:59Z",
+      "pontos": 25,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1408108",
+      "turmaId": "294889",
+      "nome": "ADA",
+      "prazo": null,
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    }
+  ]
+}

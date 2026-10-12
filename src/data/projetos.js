@@ -1,5 +1,5 @@
-const logoEstagiOn = '../../public/images/Logo_estagiOn.png'
-const LogoMeuBolso = '../../public/images/Logo_meu_bolso.png'
+const logoEstagiOn = 'images/Logo_estagiOn.png'
+const LogoMeuBolso = 'images/Logo_meu_bolso.png'
 export const projetos = [
     {
     id: 'estagi-on',

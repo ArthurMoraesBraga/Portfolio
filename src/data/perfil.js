@@ -1,4 +1,4 @@
-const fotoPerfil = '../../public/images/Imagem_minha_portfolio.png'
+const fotoPerfil = 'images/Imagem_minha_portfolio.png'
 
 export const perfil = {
     nome: 'Arthur Moraes',

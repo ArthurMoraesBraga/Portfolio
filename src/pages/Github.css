@@ -701,3 +701,16 @@
     font-size: 18px;
     color: var(--cor-anel);
 }
+.github-titulo{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.github-gif{
+    display:block;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}

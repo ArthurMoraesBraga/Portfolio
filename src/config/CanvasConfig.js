@@ -25,9 +25,6 @@
     export const TEXTOS = {
     titulo: 'Canvas',
     subtitulo: 'Minhas turmas, atividades e notas no Canvas da PUC Minas.',
-    avisoTempoReal:
-        'Estes dados foram capturados na última atualização e não são exibidos em tempo real. Prazos, entregas e notas podem ter mudado desde então.',
-    avisoDesatualizado: 'Os dados têm mais de {dias} dias. Eles podem estar bem diferentes do Canvas atual.',
     avisoSga:
         'As notas desta página vêm do Canvas e podem ser parciais ou provisórias. O registro acadêmico oficial é o do SGA, que prevalece em caso de diferença.',
     semDados: 'Os dados do Canvas ainda não estão disponíveis.',
