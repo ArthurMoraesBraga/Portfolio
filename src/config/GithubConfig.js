@@ -3,7 +3,7 @@
 // fica aqui. Nenhum token ou segredo entra neste arquivo: todas as consultas
 // usam apenas dados públicos e são feitas direto do navegador.
 
-const USUARIO = 'arthurmbaam-stack'
+const USUARIO = 'ArthurMoraesBraga'
 
 const GITHUB_CONFIG = {
     USUARIO,

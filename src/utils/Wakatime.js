@@ -5,7 +5,7 @@ const URL_ESTATISTICAS =
     'https://wakatime.com/share/@a0d04abd-cfe7-4836-bb0e-b44ee9a1aebf/4695fd9f-9287-4e71-af5c-166de9739c66.json'
 
 const URL_LINGUAGENS =
-    'https://wakatime.com/share/@a0d04abd-cfe7-4836-bb0e-b44ee9a1aebf/0127acce-84a9-4ff5-8694-6a72e3b89cf1.json'
+    'https://wakatime.com/share/@a0d04abd-cfe7-4836-bb0e-b44ee9a1aebf/11a856b1-5906-49b4-a11a-6da88f726d7a.json'
 
 const CACHE_MS = 15 * 60 * 1000
 
