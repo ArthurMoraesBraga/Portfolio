@@ -62,3 +62,28 @@
     .contato-grade { grid-template-columns: 1fr; }
     .contato-form { padding: 20px; }
 }
+    .contato-form .contato-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    }
+
+    .contato-label svg {
+    width: 17px;
+    height: 17px;
+    color: var(--texto-suave);
+    stroke-width: 1.7;
+    }
+
+    .contato-form .contato-enviar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    }
+
+    .contato-enviar svg {
+    width: 18px;
+    height: 18px;
+    stroke-width: 1.7;
+    }

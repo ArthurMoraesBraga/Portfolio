@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import IntroVinil from './components/IntroVinil'
+import BarraIdioma from './components/BarraIdioma'
 import MenuFaixas from './components/MenuFaixas'
 import FaixaNav from './components/FaixaNav'
 import Rodape from './components/Rodape'
@@ -29,15 +31,26 @@ const paginas = {
 
 function Paginas() {
   const { caminho } = useRota()
+  const { t, i18n } = useTranslation()
   const primeiraRenderizacao = useRef(true)
   const Pagina = paginas[caminho] ?? Inicio
   const rota = rotas.find((r) => r.caminho === caminho)
   const eInicio = caminho === '/'
+  const idioma = i18n.language
+  const nome = perfil.nome
+  const tituloRota = t(`rotas.${rota.id}.titulo`)
 
-  // A cada troca de página: título da aba, volta ao topo e foco no título principal
-  // (ajuda quem usa teclado ou leitor de tela). Não rouba o foco no primeiro carregamento.
+  // Título da aba: acompanha a página e o idioma
   useEffect(() => {
-    document.title = eInicio ? `${perfil.nome} · Portfólio` : `${rota.titulo} · ${perfil.nome}`
+    document.title = eInicio
+      ? t('meta.tituloInicio', { nome })
+      : t('meta.tituloPagina', { pagina: tituloRota, nome })
+  }, [eInicio, tituloRota, nome, t, idioma])
+
+  // A cada troca de página: volta ao topo e foco no título principal (ajuda quem usa
+  // teclado ou leitor de tela). Não rouba o foco no primeiro carregamento e não roda
+  // quando só o idioma muda, para a troca de idioma não tirar a pessoa de onde ela estava.
+  useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
 
     if (primeiraRenderizacao.current) {
@@ -45,7 +58,7 @@ function Paginas() {
       return
     }
     document.querySelector('main h1')?.focus({ preventScroll: true })
-  }, [caminho, eInicio, rota.titulo])
+  }, [caminho])
 
   return (
     <>
@@ -53,15 +66,16 @@ function Paginas() {
         e.preventDefault()
         document.querySelector('main h1')?.focus()
       }}>
-        Ir para o conteúdo
+        {t('app.pularConteudo')}
       </a>
 
+      <BarraIdioma />
       {!eInicio && <MenuFaixas />}
       <main id="conteudo">
         <Pagina key={caminho} />
       </main>
       {!eInicio && <FaixaNav />}
-      <Rodape nome={perfil.nome} />
+      <Rodape nome={nome} />
     </>
   )
 }

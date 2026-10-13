@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import Link from '../router/Link'
 import { useRota } from '../router/contexto'
 import './Capa.css'
@@ -5,6 +6,7 @@ import './Capa.css'
 // Capa de vinil que representa uma página. O disco sai da capa ao passar o mouse
 // ou ao receber foco do teclado; no toque, o clique navega direto.
 function Capa({ rota, indice }) {
+    const { t } = useTranslation()
     const { fase, destino } = useRota()
     const escolhida = fase === 'cobrindo' && destino === rota.caminho
 
@@ -28,8 +30,8 @@ function Capa({ rota, indice }) {
         <span className="capa-aneis" aria-hidden="true" />
         <span className="capa-faixa">{rota.faixa}</span>
         <span className="capa-texto">
-            <span className="capa-titulo">{rota.titulo}</span>
-            <span className="capa-descricao">{rota.descricao}</span>
+            <span className="capa-titulo">{t(`rotas.${rota.id}.titulo`)}</span>
+            <span className="capa-descricao">{t(`rotas.${rota.id}.descricao`)}</span>
         </span>
         </span>
     </Link>

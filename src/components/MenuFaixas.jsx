@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Link from '../router/Link'
 import { useRota } from '../router/contexto'
 import { faixas } from '../data/rotas'
@@ -7,6 +8,7 @@ import './MenuFaixas.css'
 
 // Menu compacto das páginas internas, no formato de lista de faixas de um álbum.
 function MenuFaixas() {
+    const { t } = useTranslation()
     const { caminho } = useRota()
     const [aberto, setAberto] = useState(false)
     const [caminhoAnterior, setCaminhoAnterior] = useState(caminho)
@@ -27,10 +29,10 @@ function MenuFaixas() {
     return (
     <header className="menu">
         <div className="container menu-conteudo">
-        <Link para="/" className="menu-marca" title="Voltar ao início">
+        <Link para="/" className="menu-marca" title={t('menu.voltarInicio')}>
             <span className="menu-disco" aria-hidden="true" />
             <span className="menu-nome">{perfil.nome}</span>
-            <span className="menu-voltar">Início</span>
+            <span className="menu-voltar">{t('menu.inicio')}</span>
         </Link>
 
         <button
@@ -40,19 +42,19 @@ function MenuFaixas() {
             aria-controls="menu-faixas"
             onClick={() => setAberto((a) => !a)}
         >
-            Faixas
+            {t('menu.faixas')}
         </button>
 
         <nav
             id="menu-faixas"
             className={`menu-faixas ${aberto ? 'menu-faixas--aberto' : ''}`}
-            aria-label="Páginas do portfólio"
+            aria-label={t('menu.paginasPortfolio')}
         >
             <ol>
             {faixas.map((f) => (
                 <li key={f.caminho}>
                 <Link para={f.caminho}>
-                    <span className="menu-num">{f.faixa}</span> — {f.titulo}
+                    <span className="menu-num">{f.faixa}</span> — {t(`rotas.${f.id}.titulo`)}
                 </Link>
                 </li>
             ))}

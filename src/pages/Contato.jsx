@@ -1,8 +1,18 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { contato } from '../data/contato'
 import './Contato.css'
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaGithub,
+    FaInstagram,
+    FaLinkedin } from 'react-icons/fa'
+import {
+    FiUser,
+    FiMail,
+    FiMessageSquare,
+    FiSend,
+    } from 'react-icons/fi'
 function Contato() {
+    const { t } = useTranslation()
     const [status, setStatus] = useState('parado') // parado | enviando | sucesso | erro
 
     async function enviar(evento) {
@@ -27,16 +37,16 @@ function Contato() {
     return (
     <article className="pagina container">
         <header className="pagina-topo">
-        <p className="pagina-faixa">Faixa 05</p>
-        <h1 className="pagina-titulo" tabIndex={-1}>Contato</h1>
+        <p className="pagina-faixa">{t('comum.faixa', { numero: '07' })}</p>
+        <h1 className="pagina-titulo" tabIndex={-1}>{t('contato.titulo')}</h1>
         <p className="pagina-intro">
-            Vamos conversar? Mande uma mensagem ou me encontre nas redes.
+            {t('contato.intro')}
         </p>
         </header>
 
         <div className="contato-grade">
         <section aria-labelledby="contato-redes-titulo">
-            <h2 id="contato-redes-titulo" className="subtitulo">Redes sociais</h2>
+            <h2 id="contato-redes-titulo" className="subtitulo">{t('contato.redes')}</h2>
             <p className="contato-email">
             <a href={`mailto:${contato.email}`}>{contato.email}</a>
             </p>
@@ -55,7 +65,7 @@ function Contato() {
                     href={r.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`${r.nome} (abre em nova aba)`}
+                    aria-label={t('contato.redeAria', { nome: r.nome })}
                     title={r.nome}
                 >
                     {Icone ? <Icone aria-hidden="true" /> : r.nome}
@@ -67,24 +77,55 @@ function Contato() {
         </section>
 
         <form className="contato-form papel" onSubmit={enviar}>
-            <h2 className="subtitulo">Envie uma mensagem</h2>
+            <h2 className="subtitulo">{t('contato.enviarMensagemTitulo')}</h2>
 
-            <label htmlFor="nome">Nome</label>
-            <input id="nome" name="nome" type="text" required autoComplete="name" />
+            <label htmlFor="nome" className="contato-label">
+                <FiUser aria-hidden="true" />
+                {t('contato.nome')}
+                </label>
+                <input
+                id="nome"
+                name="nome"
+                type="text"
+                required
+                autoComplete="name"
+                />
 
-            <label htmlFor="email">E-mail</label>
-            <input id="email" name="email" type="email" required autoComplete="email" />
+            <label htmlFor="email" className="contato-label">
+                <FiMail aria-hidden="true" />
+                {t('contato.email')}
+            </label>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autoComplete="email"
+            />
 
-            <label htmlFor="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required />
+            <label htmlFor="mensagem" className="contato-label">
+                <FiMessageSquare aria-hidden="true" />
+                {t('contato.mensagem')}
+            </label>
+            <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                required
+            />
 
-            <button type="submit" className="botao botao--primario" disabled={status === 'enviando'}>
-            {status === 'enviando' ? 'Enviando...' : 'Enviar mensagem'}
+            <button
+            type="submit"
+            className="botao botao--primario contato-enviar"
+            disabled={status === 'enviando'}
+            >
+                <FiSend aria-hidden="true" />
+                {status === 'enviando' ? t('contato.enviando') : t('contato.enviar')}
             </button>
 
             <p className="contato-status" role="status">
-            {status === 'sucesso' && 'Mensagem enviada. Obrigado pelo contato!'}
-            {status === 'erro' && 'Não foi possível enviar. Tente novamente ou use o e-mail desta página.'}
+            {status === 'sucesso' && t('contato.sucesso')}
+            {status === 'erro' && t('contato.erro')}
             </p>
         </form>
         </div>

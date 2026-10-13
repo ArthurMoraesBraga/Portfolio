@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { perfil } from '../data/perfil'
 import './IntroVinil.css'
 
 function IntroVinil({ onFinish }) {
+    const { t } = useTranslation()
     const [saindo, setSaindo] = useState(false)
 
     useEffect(() => {
@@ -24,7 +26,7 @@ function IntroVinil({ onFinish }) {
     <div
         className={`intro-vinil ${saindo ? 'intro-vinil--saindo' : ''}`}
         role="status"
-        aria-label={`Abrindo o portfólio de ${perfil.nome}`}
+        aria-label={t('intro.abrindo', { nome: perfil.nome })}
     >
         <div className="intro-conteudo">
         <div className="vinil" aria-hidden="true">
@@ -35,7 +37,7 @@ function IntroVinil({ onFinish }) {
         </div>
 
         <p className="intro-nome">{perfil.nome}</p>
-        <p className="intro-legenda">{perfil.lema}</p>
+        <p className="intro-legenda">{t('perfil.lema')}</p>
         </div>
 
     </div>

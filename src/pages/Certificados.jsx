@@ -1,16 +1,18 @@
+import { useTranslation } from 'react-i18next'
 import { certificados } from '../data/certificados'
 import './Certificados.css'
 
 function Certificados() {
+    const { t } = useTranslation()
     return (
         <article className="pagina container">
             <header className="pagina-topo">
-                <p className="pagina-faixa">Faixa 03</p>
+                <p className="pagina-faixa">{t('comum.faixa', { numero: '03' })}</p>
                 <h1 className="pagina-titulo" tabIndex={-1}>
-                    Certificados
+                    {t('certificados.titulo')}
                 </h1>
                 <p className="pagina-intro">
-                    Cursos e experiências que complementam minha formação.
+                    {t('certificados.intro')}
                 </p>
             </header>
 
@@ -22,11 +24,11 @@ function Certificados() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="cert-previa"
-                            aria-label={`Abrir certificado: ${c.nome}`}
+                            aria-label={t('certificados.abrirCertificado', { nome: c.nome })}
                         >
                             <img
                                 src={c.previa}
-                                alt={`Prévia do certificado: ${c.nome}`}
+                                alt={t('certificados.previa', { nome: c.nome })}
                                 loading="lazy"
                             />
                         </a>
@@ -42,7 +44,7 @@ function Certificados() {
                                 rel="noopener noreferrer"
                                 className="botao botao--primario"
                             >
-                                Abrir PDF
+                                {t('certificados.abrirPdf')}
                                 <span className="visualmente-oculto">
                                     : {c.nome}
                                 </span>

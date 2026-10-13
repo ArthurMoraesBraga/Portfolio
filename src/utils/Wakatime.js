@@ -1,3 +1,6 @@
+import { localeAtual } from './localizacao'
+import { FUSO_HORARIO } from '../i18n'
+
 const URL_ESTATISTICAS =
     'https://wakatime.com/share/@a0d04abd-cfe7-4836-bb0e-b44ee9a1aebf/4695fd9f-9287-4e71-af5c-166de9739c66.json'
 
@@ -175,14 +178,14 @@ export function formatDuration(seconds = 0) {
     return resto ? `${horas} h ${resto} min` : `${horas} h`
 }
 
-export function formatPercent(value, locale = 'pt-BR') {
+export function formatPercent(value, locale = localeAtual()) {
     return new Intl.NumberFormat(locale, {
         style: 'percent',
         maximumFractionDigits: 1,
     }).format(value / 100)
 }
 
-export function formatDate(value, locale = 'pt-BR') {
+export function formatDate(value, locale = localeAtual()) {
     if (!value) return ''
 
     const date = new Date(`${value.slice(0, 10)}T12:00:00Z`)
@@ -190,6 +193,6 @@ export function formatDate(value, locale = 'pt-BR') {
 
     return new Intl.DateTimeFormat(locale, {
         dateStyle: 'medium',
-        timeZone: 'America/Sao_Paulo',
+        timeZone: FUSO_HORARIO,
     }).format(date)
 }

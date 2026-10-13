@@ -1,17 +1,18 @@
     import { CANVAS_CONFIG } from '../config/CanvasConfig.js';
+    import i18n from '../i18n';
+    import { formatadorData, formatadorNumero } from './localizacao';
 
-    const { locale, fusoHorario } = CANVAS_CONFIG;
+    const { fusoHorario } = CANVAS_CONFIG;
 
-    const fmtData = new Intl.DateTimeFormat(locale, {
-    timeZone: fusoHorario, day: '2-digit', month: '2-digit', year: 'numeric',
-    });
-    const fmtHora = new Intl.DateTimeFormat(locale, {
-    timeZone: fusoHorario, hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
-    });
+    // Datas e números seguem o idioma escolhido (os formatadores são lidos a cada chamada).
+    // O fuso é sempre America/Sao_Paulo (ver formatadorData em localizacao.js).
+    const fmtData = () => formatadorData({ day: '2-digit', month: '2-digit', year: 'numeric' });
+    const fmtHora = () => formatadorData({ hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
+    // en-CA só serve para obter "AAAA-MM-DD"; não aparece na tela
     const fmtDiaCivil = new Intl.DateTimeFormat('en-CA', {
     timeZone: fusoHorario, year: 'numeric', month: '2-digit', day: '2-digit',
     });
-    const fmtNumero = new Intl.NumberFormat(locale, { maximumFractionDigits: 2 });
+    const fmtNumero = () => formatadorNumero({ maximumFractionDigits: 2 });
 
     const DIA_MS = 86_400_000;
 
@@ -21,13 +22,13 @@
     }
 
     export function formatarNumero(valor) {
-    return typeof valor === 'number' && Number.isFinite(valor) ? fmtNumero.format(valor) : null;
+    return typeof valor === 'number' && Number.isFinite(valor) ? fmtNumero().format(valor) : null;
     }
 
     export function formatarDataHora(iso) {
     const ms = Date.parse(iso);
     if (Number.isNaN(ms)) return null;
-    return `${fmtData.format(ms)} às ${fmtHora.format(ms)}`;
+    return i18n.t('canvas.dataHora', { data: fmtData().format(ms), hora: fmtHora().format(ms) });
     }
 
     export function diasDesde(iso, agora) {
@@ -40,23 +41,23 @@
     if (Number.isNaN(ms)) return null;
     const dif = diaCivil(ms) - diaCivil(agora);
     let relativo;
-    if (dif === 0) relativo = 'hoje';
-    else if (dif === 1) relativo = 'amanhã';
-    else if (dif === -1) relativo = 'ontem';
-    else if (dif > 1) relativo = `em ${dif} dias`;
-    else relativo = `há ${Math.abs(dif)} dias`;
+    if (dif === 0) relativo = i18n.t('canvas.prazo.hoje');
+    else if (dif === 1) relativo = i18n.t('canvas.prazo.amanha');
+    else if (dif === -1) relativo = i18n.t('canvas.prazo.ontem');
+    else if (dif > 1) relativo = i18n.t('canvas.prazo.emDias', { n: dif });
+    else relativo = i18n.t('canvas.prazo.haDias', { n: Math.abs(dif) });
     return { texto: formatarDataHora(iso), relativo };
     }
 
     /** Nota indisponível nunca vira zero: sem nota publicada, devolve texto explícito. */
     export function formatarNota(nota, pontosPossiveis) {
-    if (!nota?.publicada) return { publicada: false, texto: 'Não publicada' };
+    if (!nota?.publicada) return { publicada: false, texto: i18n.t('canvas.nota.naoPublicada') };
     const pontos = formatarNumero(nota.pontos);
     if (pontos !== null) {
         const total = formatarNumero(pontosPossiveis);
         return { publicada: true, texto: total !== null ? `${pontos} / ${total}` : pontos };
     }
-    return { publicada: true, texto: nota.conceito ?? 'Publicada' };
+    return { publicada: true, texto: nota.conceito ?? i18n.t('canvas.nota.publicada') };
     }
 
     export function formatarPontuacaoCanvas(notaCanvas) {

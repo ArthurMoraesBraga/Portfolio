@@ -3,6 +3,7 @@ import { Component,
     useMemo,
     useRef,
     useState } from 'react'
+import { Trans, useTranslation } from 'react-i18next'
 import {
     FaCodeBranch,
     FaGithub,
@@ -11,13 +12,11 @@ import CONFIG from '../config/GithubConfig'
 import {
     SECOES,
     SECAO_PADRAO,
-    DIAS_SEMANA,
     ORDEM_SEMANA,
     CORES_LINGUAGENS,
     COR_OUTRAS,
-    TEXTOS,
     METODOLOGIA,
-} from '../data/Github'
+} from '../data/github'
 import {
     GitHubLimiteError,
     agruparOutras,
@@ -30,30 +29,35 @@ import {
 import './Github.css'
 
 import Wakatime from '../components/Wakatime'
+import { comoLista, formatadorData, formatadorNumero, paraPlural } from '../utils/localizacao'
 
 
-const { USUARIO, URL_PERFIL, IDIOMA, FUSO_HORARIO, LIMITES } = CONFIG
+const { USUARIO, URL_PERFIL, LIMITES } = CONFIG
 
 /* =====================================================================
-   Formatação (português do Brasil, fuso de São Paulo)
+   Formatação (idioma escolhido; horários sempre no fuso de São Paulo)
    ===================================================================== */
 
-const fNumero = new Intl.NumberFormat(IDIOMA)
-const fPercentual = new Intl.NumberFormat(IDIOMA, { maximumFractionDigits: 1 })
-const fDiaMes = new Intl.DateTimeFormat(IDIOMA, { day: 'numeric', month: 'short', timeZone: 'UTC' })
-const fData = new Intl.DateTimeFormat(IDIOMA, { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })
-const fMes = new Intl.DateTimeFormat(IDIOMA, { month: 'short', timeZone: 'UTC' })
-const fHoraMinuto = new Intl.DateTimeFormat(IDIOMA, { hour: '2-digit', minute: '2-digit', timeZone: FUSO_HORARIO })
+// Os formatadores são buscados a cada chamada: assim, ao trocar PT/EN, a próxima
+// renderização já usa o idioma novo. Datas "civis" (só o dia) usam UTC para não escorregar.
+const fNumero = () => formatadorNumero()
+const fPercentual = () => formatadorNumero({ maximumFractionDigits: 1 })
+const fDiaMes = () => formatadorData({ day: 'numeric', month: 'short', timeZone: 'UTC' })
+const fData = () => formatadorData({ day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })
+const fMes = () => formatadorData({ month: 'short', timeZone: 'UTC' })
+const fHoraMinuto = () => formatadorData({ hour: '2-digit', minute: '2-digit' })
 
 const meioDia = (chave) => new Date(`${chave}T12:00:00Z`)
-const numero = (valor) => fNumero.format(Math.round(valor))
-const percentual = (valor) => `${fPercentual.format(valor)}%`
-const diaMes = (chave) => (chave ? fDiaMes.format(meioDia(chave)).replace('.', '') : '')
-const data = (chave) => (chave ? fData.format(meioDia(chave)).replaceAll('.', '') : '')
-const mes = (chave) => fMes.format(meioDia(chave)).replace('.', '')
+const numero = (valor) => fNumero().format(Math.round(valor))
+const percentual = (valor) => `${fPercentual().format(valor)}%`
+const diaMes = (chave) => (chave ? fDiaMes().format(meioDia(chave)).replace('.', '') : '')
+const data = (chave) => (chave ? fData().format(meioDia(chave)).replaceAll('.', '') : '')
+const mes = (chave) => fMes().format(meioDia(chave)).replace('.', '')
 const hora = (h) => `${h}h`
 const faixaHora = (h) => `${hora(h)}–${hora((h + 1) % 24)}`
-const plural = (n, singular, pluralTexto) => `${numero(n)} ${n === 1 ? singular : pluralTexto}`
+
+// Quantidade com a unidade no singular ou no plural, vinda das traduções (github.unidades.*)
+const plural = (t, unidade, n) => t(`github.unidades.${unidade}`, { count: paraPlural(n), n: numero(n) })
 
 /* =====================================================================
    Busca de dados e estados (carregando, erro, limite)
@@ -91,14 +95,15 @@ function useFonte(fonte) {
     return { ...estado, tentarDeNovo }
 }
 
-const quandoLibera = (erro) => (erro?.resetEm ? fHoraMinuto.format(erro.resetEm) : null)
+const quandoLibera = (erro) => (erro?.resetEm ? fHoraMinuto().format(erro.resetEm) : null)
 
 function Estado({ estado }) {
+    const { t } = useTranslation()
     const { status, erro, tentarDeNovo } = estado
     if (status === 'carregando') {
         return (
             <p className="gh-estado" role="status">
-                {TEXTOS.carregando}
+                {t('github.textos.carregando')}
             </p>
         )
     }
@@ -106,22 +111,28 @@ function Estado({ estado }) {
     return (
         <div className={`gh-estado gh-estado--${status} papel`} role="alert">
             <p>
-                {status === 'limite' ? TEXTOS.limite : TEXTOS.erro}
-                {liberaAs && ` Liberação prevista: ${liberaAs} (horário de Brasília).`}
+                {status === 'limite' ? t('github.textos.limite') : t('github.textos.erro')}
+                {liberaAs && ` ${t('github.estado.liberacao', { hora: liberaAs })}`}
             </p>
             <button type="button" className="botao botao--secundario" onClick={tentarDeNovo}>
-                {TEXTOS.tentarDeNovo}
+                {t('github.textos.tentarDeNovo')}
             </button>
         </div>
     )
 }
 
-function Vazio({ children = TEXTOS.vazio }) {
+function Vazio({ children }) {
+    const { t } = useTranslation()
     return (
         <p className="gh-vazio" role="status">
-            {children}
+            {children ?? t('github.textos.vazio')}
         </p>
     )
+}
+
+function MensagemErro() {
+    const { t } = useTranslation()
+    return <p>{t('github.textos.erro')}</p>
 }
 
 // Se a API mandar algo num formato inesperado, o erro fica só na seção
@@ -136,7 +147,7 @@ class SecaoComErro extends Component {
     render() {
         return this.state.falhou ? (
             <div className="gh-estado gh-estado--erro papel" role="alert">
-                <p>{TEXTOS.erro}</p>
+                <MensagemErro />
             </div>
         ) : (
             this.props.children
@@ -226,10 +237,11 @@ function Colunas({ itens, valor, leitura, eixo, topo, legenda, classe = '' }) {
    ===================================================================== */
 
 function Perfil({ usuario }) {
+    const { t } = useTranslation()
     const meta = [
         usuario.empresa,
         usuario.local,
-        usuario.criadoEm && `No GitHub desde ${usuario.criadoEm.slice(0, 4)}`,
+        usuario.criadoEm && t('github.perfil.desde', { ano: usuario.criadoEm.slice(0, 4) }),
     ].filter(Boolean)
 
     return (
@@ -240,7 +252,7 @@ function Perfil({ usuario }) {
                     {usuario.nome}{' '}
                     <a href={usuario.url} target="_blank" rel="noopener noreferrer">
                         <FaGithub aria-hidden="true" /> @{usuario.login}
-                        <span className="visualmente-oculto"> (abre em nova aba)</span>
+                        <span className="visualmente-oculto"> {t('comum.abreEmNovaAbaParenteses')}</span>
                     </a>
                 </p>
                 {usuario.bio && <p className="gh-perfil-bio">{usuario.bio}</p>}
@@ -257,6 +269,7 @@ function Perfil({ usuario }) {
 }
 
 function Indicador({ rotulo, estado, valor, nota }) {
+    const { t } = useTranslation()
     const pronto = estado.status === 'pronto'
     return (
         <li className="gh-indicador papel">
@@ -265,22 +278,23 @@ function Indicador({ rotulo, estado, valor, nota }) {
                 {pronto ? valor(estado.dados) : estado.status === 'carregando' ? '…' : '—'}
             </span>
             <span className="gh-indicador-nota">
-                {pronto ? nota(estado.dados) : estado.status === 'carregando' ? '\u00a0' : TEXTOS.indisponivel}
+                {pronto ? nota(estado.dados) : estado.status === 'carregando' ? '\u00a0' : t('github.textos.indisponivel')}
             </span>
         </li>
     )
 }
 
 function Resumo() {
+    const { t } = useTranslation()
     const perfil = useFonte(perfilFonte)
     const contribuicoes = useFonte(contribuicoesFonte)
     const commits = useFonte(commitsFonte)
     const contagens = useFonte(contagensFonte)
     const fontes = [
         ['perfil', perfil],
-        ['contribuições', contribuicoes],
+        ['contribuicoes', contribuicoes],
         ['commits', commits],
-        ['pull requests e issues', contagens],
+        ['contagens', contagens],
     ]
     const falhas = fontes.filter(([, e]) => e.status === 'erro' || e.status === 'limite')
     const limite = falhas.find(([, e]) => e.status === 'limite')?.[1]
@@ -291,51 +305,51 @@ function Resumo() {
 
             <ul className="gh-indicadores">
                 <Indicador
-                    rotulo="Repositórios públicos"
+                    rotulo={t('github.indicadores.repos.rotulo')}
                     estado={perfil}
                     valor={(p) => numero(p.repos.length)}
                     nota={(p) =>
                         p.forksIgnorados
-                            ? `próprios; ${plural(p.forksIgnorados, 'fork ignorado', 'forks ignorados')}`
-                            : 'próprios, sem forks'
+                            ? t('github.indicadores.repos.notaForks', { count: paraPlural(p.forksIgnorados), n: numero(p.forksIgnorados) })
+                            : t('github.indicadores.repos.notaSemForks')
                     }
                 />
-                <Indicador rotulo="Estrelas" estado={perfil} valor={(p) => numero(p.estrelas)} nota={() => 'recebidas nos seus repositórios'} />
-                <Indicador rotulo="Forks recebidos" estado={perfil} valor={(p) => numero(p.forks)} nota={() => 'cópias dos seus repositórios'} />
+                <Indicador rotulo={t('github.indicadores.estrelas.rotulo')} estado={perfil} valor={(p) => numero(p.estrelas)} nota={() => t('github.indicadores.estrelas.nota')} />
+                <Indicador rotulo={t('github.indicadores.forks.rotulo')} estado={perfil} valor={(p) => numero(p.forks)} nota={() => t('github.indicadores.forks.nota')} />
                 <Indicador
-                    rotulo="Seguidores"
+                    rotulo={t('github.indicadores.seguidores.rotulo')}
                     estado={perfil}
                     valor={(p) => numero(p.usuario.seguidores)}
-                    nota={(p) => `seguindo ${numero(p.usuario.seguindo)}`}
+                    nota={(p) => t('github.indicadores.seguidores.nota', { n: numero(p.usuario.seguindo) })}
                 />
                 <Indicador
-                    rotulo="Contribuições"
+                    rotulo={t('github.indicadores.contribuicoes.rotulo')}
                     estado={contribuicoes}
                     valor={(c) => numero(c.janela.total)}
-                    nota={(c) => `${data(c.janela.inicio)} a ${data(c.janela.fim)}`}
+                    nota={(c) => t('comum.intervalo', { de: data(c.janela.inicio), ate: data(c.janela.fim) })}
                 />
                 <Indicador
-                    rotulo="Commits públicos"
+                    rotulo={t('github.indicadores.commits.rotulo')}
                     estado={commits}
                     valor={(c) => numero(c.total)}
-                    nota={(c) => `${data(c.inicio)} a ${data(c.fim)}`}
+                    nota={(c) => t('comum.intervalo', { de: data(c.inicio), ate: data(c.fim) })}
                 />
-                <Indicador rotulo="Pull requests" estado={contagens} valor={(c) => numero(c.pullRequests)} nota={() => 'públicos, desde sempre'} />
-                <Indicador rotulo="Issues" estado={contagens} valor={(c) => numero(c.issues)} nota={() => 'públicas, desde sempre'} />
+                <Indicador rotulo={t('github.indicadores.pullRequests.rotulo')} estado={contagens} valor={(c) => numero(c.pullRequests)} nota={() => t('github.indicadores.pullRequests.nota')} />
+                <Indicador rotulo={t('github.indicadores.issues.rotulo')} estado={contagens} valor={(c) => numero(c.issues)} nota={() => t('github.indicadores.issues.nota')} />
                 <Indicador
-                    rotulo="Dias com contribuição"
+                    rotulo={t('github.indicadores.diasAtivos.rotulo')}
                     estado={contribuicoes}
                     valor={(c) => numero(c.janela.diasAtivos)}
-                    nota={(c) => `${data(c.janela.inicio)} a ${data(c.hoje)}`}
+                    nota={(c) => t('comum.intervalo', { de: data(c.janela.inicio), ate: data(c.hoje) })}
                 />
                 <Indicador
-                    rotulo="Maior sequência"
+                    rotulo={t('github.indicadores.maiorSequencia.rotulo')}
                     estado={contribuicoes}
-                    valor={(c) => plural(c.maiorSequencia.tamanho, 'dia', 'dias')}
+                    valor={(c) => plural(t, 'dia', c.maiorSequencia.tamanho)}
                     nota={(c) =>
                         c.maiorSequencia.tamanho
                             ? `${diaMes(c.maiorSequencia.inicio)} – ${data(c.maiorSequencia.fim)}`
-                            : 'sem sequência'
+                            : t('github.indicadores.maiorSequencia.semSequencia')
                     }
                 />
             </ul>
@@ -343,16 +357,16 @@ function Resumo() {
             {falhas.length > 0 && (
                 <div className="gh-aviso papel" role="status">
                     <p>
-                        Alguns dados não carregaram: {falhas.map(([nome]) => nome).join(', ')}.
-                        {limite && quandoLibera(limite.erro) && ` O limite de consultas libera por volta de ${quandoLibera(limite.erro)}.`}
+                        {t('github.aviso.falhas', { lista: falhas.map(([nome]) => t(`github.aviso.fontes.${nome}`)).join(', ') })}
+                        {limite && quandoLibera(limite.erro) && ` ${t('github.aviso.limite', { hora: quandoLibera(limite.erro) })}`}
                     </p>
                     <button type="button" className="botao botao--secundario" onClick={() => falhas.forEach(([, e]) => e.tentarDeNovo())}>
-                        {TEXTOS.tentarDeNovo}
+                        {t('github.textos.tentarDeNovo')}
                     </button>
                 </div>
             )}
 
-            <p className="gh-nota">{TEXTOS.diferencaContribuicoes}</p>
+            <p className="gh-nota">{t('github.textos.diferencaContribuicoes')}</p>
         </>
     )
 }
@@ -364,6 +378,7 @@ function Resumo() {
 // Disco de vinil: sulcos escuros, fatias coloridas no lugar da área gravada
 // e a etiqueta no centro com o total de repositórios.
 function DiscoLinguagens({ itens, total }) {
+    const { t } = useTranslation()
     // Onde cada fatia começa: soma dos percentuais das anteriores
     const inicios = itens.map((_, indice) => itens.slice(0, indice).reduce((soma, i) => soma + i.percentual, 0))
     return (
@@ -396,7 +411,7 @@ function DiscoLinguagens({ itens, total }) {
                 {total}
             </text>
             <text x="100" y="118" textAnchor="middle" fontFamily="sans-serif" fontSize="8" letterSpacing="1" fill="#263329">
-                REPOS
+                {t('github.linguagens.repos')}
             </text>
             <circle cx="100" cy="100" r="3" fill="#eee9df" />
         </svg>
@@ -404,22 +419,31 @@ function DiscoLinguagens({ itens, total }) {
 }
 
 function LinguagensConteudo({ dados }) {
+    const { t } = useTranslation()
     const resumo = useMemo(() => resumirLinguagens(dados.repos), [dados])
     const itens = useMemo(() => agruparOutras(resumo.itens), [resumo])
 
-    if (resumo.total === 0) return <Vazio>Nenhum repositório público tem linguagem detectada pelo GitHub.</Vazio>
+    if (resumo.total === 0) return <Vazio>{t('github.linguagens.nenhuma')}</Vazio>
+
+    const total = plural(t, 'repositorioPublico', resumo.total)
 
     return (
         <>
             <p className="gh-resumo">
-                Linguagem principal de <strong>{plural(resumo.total, 'repositório público', 'repositórios públicos')}</strong>
-                {resumo.semLinguagem > 0 &&
-                    ` (${plural(resumo.semLinguagem, 'repositório ficou', 'repositórios ficaram')} de fora por não ter linguagem detectada)`}
-                . O gráfico conta repositórios, não linhas de código.
+                {resumo.semLinguagem > 0 ? (
+                    <Trans
+                        i18nKey="github.linguagens.resumoComExcecao"
+                        count={paraPlural(resumo.semLinguagem)}
+                        values={{ total, n: numero(resumo.semLinguagem) }}
+                        components={{ strong: <strong /> }}
+                    />
+                ) : (
+                    <Trans i18nKey="github.linguagens.resumo" values={{ total }} components={{ strong: <strong /> }} />
+                )}
             </p>
 
             <div className="gh-linguagens">
-                <div className="gh-disco" role="img" aria-label={`Disco com ${itens.length} fatias de linguagens, detalhadas na lista ao lado.`}>
+                <div className="gh-disco" role="img" aria-label={t('github.linguagens.discoAria', { n: itens.length })}>
                     <DiscoLinguagens itens={itens} total={resumo.total} />
                 </div>
 
@@ -431,9 +455,9 @@ function LinguagensConteudo({ dados }) {
                                 style={{ background: item.outras ? COR_OUTRAS : CORES_LINGUAGENS[indice % CORES_LINGUAGENS.length] }}
                                 aria-hidden="true"
                             />
-                            <span className="gh-legenda-nome">{item.nome}</span>
+                            <span className="gh-legenda-nome">{item.outras ? t('github.linguagens.outras', { n: item.quantidade }) : item.nome}</span>
                             <span className="gh-legenda-valor">
-                                {plural(item.valor, 'repositório', 'repositórios')} · {percentual(item.percentual)}
+                                {plural(t, 'repositorio', item.valor)} · {percentual(item.percentual)}
                             </span>
                         </li>
                     ))}
@@ -451,29 +475,30 @@ Atividade: sequências, calendário e contribuições por ano
    ===================================================================== */
 
 function Sequencias({ dados }) {
+    const { t } = useTranslation()
     const { sequenciaAtual, maiorSequencia, janela, hoje } = dados
     const periodo = (sequencia) =>
         sequencia.tamanho
-            ? `${diaMes(sequencia.inicio)} – ${sequencia.fim === hoje ? 'hoje' : data(sequencia.fim)}`
-            : 'sem sequência'
+            ? `${diaMes(sequencia.inicio)} – ${sequencia.fim === hoje ? t('github.atividade.hoje') : data(sequencia.fim)}`
+            : t('github.atividade.semSequencia')
 
     return (
         <div className="gh-sequencias">
             <div className="gh-sequencia papel">
                 <span className="gh-sequencia-valor">{numero(janela.total)}</span>
-                <span className="gh-sequencia-rotulo">Contribuição total</span>
+                <span className="gh-sequencia-rotulo">{t('github.atividade.contribuicaoTotal')}</span>
                 <span className="gh-sequencia-nota">
-                    {data(janela.inicio)} a {data(janela.fim)}
+                    {t('comum.intervalo', { de: data(janela.inicio), ate: data(janela.fim) })}
                 </span>
             </div>
             <div className="gh-sequencia papel">
-                <span className="gh-sequencia-valor">{plural(sequenciaAtual.tamanho, 'dia', 'dias')}</span>
-                <span className="gh-sequencia-rotulo">sequência atual</span>
+                <span className="gh-sequencia-valor">{plural(t, 'dia', sequenciaAtual.tamanho)}</span>
+                <span className="gh-sequencia-rotulo">{t('github.atividade.sequenciaAtual')}</span>
                 <span className="gh-sequencia-nota">{periodo(sequenciaAtual)}</span>
             </div>
             <div className="gh-sequencia papel">
-                <span className="gh-sequencia-valor">{plural(maiorSequencia.tamanho, 'dia', 'dias')}</span>
-                <span className="gh-sequencia-rotulo">maior sequência (histórico)</span>
+                <span className="gh-sequencia-valor">{plural(t, 'dia', maiorSequencia.tamanho)}</span>
+                <span className="gh-sequencia-rotulo">{t('github.atividade.maiorSequenciaHistorico')}</span>
                 <span className="gh-sequencia-nota">{periodo(maiorSequencia)}</span>
             </div>
         </div>
@@ -483,6 +508,8 @@ function Sequencias({ dados }) {
 // Cada bolinha é um dia (como um mini disco). Passar o mouse, tocar ou usar as
 // setas (com o calendário focado) mostra o dia na linha de baixo.
 function Calendario({ dados }) {
+    const { t } = useTranslation()
+    const diasCurtos = comoLista(t('comum.diasSemanaCurto', { returnObjects: true }))
     const semanas = dados.calendario.semanas
     const celulas = useMemo(() => semanas.flat(), [semanas])
     const [ativo, setAtivo] = useState(null)
@@ -503,8 +530,8 @@ function Calendario({ dados }) {
     const melhor = dentro.reduce((topo, c) => (c.quantidade > topo.quantidade ? c : topo), dentro[0])
     const descrever = (c) =>
         c.quantidade
-            ? `${data(c.data)}: ${plural(c.quantidade, 'contribuição', 'contribuições')}`
-            : `${data(c.data)}: nenhuma contribuição`
+            ? t('github.atividade.contribuicaoNoDia', { data: data(c.data), contribuicoes: plural(t, 'contribuicao', c.quantidade) })
+            : t('github.atividade.nenhumaContribuicao', { data: data(c.data) })
 
     const aoTeclar = (evento) => {
         const passo = { ArrowUp: -1, ArrowDown: 1, ArrowLeft: -7, ArrowRight: 7 }[evento.key]
@@ -524,8 +551,11 @@ function Calendario({ dados }) {
     return (
         <figure className="gh-calendario">
             <p className="gh-resumo">
-                <strong>{plural(dados.janela.total, 'contribuição', 'contribuições')}</strong> de {data(dados.janela.inicio)} a{' '}
-                {data(dados.janela.fim)}. Inclui commits, pull requests, issues e revisões.
+                <Trans
+                    i18nKey="github.atividade.resumoCalendario"
+                    values={{ total: plural(t, 'contribuicao', dados.janela.total), de: data(dados.janela.inicio), ate: data(dados.janela.fim) }}
+                    components={{ strong: <strong /> }}
+                />
             </p>
 
             <div className="gh-calendario-rolagem">
@@ -540,14 +570,14 @@ function Calendario({ dados }) {
                     <div className="gh-calendario-dias" aria-hidden="true">
                         {[1, 3, 5].map((dia) => (
                             <span key={dia} style={{ gridRow: dia + 1 }}>
-                                {DIAS_SEMANA[dia].curto}
+                                {diasCurtos[dia]}
                             </span>
                         ))}
                     </div>
                     <div
                         className="gh-calendario-grade"
                         role="img"
-                        aria-label={`Calendário de contribuições de ${data(dados.janela.inicio)} a ${data(dados.janela.fim)}, com ${plural(dados.janela.total, 'contribuição', 'contribuições')}. ${melhor?.quantidade ? `Dia mais ativo: ${descrever(melhor)}.` : ''}`}
+                        aria-label={`${t('github.atividade.calendarioAria', { de: data(dados.janela.inicio), ate: data(dados.janela.fim), total: plural(t, 'contribuicao', dados.janela.total) })} ${melhor?.quantidade ? t('github.atividade.diaMaisAtivoAria', { descricao: descrever(melhor) }) : ''}`.trim()}
                         tabIndex={0}
                         onKeyDown={aoTeclar}
                         onPointerOver={escolher}
@@ -571,14 +601,14 @@ function Calendario({ dados }) {
 
             <div className="gh-calendario-rodape">
                 <figcaption className="gh-leitura" aria-hidden="true">
-                    {ativo !== null ? descrever(celulas[ativo]) : melhor?.quantidade > 0 && `Dia mais ativo: ${descrever(melhor)}`}
+                    {ativo !== null ? descrever(celulas[ativo]) : melhor?.quantidade > 0 && t('github.atividade.diaMaisAtivo', { descricao: descrever(melhor) })}
                 </figcaption>
                 <span className="gh-calendario-legenda" aria-hidden="true">
-                    menos
+                    {t('github.atividade.menos')}
                     {[0, 1, 2, 3, 4].map((nivel) => (
                         <span key={nivel} className="gh-celula" data-nivel={nivel} />
                     ))}
-                    mais
+                    {t('github.atividade.mais')}
                 </span>
             </div>
         </figure>
@@ -586,15 +616,19 @@ function Calendario({ dados }) {
 }
 
 function PorAno({ anos, hoje }) {
+    const { t } = useTranslation()
     const anoAtual = Number(hoje.slice(0, 4))
     const leitura = (item) =>
-        `${item.ano} · ${plural(item.total, 'contribuição', 'contribuições')}${item.ano === anoAtual ? ' (até hoje)' : ''}`
+        t(item.ano === anoAtual ? 'github.atividade.porAnoLeituraAtual' : 'github.atividade.porAnoLeitura', {
+            ano: item.ano,
+            contribuicoes: plural(t, 'contribuicao', item.total),
+        })
 
     return (
         <div className="gh-bloco papel">
-            <h3 className="gh-bloco-titulo">Contribuições por ano</h3>
+            <h3 className="gh-bloco-titulo">{t('github.atividade.porAnoTitulo')}</h3>
             {anos.length === 0 ? (
-                <Vazio>Nenhuma contribuição encontrada no histórico do perfil.</Vazio>
+                <Vazio>{t('github.atividade.porAnoVazio')}</Vazio>
             ) : (
                 <Colunas
                     classe="gh-colunas--anos"
@@ -603,7 +637,7 @@ function PorAno({ anos, hoje }) {
                     leitura={leitura}
                     eixo={(item) => item.ano}
                     topo={(item) => numero(item.total)}
-                    legenda="Contribuições por ano"
+                    legenda={t('github.atividade.porAnoLegenda')}
                 />
             )}
         </div>
@@ -611,10 +645,11 @@ function PorAno({ anos, hoje }) {
 }
 
 function Atividade() {
+    const { t } = useTranslation()
     const contribuicoes = useFonte(contribuicoesFonte)
     if (contribuicoes.status !== 'pronto') return <Estado estado={contribuicoes} />
     const { dados } = contribuicoes
-    if (dados.total === 0) return <Vazio>Ainda não há contribuições públicas registradas neste perfil.</Vazio>
+    if (dados.total === 0) return <Vazio>{t('github.atividade.vazio')}</Vazio>
 
     return (
         <>
@@ -622,7 +657,7 @@ function Atividade() {
             <Calendario dados={dados} />
             <PorAno anos={dados.anos} hoje={dados.hoje} />
             <p className="gh-nota">
-                Fonte: calendário público do perfil. {TEXTOS.diferencaContribuicoes}
+                {t('github.atividade.fonte')} {t('github.textos.diferencaContribuicoes')}
             </p>
         </>
     )
@@ -633,9 +668,12 @@ function Atividade() {
    ===================================================================== */
 
 function HorariosConteudo({ dados }) {
+    const { t } = useTranslation()
+    const diasCurtos = comoLista(t('comum.diasSemanaCurto', { returnObjects: true }))
+    const diasLongos = [0, 1, 2, 3, 4, 5, 6].map((i) => t(`github.dias.${i}.longo`))
     const { exato, total, analisados, horas, diasSemana, periodos, horaPico, repositorios } = dados
     if (horaPico === null) {
-        return <Vazio>Nenhum commit público foi encontrado de {data(dados.inicio)} a {data(dados.fim)}.</Vazio>
+        return <Vazio>{t('github.horarios.nenhumCommit', { de: data(dados.inicio), ate: data(dados.fim) })}</Vazio>
     }
 
     const aprox = exato ? '' : '≈ '
@@ -643,29 +681,39 @@ function HorariosConteudo({ dados }) {
     const maxDia = Math.max(...diasSemana.map((d) => d.estimativa)) || 1
     const diaPico = diasSemana.findIndex((d) => d.estimativa === maxDia)
     const leituraHora = (item, h) =>
-        `${faixaHora(h)} · ${percentual(item.percentual)} · ${aprox}${plural(item.estimativa, 'commit', 'commits')}`
+        `${faixaHora(h)} · ${percentual(item.percentual)} · ${aprox}${plural(t, 'commit', item.estimativa)}`
 
     return (
         <>
             <p className="gh-resumo">
-                Horário com maior frequência de commits: <strong>{faixaHora(horaPico)}</strong>, e o período com mais commits é a{' '}
-                <strong>{maiorPeriodo.rotulo.toLowerCase()}</strong> ({percentual(maiorPeriodo.percentual)}). {TEXTOS.semQualidade}
+                <Trans
+                    i18nKey="github.horarios.resumo"
+                    values={{
+                        hora: faixaHora(horaPico),
+                        periodo: t(`github.periodos.${maiorPeriodo.chave}`).toLowerCase(),
+                        percentual: percentual(maiorPeriodo.percentual),
+                    }}
+                    components={{ strong: <strong /> }}
+                />
             </p>
 
             <div className={`gh-amostra papel ${exato ? 'gh-amostra--exata' : ''}`} role="note">
                 <p>
-                    {exato
-                        ? `Todos os ${plural(total, 'commit público', 'commits públicos')} de ${data(dados.inicio)} a ${data(dados.fim)} foram analisados.`
-                        : `Foram analisados ${numero(analisados)} dos ${plural(total, 'commit público', 'commits públicos')} de ${data(dados.inicio)} a ${data(dados.fim)}. A busca do GitHub devolve no máximo 100 commits por página, então, nos trimestres com mais commits, só os mais recentes entram. Cada commit analisado representa os demais do trimestre, e os números com ≈ são estimativas, não contagens exatas.`}
-                    {dados.incompleto && ' O GitHub avisou que parte dos resultados desta busca veio incompleta.'}
+                    {t(exato ? 'github.horarios.amostraExata' : 'github.horarios.amostraParcial', {
+                        commits: plural(t, 'commitPublico', total),
+                        analisados: numero(analisados),
+                        de: data(dados.inicio),
+                        ate: data(dados.fim),
+                    })}
+                    {dados.incompleto && ` ${t('github.horarios.incompleto')}`}
                 </p>
                 <p>
-                    Horários no fuso America/Sao_Paulo.
+                    {t('github.horarios.fuso')}
                 </p>
             </div>
 
             <div className="gh-bloco papel">
-                <h3 className="gh-bloco-titulo">Commits por horário do dia</h3>
+                <h3 className="gh-bloco-titulo">{t('github.horarios.porHorarioTitulo')}</h3>
                 <Colunas
                     classe="gh-colunas--horas"
                     itens={horas}
@@ -673,13 +721,13 @@ function HorariosConteudo({ dados }) {
                     leitura={leituraHora}
                     eixo={(item, h) => (h % 3 === 0 ? hora(h) : '')}
                     topo={(item) => percentual(item.percentual)}
-                    legenda="Distribuição dos commits por horário do dia, em porcentagem"
+                    legenda={t('github.horarios.porHorarioLegenda')}
                 />
             </div>
 
             <div className="gh-duo">
                 <div className="gh-bloco papel">
-                    <h3 className="gh-bloco-titulo">Commits por dia da semana</h3>
+                    <h3 className="gh-bloco-titulo">{t('github.horarios.porDiaTitulo')}</h3>
                     <ul className="gh-semana">
                         {ORDEM_SEMANA.map((dia, indice) => (
                             <li
@@ -688,8 +736,8 @@ function HorariosConteudo({ dados }) {
                                 style={{ '--rel': `${(diasSemana[dia].estimativa / maxDia) * 100}%`, '--i': indice }}
                             >
                                 <span className="gh-dia-nome">
-                                    <span aria-hidden="true">{DIAS_SEMANA[dia].curto}</span>
-                                    <span className="visualmente-oculto">{DIAS_SEMANA[dia].longo}</span>
+                                    <span aria-hidden="true">{diasCurtos[dia]}</span>
+                                    <span className="visualmente-oculto">{diasLongos[dia]}</span>
                                 </span>
                                 <span className="gh-trilho" aria-hidden="true">
                                     <span className="gh-trilho-barra" />
@@ -697,7 +745,7 @@ function HorariosConteudo({ dados }) {
                                 <span className="gh-dia-valor">
                                     {aprox}
                                     {numero(diasSemana[dia].estimativa)}
-                                    <span className="visualmente-oculto"> commits, {percentual(diasSemana[dia].percentual)}</span>
+                                    <span className="visualmente-oculto"> {t('github.horarios.commitsPercentual', { percentual: percentual(diasSemana[dia].percentual) })}</span>
                                 </span>
                             </li>
                         ))}
@@ -705,7 +753,7 @@ function HorariosConteudo({ dados }) {
                 </div>
 
                 <div className="gh-bloco papel">
-                    <h3 className="gh-bloco-titulo">Commits por período</h3>
+                    <h3 className="gh-bloco-titulo">{t('github.horarios.porPeriodoTitulo')}</h3>
                     <ul className="gh-periodos">
                         {periodos.map((periodo, indice) => (
                             <li
@@ -713,7 +761,7 @@ function HorariosConteudo({ dados }) {
                                 className={periodo === maiorPeriodo ? 'gh-periodo gh-periodo--pico' : 'gh-periodo'}
                                 style={{ '--rel': `${periodo.percentual}%`, '--i': indice }}
                             >
-                                <span className="gh-periodo-nome">{periodo.rotulo}</span>
+                                <span className="gh-periodo-nome">{t(`github.periodos.${periodo.chave}`)}</span>
                                 <span className="gh-periodo-faixa">
                                     {hora(periodo.de)}–{hora((periodo.ate + 1) % 24)}
                                 </span>
@@ -728,15 +776,15 @@ function HorariosConteudo({ dados }) {
             </div>
 
             <details className="gh-repos-analisados">
-                <summary>Repositórios com commits analisados ({numero(repositorios.length)})</summary>
+                <summary>{t('github.horarios.reposAnalisados', { n: numero(repositorios.length) })}</summary>
                 <ul className="gh-tags">
                     {repositorios.map((repo) => (
                         <li key={repo.nome} className="tag">
-                            {repo.nome} · {plural(repo.commits, 'commit', 'commits')}
+                            {repo.nome} · {plural(t, 'commit', repo.commits)}
                         </li>
                     ))}
                 </ul>
-                <p className="gh-nota">A contagem por repositório considera apenas os commits analisados na amostra.</p>
+                <p className="gh-nota">{t('github.horarios.reposNota')}</p>
             </details>
         </>
     )
@@ -753,6 +801,7 @@ function Horarios() {
    ===================================================================== */
 
 function RepositoriosConteudo({ dados }) {
+    const { t } = useTranslation()
     const [todos, setTodos] = useState(false)
     const ordenados = useMemo(
         () =>
@@ -764,17 +813,16 @@ function RepositoriosConteudo({ dados }) {
             ),
         [dados],
     )
-    if (ordenados.length === 0) return <Vazio>Nenhum repositório público próprio encontrado.</Vazio>
+    if (ordenados.length === 0) return <Vazio>{t('github.repositorios.vazio')}</Vazio>
 
     const visiveis = todos ? ordenados : ordenados.slice(0, LIMITES.reposExibidos)
 
     return (
         <>
             <p className="gh-resumo">
-                <strong>{plural(ordenados.length, 'repositório público próprio', 'repositórios públicos próprios')}</strong>, em ordem de
-                estrelas e, no empate, do mais recente.
-                {dados.forksIgnorados > 0 && ` ${plural(dados.forksIgnorados, 'fork de outro projeto ficou', 'forks de outros projetos ficaram')} de fora.`}
-                {dados.truncado && ` Foram lidos só os ${LIMITES.maxPaginasRepos * LIMITES.reposPorPagina} mais recentes.`}
+                <strong>{plural(t, 'repositorioPublicoProprio', ordenados.length)}</strong>{t('github.repositorios.ordem')}
+                {dados.forksIgnorados > 0 && ` ${t('github.repositorios.forksFora', { count: paraPlural(dados.forksIgnorados), n: numero(dados.forksIgnorados) })}`}
+                {dados.truncado && ` ${t('github.repositorios.truncado', { n: LIMITES.maxPaginasRepos * LIMITES.reposPorPagina })}`}
             </p>
 
             <ol className="gh-repos">
@@ -783,24 +831,24 @@ function RepositoriosConteudo({ dados }) {
                         <div className="gh-repo-topo">
                             <a className="gh-repo-nome" href={repo.url} target="_blank" rel="noopener noreferrer">
                                 {repo.nome}
-                                <span className="visualmente-oculto"> (abre em nova aba)</span>
+                                <span className="visualmente-oculto"> {t('comum.abreEmNovaAbaParenteses')}</span>
                             </a>
                             <span className="gh-repo-meta">
                                 <span>
                                     <FaStar aria-hidden="true" /> {numero(repo.estrelas)}
-                                    <span className="visualmente-oculto"> estrelas</span>
+                                    <span className="visualmente-oculto"> {t('github.repositorios.estrelas')}</span>
                                 </span>
                                 <span>
                                     <FaCodeBranch aria-hidden="true" /> {numero(repo.forks)}
-                                    <span className="visualmente-oculto"> forks</span>
+                                    <span className="visualmente-oculto"> {t('github.repositorios.forks')}</span>
                                 </span>
                             </span>
                         </div>
                         {repo.descricao && <p className="gh-repo-descricao">{repo.descricao}</p>}
                         <p className="gh-repo-rodape">
                             {repo.linguagem && <span className="tag">{repo.linguagem}</span>}
-                            {repo.arquivado && <span className="tag">arquivado</span>}
-                            {repo.atualizadoEm && <span>Atualizado em {data(repo.atualizadoEm.slice(0, 10))}</span>}
+                            {repo.arquivado && <span className="tag">{t('github.repositorios.arquivado')}</span>}
+                            {repo.atualizadoEm && <span>{t('github.repositorios.atualizadoEm', { data: data(repo.atualizadoEm.slice(0, 10)) })}</span>}
                         </p>
                     </li>
                 ))}
@@ -808,7 +856,7 @@ function RepositoriosConteudo({ dados }) {
 
             {ordenados.length > LIMITES.reposExibidos && (
                 <button type="button" className="botao botao--secundario gh-ver-mais" onClick={() => setTodos((v) => !v)} aria-expanded={todos}>
-                    {todos ? 'Mostrar menos' : `Mostrar todos (${ordenados.length})`}
+                    {todos ? t('github.repositorios.mostrarMenos') : t('github.repositorios.mostrarTodos', { n: ordenados.length })}
                 </button>
             )}
         </>
@@ -834,6 +882,7 @@ const VISOES = {
 }
 
 function Abas({ ativa, aoEscolher }) {
+    const { t } = useTranslation()
     const refs = useRef({})
 
     const aoTeclar = (evento, indice) => {
@@ -850,7 +899,7 @@ function Abas({ ativa, aoEscolher }) {
     }
 
     return (
-        <div className="gh-abas" role="tablist" aria-label="Seções das estatísticas">
+        <div className="gh-abas" role="tablist" aria-label={t('github.secoes.rotulo')}>
             {SECOES.map((secao, indice) => (
                 <button
                     key={secao.id}
@@ -864,11 +913,11 @@ function Abas({ ativa, aoEscolher }) {
                     aria-controls="gh-painel"
                     tabIndex={ativa === secao.id ? 0 : -1}
                     className={ativa === secao.id ? 'gh-aba gh-aba--ativa' : 'gh-aba'}
-                    title={secao.descricao}
+                    title={t(`github.secoes.${secao.id}.descricao`)}
                     onClick={() => aoEscolher(secao.id)}
                     onKeyDown={(evento) => aoTeclar(evento, indice)}
                 >
-                    {secao.rotulo}
+                    {t(`github.secoes.${secao.id}.rotulo`)}
                 </button>
             ))}
         </div>
@@ -876,6 +925,7 @@ function Abas({ ativa, aoEscolher }) {
 }
 
 function Github() {
+    const { t } = useTranslation()
     const [ativa, setAtiva] = useState(SECAO_PADRAO)
     const Visao = VISOES[ativa]
     const secao = SECOES.find((s) => s.id === ativa)
@@ -884,18 +934,18 @@ function Github() {
         <article className="pagina container github">
             <header className="pagina-topo">
                 <p className="pagina-faixa">
-                    {TEXTOS.faixa}
+                    {t('comum.faixa', { numero: '06' })}
                     </p>
                 <h1 className="pagina-titulo github-titulo" tabIndex={-1}>
                     <img src="/images/gif-git.gif" alt="" className="github-gif">
                     </img>
-                    {TEXTOS.titulo}
+                    {t('github.faixaTitulo')}
                 </h1>
                 <p className="pagina-intro">
-                    {TEXTOS.intro}{' '}
+                    {t('github.textos.intro')}{' '}
                     <a href={URL_PERFIL} target="_blank" rel="noopener noreferrer">
                         github.com/{USUARIO}
-                        <span className="visualmente-oculto"> (abre em nova aba)</span>
+                        <span className="visualmente-oculto"> {t('comum.abreEmNovaAbaParenteses')}</span>
                     </a>
                 </p>
             </header>
@@ -903,19 +953,19 @@ function Github() {
             <Abas ativa={ativa} aoEscolher={setAtiva} />
 
             <section id="gh-painel" role="tabpanel" aria-labelledby={`gh-aba-${ativa}`} className="gh-painel">
-                <h2 className="subtitulo">{secao.descricao}</h2>
+                <h2 className="subtitulo">{t(`github.secoes.${secao.id}.descricao`)}</h2>
                 <SecaoComErro key={ativa}>
                     <Visao />
                 </SecaoComErro>
             </section>
 
             <details className="gh-metodologia papel">
-                <summary>Como estes dados são obtidos e quais são os limites</summary>
+                <summary>{t('github.metodologia.titulo')}</summary>
                 <dl>
-                    {METODOLOGIA.map((item) => (
-                        <div key={item.titulo}>
-                            <dt>{item.titulo}</dt>
-                            <dd>{item.texto}</dd>
+                    {METODOLOGIA.map((id) => (
+                        <div key={id}>
+                            <dt>{t(`github.metodologia.itens.${id}.titulo`)}</dt>
+                            <dd>{t(`github.metodologia.itens.${id}.texto`)}</dd>
                         </div>
                     ))}
                 </dl>

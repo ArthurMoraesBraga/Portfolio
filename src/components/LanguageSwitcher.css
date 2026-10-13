@@ -1,0 +1,80 @@
+/* Seletor de idioma: [globo] PT / EN, no mesmo estilo dos botões em pílula do menu */
+.idioma {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--salvia-escuro);
+}
+
+.idioma-icone {
+    flex: none;
+    width: 18px;
+    height: 18px;
+}
+
+.idioma-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.idioma-barra {
+    color: var(--texto-suave);
+    font-family: var(--fonte-mono);
+    font-size: 13px;
+    user-select: none;
+}
+
+.idioma-botao {
+    min-width: 36px;
+    padding: 3px 10px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--salvia-escuro);
+    font-family: var(--fonte-mono);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.idioma-botao:hover { background: #a8b5a02e; }
+
+/* Idioma ativo: pílula preenchida, como o botão "Faixas" aberto */
+.idioma-botao--ativo,
+.idioma-botao--ativo:hover {
+    border-color: var(--salvia-escuro);
+    background: var(--salvia-escuro);
+    color: #fff;
+    cursor: default;
+}
+
+.idioma-botao:focus-visible {
+    outline: 3px solid var(--azul-escuro);
+    outline-offset: 2px;
+}
+
+/* Barra do topo, compartilhada por todas as páginas */
+.barra-idioma {
+    padding: 6px 0;
+}
+
+.barra-idioma-conteudo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* A página inicial não tem o menu das faixas: a barra ocupa o lugar de parte do
+   espaçamento de cima, para o resto do layout ficar onde estava. */
+.barra-idioma + main .inicio-apresentacao { padding-top: 16px; }
+
+@media (max-width: 760px) {
+    .barra-idioma + main .inicio-apresentacao { padding-top: 0; }
+}
+
+@media (max-width: 420px) {
+    .idioma { gap: 4px; }
+    .idioma-botao { min-width: 34px; padding: 2px 8px; }
+}

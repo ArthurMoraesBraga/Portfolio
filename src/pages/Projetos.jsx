@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { projetos } from '../data/projetos'
 import './Projetos.css'
 
@@ -6,13 +7,14 @@ import './Projetos.css'
 const ordenados = [...projetos].sort((a, b) => Number(a.ano) - Number(b.ano))
 
 function Projetos() {
+    const { t, i18n } = useTranslation()
     return (
     <article className="pagina container">
         <header className="pagina-topo">
-        <p className="pagina-faixa">Faixa 02</p>
-        <h1 className="pagina-titulo" tabIndex={-1}>Projetos</h1>
+        <p className="pagina-faixa">{t('comum.faixa', { numero: '02' })}</p>
+        <h1 className="pagina-titulo" tabIndex={-1}>{t('projetos.titulo')}</h1>
         <p className="pagina-intro">
-            Lista de projetos desenvolvidos ao longo da minha trajetória.
+            {t('projetos.intro')}
         </p>
         </header>
 
@@ -28,7 +30,7 @@ function Projetos() {
                 className="projeto-capa papel"
                 style={{ '--cor-capa': p.cor }}
                 role="img"
-                aria-label={`Capa do projeto ${p.titulo}`}
+                aria-label={t('projetos.capaAria', { titulo: p.titulo })}
                 >
                 {p.imagem ? (
                     <img className="projeto-img" src={p.imagem} alt="" />
@@ -41,22 +43,22 @@ function Projetos() {
                 <div className="projeto-info">
                 <h2>{p.titulo}</h2>
                 {p.reconhecimento && (
-                <span className="tag">{p.reconhecimento}</span>
+                <span className="tag">{t(`projetos.reconhecimentos.${p.reconhecimento}`)}</span>
                 )}
                 {p.status && (
-                <span className="tag">{p.status}</span>
+                <span className="tag">{t(`projetos.status.${p.status}`)}</span>
                 )}
-                <p className="projeto-meta">{p.tipo}</p>
-                <p>{p.descricao}</p>
+                <p className="projeto-meta">{t(`projetos.tipo.${p.tipo}`)}</p>
+                <p>{t(`projetos.itens.${p.id}.descricao`)}</p>
 
-                {p.contribuicao && (
+                {i18n.exists(`projetos.itens.${p.id}.contribuicao`) && (
                     <div className="projeto-contribuicao">
-                    <strong>Minha contribuição</strong>
-                    <p>{p.contribuicao}</p>
+                    <strong>{t('projetos.contribuicao')}</strong>
+                    <p>{t(`projetos.itens.${p.id}.contribuicao`)}</p>
                     </div>
                 )}
 
-                <ul className="projeto-tags" aria-label="Tecnologias">
+                <ul className="projeto-tags" aria-label={t('projetos.tecnologias')}>
                     {p.tecnologias.map((t) => (
                     <li key={t}><span className="tag">{t}</span></li>
                     ))}
@@ -67,14 +69,14 @@ function Projetos() {
                     {p.repositorio && (
                         <li>
                         <a href={p.repositorio} target="_blank" rel="noreferrer">
-                            Ver no GitHub<span className="visualmente-oculto"> ({p.titulo}, abre em nova aba)</span>
+                            {t('projetos.verGithub')}<span className="visualmente-oculto"> {t('comum.abreEmNovaAbaTitulo', { titulo: p.titulo })}</span>
                         </a>
                         </li>
                     )}
                     {p.demo && (
                         <li>
                         <a href={p.demo} target="_blank" rel="noreferrer">
-                            Ver demonstração<span className="visualmente-oculto"> ({p.titulo}, abre em nova aba)</span>
+                            {t('projetos.verDemo')}<span className="visualmente-oculto"> {t('comum.abreEmNovaAbaTitulo', { titulo: p.titulo })}</span>
                         </a>
                         </li>
                     )}

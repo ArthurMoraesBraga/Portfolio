@@ -13,6 +13,12 @@
       rel="stylesheet"
     />
     <title>Arthur Moraes · Portfólio</title>
+    <script>
+      // Aplica o idioma salvo no atributo lang antes do React carregar (a chave é a mesma de src/i18n.js)
+      try {
+        if (localStorage.getItem('portfolio-idioma') === 'en') document.documentElement.lang = 'en'
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

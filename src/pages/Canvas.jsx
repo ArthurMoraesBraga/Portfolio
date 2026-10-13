@@ -16,12 +16,11 @@
     }
 
         import { useId, useMemo, useRef, useState } from 'react'
+        import { useTranslation } from 'react-i18next'
         import dadosBrutos from '../data/canvasDados.json'
         import {
         ABAS as ABAS_CONFIG,
         CANVAS_CONFIG,
-        SITUACOES,
-        TEXTOS,
         } from '../config/CanvasConfig.js'
         import {
         calcularSituacao,
@@ -34,25 +33,28 @@
         resumirTurma,
         validarDados,
         } from '../utils/canvas.js'
+        import { comoLista, formatadorData, paraPlural } from '../utils/localizacao'
         import './Canvas.css'
 
         function Situacao({ situacao }) {
-        const info = SITUACOES[situacao] ?? SITUACOES.pendente
+        const { t } = useTranslation()
+        const chave = ICONES_SITUACOES[situacao] ? situacao : 'pendente'
         const Icone = ICONES_SITUACOES[situacao] ?? FiClock
 
         return (
             <span className={`canvas-situacao canvas-situacao--${situacao}`}>
             <Icone className="canvas-icone" aria-hidden="true" />
             {' '}
-            {info.rotulo}
+            {t(`canvas.situacoes.${chave}`)}
             </span>
         )
         }
 
         function Prazo({ prazo, agora }) {
+        const { t } = useTranslation()
         const info = descreverPrazo(prazo, agora)
 
-        if (!info) return <span>Sem prazo definido</span>
+        if (!info) return <span>{t('canvas.prazo.semPrazo')}</span>
 
         return (
             <span>
@@ -140,7 +142,7 @@
     const ordenar = (lista) => lista.sort((a, b) => nomeDisciplina(a).localeCompare(nomeDisciplina(b), 'pt-BR'))
     const resultado = [...grupos.entries()].sort(([a], [b]) => a - b).map(([numero, materias]) => ({
         id: String(numero),
-        rotulo: `${numero}º semestre`,
+        numero,
         periodo: `${INICIO_CURSO.ano + Math.floor((numero - 1) / 2)}/${(numero - 1) % 2 + 1}`,
         turmas: ordenar([...materias.values()]),
     }))
@@ -167,19 +169,22 @@
     }
 
     function NotaDaMateria({ materia, atividades }) {
+    const { t } = useTranslation()
     const nota = pontuacaoDaMateria(materia, atividades)
     return (
         <div className="canvas-nota-unificada">
-        <span className="canvas-nota-rotulo canvas-suave"><FiAward className="canvas-icone" aria-hidden="true" /> Nota acumulada nas atividades</span>
+        <span className="canvas-nota-rotulo canvas-suave"><FiAward className="canvas-icone" aria-hidden="true" /> {t('canvas.notaAcumulada')}</span>
         <strong className="canvas-mono">
-            {nota.publicadas > 0 ? formatarNumero(nota.obtidos) : 'Sem nota publicada'}
-            {nota.publicadas > 0 && (nota.maximo != null ? ` / ${nota.maximo} pontos` : ' pontos')}
+            {nota.publicadas === 0
+                ? t('canvas.semNotaPublicada')
+                : nota.maximo != null
+                    ? t('canvas.pontosTotal', { obtidos: formatarNumero(nota.obtidos), maximo: nota.maximo })
+                    : t('canvas.pontos', { count: paraPlural(nota.obtidos), valor: formatarNumero(nota.obtidos) })}
         </strong>
         </div>
     )
     }
 
-    const DIAS_SEMANA = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb']
     const FUSO = CANVAS_CONFIG.fusoHorario || 'America/Sao_Paulo'
     const DATA_CIVIL = new Intl.DateTimeFormat('en-US', {
     timeZone: FUSO, year: 'numeric', month: '2-digit', day: '2-digit',
@@ -197,26 +202,27 @@
     }
 
     function DetalhesAtividades({ atividades, mapaTurmas, agora }) {
+    const { t } = useTranslation()
     return (
         <ul className="canvas-lista">
         {atividades.map((atividade) => (
             <li key={atividade.id}>
             <article className="papel canvas-cartao canvas-cartao--linha">
                 <div>
-                <h3>{atividade.nome ?? 'Atividade sem título'}</h3>
+                <h3>{atividade.nome ?? t('canvas.atividadeSemTitulo')}</h3>
                 <p className="canvas-suave">{nomeDisciplina(mapaTurmas.get(atividade.turmaId) ?? {})}</p>
                 <p><FiClock className="canvas-icone" aria-hidden="true" />{' '}
                     <Prazo prazo={atividade.prazo} agora={agora} />
                 </p>
-                {atividade.entregueEm && <p className="canvas-suave">Entregue em {formatarDataHora(atividade.entregueEm)}</p>}
+                {atividade.entregueEm && <p className="canvas-suave">{t('canvas.entregueEm', { quando: formatarDataHora(atividade.entregueEm) })}</p>}
                 </div>
                 <div className="canvas-lateral">
                 <Situacao situacao={calcularSituacao(atividade, agora)} />
                 {atividade.avaliativa && formatarNumero(atividade.pontos) !== null && (
-                    <span className="canvas-suave">Vale {formatarNumero(atividade.pontos)} pontos</span>
+                    <span className="canvas-suave">{t('canvas.vale', { count: paraPlural(atividade.pontos), valor: formatarNumero(atividade.pontos) })}</span>
                 )}
                 {atividade.nota?.publicada && Number.isFinite(atividade.nota.pontos) && (
-                    <span className="canvas-mono">Nota: {formatarNumero(atividade.nota.pontos)} pontos</span>
+                    <span className="canvas-mono">{t('canvas.notaPontos', { count: paraPlural(atividade.nota.pontos), valor: formatarNumero(atividade.nota.pontos) })}</span>
                 )}
                 </div>
             </article>
@@ -227,6 +233,8 @@
     }
 
     function CalendarioAtividades({ atividades, mapaTurmas, agora }) {
+    const { t } = useTranslation()
+    const diasSemana = comoLista(t('comum.diasSemanaCurto', { returnObjects: true }))
     const hoje = diaNoFuso(agora)
     const [diaSelecionado, setDiaSelecionado] = useState(hoje)
     const [mesVisivel, setMesVisivel] = useState(hoje.slice(0, 7))
@@ -245,10 +253,12 @@
     }
     for (const lista of porDia.values()) lista.sort((a, b) => Date.parse(a.prazo) - Date.parse(b.prazo))
     const atividadesDoDia = porDia.get(diaSelecionado) ?? []
-    const tituloMes = new Intl.DateTimeFormat('pt-BR', { month: 'long', year: 'numeric', timeZone: 'UTC' })
+    // Datas civis (sem horário): formatadas em UTC para o dia não escorregar; o idioma vem da troca de PT/EN
+    const tituloMes = formatadorData({ month: 'long', year: 'numeric', timeZone: 'UTC' })
         .format(new Date(Date.UTC(ano, mes, 1)))
-    const tituloDia = new Intl.DateTimeFormat('pt-BR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
-        .format(new Date(`${diaSelecionado}T12:00:00Z`))
+    const dataLonga = (chave) => formatadorData({ day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
+        .format(new Date(`${chave}T12:00:00Z`))
+    const tituloDia = dataLonga(diaSelecionado)
     const totalMes = [...porDia.entries()].filter(([dia]) => dia.startsWith(mesVisivel))
         .reduce((soma, [, lista]) => soma + lista.length, 0)
 
@@ -265,16 +275,16 @@
         <div className="canvas-cal-topo">
             <div>
             <h3><FiCalendar className="canvas-icone" aria-hidden="true" /> {tituloMes}</h3>
-            <p className="canvas-suave">{totalMes} atividades neste mês · horários de Brasília</p>
+            <p className="canvas-suave">{t('canvas.calendario.atividadesNoMes', { count: paraPlural(totalMes), n: totalMes })}</p>
             </div>
             <div className="canvas-cal-navegacao">
-            <button type="button" onClick={() => mudarMes(-1)} aria-label="Mês anterior"><FiChevronLeft aria-hidden="true" /></button>
-            <button type="button" onClick={irHoje}>Hoje</button>
-            <button type="button" onClick={() => mudarMes(1)} aria-label="Próximo mês"><FiChevronRight aria-hidden="true" /></button>
+            <button type="button" onClick={() => mudarMes(-1)} aria-label={t('canvas.calendario.mesAnterior')}><FiChevronLeft aria-hidden="true" /></button>
+            <button type="button" onClick={irHoje}>{t('canvas.calendario.hoje')}</button>
+            <button type="button" onClick={() => mudarMes(1)} aria-label={t('canvas.calendario.proximoMes')}><FiChevronRight aria-hidden="true" /></button>
             </div>
         </div>
-        <div className="canvas-cal-grade" role="group" aria-label={`Calendário de ${tituloMes}`}>
-            {DIAS_SEMANA.map((dia) => <span key={dia} className="canvas-cal-semana">{dia}</span>)}
+        <div className="canvas-cal-grade" role="group" aria-label={t('canvas.calendario.calendarioDe', { mes: tituloMes })}>
+            {diasSemana.map((dia) => <span key={dia} className="canvas-cal-semana">{dia}</span>)}
             {Array.from({ length: totalCelulas }, (_, indice) => {
             const numero = indice - primeiroDia + 1
             if (numero < 1 || numero > quantidade) return <span key={`vazio-${indice}`} className="canvas-cal-vazio" aria-hidden="true" />
@@ -287,7 +297,7 @@
                 onClick={() => setDiaSelecionado(dia)}
                 aria-pressed={dia === diaSelecionado}
                 aria-current={dia === hoje ? 'date' : undefined}
-                aria-label={`${numero} de ${tituloMes}, ${lista.length} atividades`}
+                aria-label={t('canvas.calendario.diaAria', { count: paraPlural(lista.length), n: lista.length, data: dataLonga(dia) })}
                 >
                 <span className="canvas-cal-numero">{numero}</span>
                 <span className="canvas-cal-previas" aria-hidden="true">
@@ -299,15 +309,15 @@
             )
             })}
         </div>
-        <section className="canvas-cal-detalhes" aria-label="Atividades do dia selecionado">
+        <section className="canvas-cal-detalhes" aria-label={t('canvas.calendario.atividadesDoDia')}>
             <h3 className="subtitulo">{tituloDia}</h3>
-            <p className="canvas-suave" role="status">{atividadesDoDia.length} atividades no dia selecionado.</p>
+            <p className="canvas-suave" role="status">{t('canvas.calendario.noDiaSelecionado', { count: paraPlural(atividadesDoDia.length), n: atividadesDoDia.length })}</p>
             {atividadesDoDia.length ? <DetalhesAtividades atividades={atividadesDoDia} mapaTurmas={mapaTurmas} agora={agora} />
-            : <p className="canvas-vazio">Nenhuma atividade com prazo neste dia.</p>}
+            : <p className="canvas-vazio">{t('canvas.calendario.nenhumaNoDia')}</p>}
         </section>
         {semPrazo.length > 0 && (
             <details className="canvas-cal-sem-prazo">
-            <summary>Sem prazo definido ({semPrazo.length})</summary>
+            <summary>{t('canvas.calendario.semPrazo', { n: semPrazo.length })}</summary>
             <DetalhesAtividades atividades={semPrazo} mapaTurmas={mapaTurmas} agora={agora} />
             </details>
         )}
@@ -316,6 +326,7 @@
     }
 
         export default function Canvas() {
+        const { t } = useTranslation()
         const dados = useMemo(() => validarDados(dadosBrutos), [])
         const [agora] = useState(() => Date.now())
         const idBase = useId()
@@ -386,9 +397,9 @@
             <main className="pagina container canvas-pagina">
                 <header className="pagina-topo canvas-cabecalho">
                 <p className="pagina-faixa">06 Canvas</p>
-                <h1 className="pagina-titulo">{TEXTOS.titulo}</h1>
+                <h1 className="pagina-titulo">{t('canvas.titulo')}</h1>
                 <p className="canvas-vazio" role="status">
-                    {TEXTOS.semDados}
+                    {t('canvas.textos.semDados')}
                 </p>
                 </header>
             </main>
@@ -401,17 +412,17 @@
                 <p className="pagina-faixa">06 Canvas</p>
                 <h1 className="pagina-titulo canvas-titulo">
                     <img src="/images/logo-canvas.svg" alt="" className="canvas-logo"></img>
-                    {TEXTOS.titulo}
+                    {t('canvas.titulo')}
                 </h1>
-                <p className="pagina-intro">{TEXTOS.subtitulo}</p>
+                <p className="pagina-intro">{t('canvas.textos.subtitulo')}</p>
 
                 <p className="canvas-atualizacao">
-                Última atualização:{' '}
+                {t('canvas.atualizacao')}{' '}
                 <time dateTime={dados.atualizadoEm} className="canvas-mono">
                     {formatarDataHora(dados.atualizadoEm)}
                 </time>
                 {' '}
-                <span className="canvas-suave">(horário de Brasília)</span>
+                <span className="canvas-suave">{t('canvas.horarioBrasilia')}</span>
                 </p>
 
 
@@ -422,7 +433,7 @@
             <div
                 className="canvas-abas"
                 role="tablist"
-                aria-label="Seções do Canvas"
+                aria-label={t('canvas.abas.rotulo')}
             >
                 {ABAS.map((aba, indice) => {
                 const ativa = aba.id === abaAtiva
@@ -447,7 +458,7 @@
                     <IconeAba className="canvas-icone canvas-icone-aba" aria-hidden="true" />
                     <span className="canvas-mono" aria-hidden="true">0{indice + 1}</span>
                     {' '}
-                    {aba.rotulo}
+                    {t(`canvas.abas.${aba.id}`)}
                     </button>
                 )
                 })}
@@ -461,11 +472,11 @@
                 hidden={abaAtiva !== 'turmas'}
                 className="canvas-painel"
             >
-                <h2 className="visualmente-oculto">Turmas</h2>
+                <h2 className="visualmente-oculto">{t('canvas.abas.turmas')}</h2>
 
                 {biblioteca.length > 0 && (
                 <div className="canvas-biblioteca-controles">
-                    <label htmlFor={`${idBase}-semestre`}><FiCalendar className="canvas-icone" aria-hidden="true" /> Semestre</label>
+                    <label htmlFor={`${idBase}-semestre`}><FiCalendar className="canvas-icone" aria-hidden="true" /> {t('canvas.semestre.rotulo')}</label>
                     <select
                     id={`${idBase}-semestre`}
                     value={grupoSelecionado.id}
@@ -473,18 +484,18 @@
                     >
                     {biblioteca.map((grupo) => (
                         <option key={grupo.id} value={grupo.id}>
-                        {grupo.rotulo}{grupo.periodo ? ` · ${grupo.periodo}` : ''}
+                        {t('canvas.semestre.nome', { n: grupo.numero })}{grupo.periodo ? ` · ${grupo.periodo}` : ''}
                         </option>
                     ))}
                     </select>
                     <p className="canvas-suave" role="status">
-                    {turmasBiblioteca.length} {turmasBiblioteca.length === 1 ? 'matéria' : 'matérias '}
+                    {t('canvas.semestre.materias', { count: paraPlural(turmasBiblioteca.length), n: turmasBiblioteca.length })}
                     </p>
                 </div>
                 )}
 
                 {turmasBiblioteca.length === 0 ? (
-                <p className="canvas-vazio">{TEXTOS.semTurmas}</p>
+                <p className="canvas-vazio">{t('canvas.textos.semTurmas')}</p>
                 ) : (
                 <ul className="canvas-grade">
                     {turmasBiblioteca.map((turma) => {
@@ -494,7 +505,7 @@
                     return (
                         <li key={turma.id}>
                         <article className="papel canvas-cartao">
-                            <h3>{nomeDisciplina(turma) || `Turma ${turma.id}`}</h3>
+                            <h3>{nomeDisciplina(turma) || t('canvas.turma', { id: turma.id })}</h3>
 
                             <p className="canvas-suave">
                             {[turma.codigo, turma.periodo]
@@ -504,25 +515,25 @@
 
                             {turma.atividadesDisponiveis === false ? (
                             <p className="canvas-suave">
-                                {TEXTOS.atividadesIndisponiveis}
+                                {t('canvas.textos.atividadesIndisponiveis')}
                             </p>
                             ) : (
                             <>
                                 <dl className="canvas-estatisticas">
                                 <div>
-                                    <dt>Atividades</dt>
+                                    <dt>{t('canvas.estatisticas.atividades')}</dt>
                                     <dd className="canvas-mono">{resumo.total}</dd>
                                 </div>
                                 <div>
-                                    <dt>Pendentes</dt>
+                                    <dt>{t('canvas.estatisticas.pendentes')}</dt>
                                     <dd className="canvas-mono">{resumo.pendentes}</dd>
                                 </div>
                                 <div>
-                                    <dt>Entregues</dt>
+                                    <dt>{t('canvas.estatisticas.entregues')}</dt>
                                     <dd className="canvas-mono">{resumo.entregues}</dd>
                                 </div>
                                 <div>
-                                    <dt>Avaliadas</dt>
+                                    <dt>{t('canvas.estatisticas.avaliadas')}</dt>
                                     <dd className="canvas-mono">{resumo.avaliadas}</dd>
                                 </div>
                                 </dl>
@@ -532,18 +543,18 @@
                                     <span className="canvas-mono">
                                     {resumo.prazoEncerrado}
                                     </span>
-                                    {' '}com prazo encerrado sem entrega
+                                    {' '}{t('canvas.prazoEncerradoSemEntrega')}
                                 </p>
                                 )}
 
                                 <p>
                                 <span className="canvas-suave">
-                                    Próximo prazo:{' '}
+                                    {t('canvas.proximoPrazo')}{' '}
                                 </span>
                                 {resumo.proxima ? (
                                     <Prazo prazo={resumo.proxima.prazo} agora={agora} />
                                 ) : (
-                                    'nenhum pendente'
+                                    t('canvas.nenhumPendente')
                                 )}
                                 </p>
                             </>
@@ -551,7 +562,7 @@
 
                             <NotaDaMateria materia={turma} atividades={atividades} />
                             {turma.idsTurmas.length > 1 && (
-                            <p className="canvas-suave">{turma.idsTurmas.length} turmas reunidas (teoria e laboratório)</p>
+                            <p className="canvas-suave">{t('canvas.turmasReunidas', { n: turma.idsTurmas.length })}</p>
                             )}
 
                             <button
@@ -559,10 +570,10 @@
                             className="botao botao--secundario canvas-botao"
                             onClick={() => irParaAtividades(turma)}
                             >
-                            Ver atividades
+                            {t('canvas.verAtividades')}
                             <FiArrowRight className="canvas-icone canvas-icone-seta" aria-hidden="true" />
                             <span className="visualmente-oculto">
-                                {' '}de {turma.nome}
+                                {' '}{t('canvas.verAtividadesDe', { nome: turma.nome })}
                             </span>
                             </button>
                         </article>
@@ -581,11 +592,11 @@
                 hidden={abaAtiva !== 'atividades'}
                 className="canvas-painel"
             >
-                <h2 className="visualmente-oculto">Atividades</h2>
+                <h2 className="visualmente-oculto">{t('canvas.abas.atividades')}</h2>
             {materiaAberta && (
             <header className="papel canvas-cartao canvas-materia-aberta">
                 <h3>{nomeDisciplina(materiaAberta)}</h3>
-                <p className="canvas-suave">Atividades de todas as turmas desta matéria no semestre selecionado.</p>
+                <p className="canvas-suave">{t('canvas.materiaAtividades')}</p>
                 <NotaDaMateria materia={materiaAberta} atividades={atividades} />
             </header>
             )}

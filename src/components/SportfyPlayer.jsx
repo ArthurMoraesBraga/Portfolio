@@ -1,15 +1,17 @@
 import { useEffect, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Vinil from './Vinil'
 const logoSpotify = '../../public/images/logo_sportfy.svg'
 import { alturaEmbed, carregarIframeApi } from '../utils/spotify'
 
 // Link para abrir no Spotify, com o logo oficial (versão preta, fundo claro, 70px).
 export function LinkSpotify({ url, titulo }) {
+    const { t } = useTranslation()
     return (
         <a href={url} target="_blank" rel="noreferrer" className="spotify-link">
             <img src={logoSpotify} alt="" width="70" height="19" />
-            <span>Abrir no Spotify</span>
-            <span className="visualmente-oculto"> ({titulo ? `${titulo}, ` : ''}abre em nova aba)</span>
+            <span>{t('spotify.abrir')}</span>
+            <span className="visualmente-oculto"> {titulo ? t('comum.abreEmNovaAbaTitulo', { titulo }) : t('comum.abreEmNovaAbaParenteses')}</span>
         </a>
     )
 }
@@ -21,6 +23,7 @@ export function LinkSpotify({ url, titulo }) {
 //   fica parado, porque não há como saber o estado real da reprodução.
 // Use `key` ao trocar de música: cada escolha cria um player novo.
 function SpotifyPlayer({ rotulo, legenda, titulo, artista, spotify }) {
+    const { t } = useTranslation()
     const hospedeiro = useRef(null)
     const [api, setApi] = useState('carregando') // 'carregando' | 'pronta' | 'indisponivel'
     const [tocando, setTocando] = useState(false)
@@ -68,16 +71,15 @@ function SpotifyPlayer({ rotulo, legenda, titulo, artista, spotify }) {
 
     let estado
     if (api === 'carregando') {
-        estado = 'Carregando o player do Spotify…'
+        estado = t('spotify.carregando')
     } else if (api === 'indisponivel') {
-        estado =
-            'O disco não acompanha a música porque o controle do Spotify não carregou (um bloqueador de anúncios pode ter impedido). O player continua funcionando.'
+        estado = t('spotify.indisponivel')
     } else {
-        estado = tocando ? 'Tocando agora' : 'Aperte play no player para ouvir.'
+        estado = tocando ? t('spotify.tocando') : t('spotify.apertePlay')
     }
 
     return (
-        <section className="player papel" aria-label="Player do Spotify">
+        <section className="player papel" aria-label={t('spotify.playerRotulo')}>
             <Vinil iniciais={rotulo} girando={tocando} />
 
             <div className="player-painel">
@@ -98,7 +100,7 @@ function SpotifyPlayer({ rotulo, legenda, titulo, artista, spotify }) {
                             <iframe
                                 className="player-embed"
                                 src={spotify.embedUrl}
-                                title={`Player do Spotify: ${titulo}`}
+                                title={t('spotify.playerTitulo', { titulo })}
                                 width="100%"
                                 height={alturaEmbed(spotify.tipo)}
                                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -109,7 +111,7 @@ function SpotifyPlayer({ rotulo, legenda, titulo, artista, spotify }) {
                         <LinkSpotify url={spotify.url} titulo={titulo} />
                     </>
                 ) : (
-                    <p className="player-aviso">Esta faixa ainda não tem player.</p>
+                    <p className="player-aviso">{t('spotify.semPlayer')}</p>
                 )}
             </div>
         </section>

@@ -1,5 +1,5 @@
 import CONFIG from '../config/GithubConfig'
-import { PERIODOS_DIA } from '../data/Github'
+import { PERIODOS_DIA } from '../data/github'
 
 // Consulta o GitHub (só dados públicos, direto do navegador), organiza as
 // respostas e calcula as estatísticas da página de GitHub.
@@ -268,7 +268,8 @@ export function agruparOutras(itens, limite = LIMITES.linguagensExibidas) {
     return [
         ...topo,
         {
-            nome: `Outras (${resto.length})`,
+            nome: `Outras (${resto.length})`, // só chave interna; o texto exibido vem de github.linguagens.outras
+            quantidade: resto.length,
             valor: resto.reduce((soma, i) => soma + i.valor, 0),
             percentual: resto.reduce((soma, i) => soma + i.percentual, 0),
             outras: true,
