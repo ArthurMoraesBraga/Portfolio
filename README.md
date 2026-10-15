@@ -391,7 +391,7 @@ cd Portfolio</code></pre>
 <h2>📚 Referência</h2>
 
 <p>
-  O portfólio de
+  O portfólio do meu professor
   <a href="https://github.com/joaopauloaramuni/joaopauloaramuni-portfolio">
     João Paulo Aramuni
   </a>
