@@ -126,3 +126,16 @@
     transition: background-color 0.6s ease;
 }
 .player { background-color: transparent; box-shadow: none; }
+
+    .musicas-titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    }
+
+    .musicas-icone {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+    }

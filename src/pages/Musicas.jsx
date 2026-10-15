@@ -57,7 +57,9 @@ function Musicas() {
         <article className="pagina container">
             <header className="pagina-topo">
                 <p className="pagina-faixa">{t('comum.faixa', { numero: '04' })}</p>
-                <h1 className="pagina-titulo" tabIndex={-1}>{t('musicas.titulo')}</h1>
+                <h1 className="pagina-titulo musicas-titulo" tabIndex={-1}>
+                <img src="/images/spotify-simbolo.svg" alt="" className="musicas-icone"></img>
+                {t('musicas.titulo')}</h1>
             </header>
 
             {atual ? (

@@ -12,7 +12,10 @@ function Projetos() {
     <article className="pagina container">
         <header className="pagina-topo">
         <p className="pagina-faixa">{t('comum.faixa', { numero: '02' })}</p>
-        <h1 className="pagina-titulo" tabIndex={-1}>{t('projetos.titulo')}</h1>
+        <h1 className="pagina-titulo projeto-titulo" tabIndex={-1}>
+            <img src="/images/vscode.svg" alt="" className="projeto-imagem"></img>
+            {t('projetos.titulo')}</h1>
+        
         <p className="pagina-intro">
             {t('projetos.intro')}
         </p>

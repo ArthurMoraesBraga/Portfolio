@@ -124,3 +124,15 @@
     .projeto-corpo { grid-template-columns: 1fr; gap: 20px; }
     .projeto-capa { max-width: 260px; }
 }
+    .projeto-titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    }
+
+    .projeto-imagem {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+    }
