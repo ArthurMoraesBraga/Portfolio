@@ -4,12 +4,25 @@
   <p>
     Cada projeto, uma nova faixa.
   </p>
-
   <p>
     <a href="https://arthurmoraes.dev">
       <strong>🌐 Acesse o portfólio</strong>
     </a>
   </p>
+  
+  <h2>🎨 Protótipo no Figma</h2>
+
+<p>
+  Wireframes do portfólio com a organização das páginas,
+  navegação e versões para computador e celular.
+</p>
+
+<p>
+  <a href="https://www.figma.com/make/R0QEr0h5Vdb5YuAX4IpM4h/Wireframe-Baixa-Fidelidade-Portf%25C3%25B3lio?t=fjAjl1XLbjaMDJWD-0">
+    Acessar o protótipo no Figma
+  </a>
+</p>
+
 
   <img
     src="https://komarev.com/ghpvc/?username=ArthurMoraesBraga-Portfolio&label=Visitas&color=8fa3ad&style=flat"
