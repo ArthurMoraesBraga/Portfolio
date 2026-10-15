@@ -546,3 +546,28 @@
         height: 42px;
         object-fit: contain;
 }
+    .canvas-grade {
+    align-items: stretch;
+    grid-auto-rows: 1fr;
+    }
+
+    .canvas-grade > li {
+    display: flex;
+    min-width: 0;
+    }
+
+    .canvas-grade .canvas-cartao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+    .canvas-grade .canvas-cartao .canvas-botao {
+    margin-top: auto;
+    align-self: flex-start;
+    }
+
+    .canvas-grade .canvas-cartao .canvas-nota {
+    margin-bottom: 16px;
+    }
