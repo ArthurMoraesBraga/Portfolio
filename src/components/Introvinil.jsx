@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { perfil } from '../data/perfil'
-import './IntroVinil.css'
+import './Introvinil.css'
 
 function IntroVinil({ onFinish }) {
     const { t } = useTranslation()

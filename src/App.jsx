@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import IntroVinil from './components/IntroVinil'
+import IntroVinil from './components/Introvinil'
 import BarraIdioma from './components/BarraIdioma'
 import MenuFaixas from './components/MenuFaixas'
 import FaixaNav from './components/FaixaNav'
