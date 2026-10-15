@@ -214,6 +214,7 @@ const pt = {
                 'Uma música que me inspira a continuar buscando meus objetivos, mesmo diante das dificuldades.',
             'musica-2': 'Escutava essa música quando era criança juntamente com meu pai, representa muito para mim',
             'musica-3': 'Minha música preferida do meu artista favorito.',
+            'musica-4': 'Mensagem de liberdade e energia leve que a música tras'
         },
         comentarioPlaylist: 'Melhores musicas',
     },

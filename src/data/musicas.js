@@ -19,6 +19,13 @@ export const musicas = [
         artista:'Yunk vino',
         link: 'https://open.spotify.com/intl-pt/track/70D4ZYmLC8Kxxw4rGthU0Q?si=af1d78a8561945aa',
         cor: '#afadad'
+    },
+    {
+        id: 'musica-4',
+        titulo: 'Deixa o Menino Jogar',
+        artsta: 'Natiruts',
+        link: 'https://open.spotify.com/intl-pt/track/277KQpOqgog5iX7NfhyaAC?si=131be07752a84fb1',
+        cor: '#5d902b'
     }
 ]
 // Os comentários de cada música e da playlist ficam em src/locales (musicas.comentarios.<id>

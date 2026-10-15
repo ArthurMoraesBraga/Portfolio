@@ -213,6 +213,7 @@ const en = {
             'musica-1': 'A song that inspires me to keep pursuing my goals, even in the face of difficulties.',
             'musica-2': 'I used to listen to this song as a child with my father; it means a lot to me.',
             'musica-3': 'My favorite song by my favorite artist.',
+            'musica-4': 'The message of freedom and the laid-back energy the song brings.'
         },
         comentarioPlaylist: 'Best songs',
     },
