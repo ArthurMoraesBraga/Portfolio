@@ -1,14 +1,23 @@
 <div align="center">
-  <h1>Arthur Moraes — Portfólio</h1>
+  <h1>🎵 Portfólio — Arthur Moraes</h1>
 
   <p>
-    Portfólio pessoal desenvolvido para apresentar minha trajetória,
-    projetos, experiências, certificados e interesses em tecnologia.
+    Cada projeto, uma nova faixa.
   </p>
 
   <p>
-    <a href="https://arthurmoraes.dev">Acessar o portfólio</a>
+    <a href="https://arthurmoraes.dev">
+      <strong>🌐 Acesse o portfólio</strong>
+    </a>
   </p>
+
+  <img
+    src="https://komarev.com/ghpvc/?username=ArthurMoraesBraga-Portfolio&label=Visitas&color=8fa3ad&style=flat"
+    alt="Contador de visitas ao README"
+  />
+
+  <br />
+  <br />
 
   <img
     src="https://skillicons.dev/icons?i=react,vite,js,html,css,git,github,vercel"
@@ -18,110 +27,240 @@
 
 <hr />
 
-<h2>Sobre o projeto</h2>
+<h2>💿 Sobre o projeto</h2>
 
 <p>
-  Este projeto foi desenvolvido durante meu aprendizado de React.
-  A proposta é reunir informações sobre minha formação em Engenharia
-  de Software na PUC Minas e compartilhar minha evolução na área.
+  Este é o repositório do meu portfólio pessoal, desenvolvido com
+  React e Vite para apresentar meus projetos, formação, experiências
+  e interesses na área de tecnologia.
 </p>
 
 <p>
-  A identidade visual tem inspiração na música e nos discos de vinil,
-  com animação de introdução, cores suaves e navegação organizada em
-  páginas. O conteúdo está disponível em português e inglês.
+  A interface foi inspirada em discos de vinil e na minha relação
+  com a música. A proposta combina cores suaves, uma introdução
+  animada e páginas organizadas como faixas de um álbum.
 </p>
 
-<h2>Como foi desenvolvido</h2>
+<p>
+  O projeto também representa meu aprendizado prático de React,
+  desde a criação dos primeiros componentes até a integração com
+  serviços externos e a publicação com domínio próprio.
+</p>
+
+<hr />
+
+<h2>🧭 O que você encontra no portfólio</h2>
 
 <ul>
   <li>
-    <strong>React:</strong> construção das páginas e dos componentes
-    reutilizáveis, com hooks para controlar estados e interações.
+    <strong>👤 Sobre mim:</strong>
+    apresentação pessoal, formação acadêmica, experiências,
+    interesses e objetivos profissionais.
   </li>
   <li>
-    <strong>Vite:</strong> ambiente de desenvolvimento e geração
-    da versão de produção.
+    <strong>💻 Projetos:</strong>
+    trabalhos desenvolvidos, tecnologias utilizadas,
+    minhas contribuições e links para os repositórios.
   </li>
   <li>
-    <strong>JavaScript e JSX:</strong> lógica da aplicação e
-    definição da interface.
+    <strong>🏅 Certificados:</strong>
+    cursos, reconhecimentos e conquistas, com visualização
+    dos documentos.
   </li>
   <li>
-    <strong>CSS:</strong> estilização, animações e adaptação
-    para diferentes tamanhos de tela.
+    <strong>🎶 Músicas:</strong>
+    seleção de faixas e playlist, com player incorporado do Spotify.
   </li>
   <li>
-    <strong>i18next e react-i18next:</strong> tradução da interface,
-    mantendo o idioma selecionado durante a navegação.
+    <strong>🐙 GitHub:</strong>
+    estatísticas de contribuições, frequência e horários de commits.
   </li>
   <li>
-    <strong>React Icons:</strong> ícones utilizados na interface.
+    <strong>⏱️ WakaTime:</strong>
+    acompanhamento do tempo registrado em programação
+    e da distribuição entre linguagens.
   </li>
   <li>
-    <strong>React-PDF:</strong> pré-visualização do currículo
-    dentro do próprio site.
+    <strong>🎓 Canvas:</strong>
+    turmas organizadas por semestre, notas e calendário
+    de atividades acadêmicas.
   </li>
   <li>
-    <strong>Git e GitHub:</strong> versionamento e armazenamento
-    do código.
+    <strong>📧 Contato:</strong>
+    formulário para envio de mensagens e links para minhas redes.
   </li>
   <li>
-    <strong>Vercel:</strong> hospedagem e publicação das atualizações
-    enviadas ao repositório.
+    <strong>📄 Currículo:</strong>
+    pré-visualização dentro do site e opção de download.
+  </li>
+  <li>
+    <strong>🌐 Idiomas:</strong>
+    conteúdo em português e inglês, mantendo a seleção
+    durante a navegação.
   </li>
 </ul>
 
-<h2>Conteúdo e funcionalidades</h2>
+<hr />
+
+<h2>🛠️ Tecnologias utilizadas</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tecnologia</th>
+      <th>Utilização</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>React</td>
+      <td>Construção da interface com componentes e hooks.</td>
+    </tr>
+    <tr>
+      <td>Vite</td>
+      <td>Servidor de desenvolvimento e build de produção.</td>
+    </tr>
+    <tr>
+      <td>JavaScript e JSX</td>
+      <td>Lógica, interações e estrutura dos componentes.</td>
+    </tr>
+    <tr>
+      <td>CSS</td>
+      <td>Estilização, animações e responsividade.</td>
+    </tr>
+    <tr>
+      <td>i18next e react-i18next</td>
+      <td>Tradução e gerenciamento do idioma da interface.</td>
+    </tr>
+    <tr>
+      <td>React Icons</td>
+      <td>Ícones utilizados nas páginas e nos botões.</td>
+    </tr>
+    <tr>
+      <td>React-PDF</td>
+      <td>Renderização do currículo em PDF dentro do site.</td>
+    </tr>
+    <tr>
+      <td>Node.js</td>
+      <td>Execução das ferramentas e dos scripts do projeto.</td>
+    </tr>
+    <tr>
+      <td>Git e GitHub</td>
+      <td>Versionamento e armazenamento do código-fonte.</td>
+    </tr>
+    <tr>
+      <td>Vercel</td>
+      <td>Hospedagem e publicação integrada ao GitHub.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2>🔌 Integrações</h2>
 
 <ul>
-  <li>Introdução animada com disco de vinil.</li>
-  <li>Apresentação pessoal, formação e experiências.</li>
-  <li>Projetos com tecnologias utilizadas e links para os repositórios.</li>
-  <li>Certificados com opções de visualização.</li>
-  <li>Pré-visualização e download do currículo.</li>
-  <li>Seleção musical com player incorporado do Spotify.</li>
-  <li>Estatísticas de atividade do GitHub.</li>
-  <li>Estatísticas de tempo de programação do WakaTime.</li>
-  <li>Informações acadêmicas do Canvas, com turmas e calendário de atividades.</li>
-  <li>Formulário de contato integrado ao Formspree.</li>
-  <li>Interface em português e inglês.</li>
-  <li>Layout responsivo.</li>
+  <li>
+    <strong>GitHub:</strong>
+    consulta de informações públicas de atividade.
+  </li>
+  <li>
+    <strong>WakaTime:</strong>
+    leitura de estatísticas disponibilizadas por
+    compartilhamentos públicos.
+  </li>
+  <li>
+    <strong>Spotify:</strong>
+    reprodução por meio do player incorporado.
+  </li>
+  <li>
+    <strong>Canvas:</strong>
+    coleta de informações acadêmicas por script e geração
+    dos dados utilizados na página.
+  </li>
+  <li>
+    <strong>Formspree:</strong>
+    recebimento das mensagens enviadas pelo formulário de contato.
+  </li>
 </ul>
 
-<h2>Organização do projeto</h2>
+<hr />
+
+<h2>📂 Organização do código</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Caminho</th>
+      <th>Responsabilidade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>src/components/</code></td>
+      <td>Componentes reutilizáveis da interface.</td>
+    </tr>
+    <tr>
+      <td><code>src/pages/</code></td>
+      <td>Páginas do portfólio e seus estilos.</td>
+    </tr>
+    <tr>
+      <td><code>src/data/</code></td>
+      <td>Conteúdos e informações exibidos nas páginas.</td>
+    </tr>
+    <tr>
+      <td><code>src/config/</code></td>
+      <td>Configurações utilizadas pelas integrações.</td>
+    </tr>
+    <tr>
+      <td><code>src/utils/</code></td>
+      <td>Funções auxiliares, consultas e tratamento de dados.</td>
+    </tr>
+    <tr>
+      <td><code>public/</code></td>
+      <td>Arquivos públicos, como imagens, certificados e currículo.</td>
+    </tr>
+    <tr>
+      <td><code>scripts/</code></td>
+      <td>Scripts executados com Node.js.</td>
+    </tr>
+    <tr>
+      <td><code>src/App.jsx</code></td>
+      <td>Organização principal da aplicação.</td>
+    </tr>
+    <tr>
+      <td><code>src/main.jsx</code></td>
+      <td>Ponto de entrada da aplicação React.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2>🚀 Como executar o projeto</h2>
+
+<h3>1. Instale as ferramentas</h3>
+
+<p>Para executar o projeto, você precisa de:</p>
 
 <ul>
-  <li><code>src/components/</code> — componentes reutilizáveis da interface.</li>
-  <li><code>src/pages/</code> — páginas e seus estilos.</li>
-  <li><code>src/data/</code> — conteúdos e dados utilizados nas páginas.</li>
-  <li><code>src/config/</code> — configurações das integrações.</li>
-  <li><code>src/utils/</code> — funções auxiliares e tratamento de dados.</li>
-  <li><code>scripts/</code> — scripts executados pelo Node.js, como a atualização dos dados do Canvas.</li>
-  <li><code>public/</code> — arquivos públicos, como imagens, PDFs e dados gerados.</li>
-  <li><code>src/App.jsx</code> — organização principal da aplicação.</li>
-  <li><code>src/main.jsx</code> — inicialização do React.</li>
-</ul>
-
-<h2>Como executar localmente</h2>
-
-<h3>1. Instale os requisitos</h3>
-
-<ul>
   <li>
-    <a href="https://nodejs.org/">Node.js</a>, em uma versão compatível
-    com o Vite utilizado no projeto. O npm acompanha a instalação.
+    <a href="https://nodejs.org/">Node.js</a>
+    em uma versão compatível com o Vite do projeto.
+    O npm é instalado junto com ele.
   </li>
   <li>
-    <a href="https://git-scm.com/">Git</a>, para clonar o repositório.
-  </li>
-  <li>
-    Um editor de código, como o
-    <a href="https://code.visualstudio.com/">Visual Studio Code</a>.
+    <a href="https://git-scm.com/">Git</a>
+    para clonar o repositório.
   </li>
 </ul>
 
-<p>Após instalar, confira no terminal:</p>
+<p>
+  Para editar o código, você pode utilizar o
+  <a href="https://code.visualstudio.com/">Visual Studio Code</a>.
+</p>
+
+<p>Confira as instalações pelo terminal:</p>
 
 <pre><code>node --version
 npm --version
@@ -135,25 +274,25 @@ cd Portfolio</code></pre>
 <h3>3. Instale as dependências</h3>
 
 <p>
-  Execute o comando na pasta que contém o arquivo
-  <code>package.json</code>:
+  Dentro da pasta que contém o <code>package.json</code>,
+  execute:
 </p>
 
 <pre><code>npm install</code></pre>
 
 <p>
-  Esse comando instala as bibliotecas utilizadas pelo projeto.
-  Não é necessário instalar React ou Vite separadamente.
+  O npm instala as bibliotecas utilizadas pelo projeto.
+  Não é necessário instalar React e Vite separadamente.
 </p>
 
-<h3>4. Inicie o ambiente de desenvolvimento</h3>
+<h3>4. Execute em modo de desenvolvimento</h3>
 
 <pre><code>npm run dev</code></pre>
 
 <p>
-  Abra no navegador o endereço informado pelo terminal.
-  Ao salvar alterações no código, o ambiente de desenvolvimento
-  atualiza a página.
+  Abra no navegador o endereço exibido no terminal.
+  As alterações salvas no código serão refletidas
+  no ambiente de desenvolvimento.
 </p>
 
 <h3>5. Gere a versão de produção</h3>
@@ -161,60 +300,106 @@ cd Portfolio</code></pre>
 <pre><code>npm run build</code></pre>
 
 <p>
-  Os arquivos prontos para publicação serão gerados na pasta
-  <code>dist/</code>.
+  A versão otimizada do site será gerada
+  na pasta <code>dist/</code>.
 </p>
 
-<p>Para testar essa versão localmente:</p>
+<h3>6. Confira a versão de produção localmente</h3>
 
 <pre><code>npm run preview</code></pre>
 
-<h2>Configuração das integrações</h2>
+<p>
+  Esse comando permite testar o resultado do build
+  antes da publicação.
+</p>
+
+<hr />
+
+<h2>⚙️ Personalização e configurações</h2>
 
 <p>
-  Para reutilizar o portfólio com seus próprios dados, substitua
-  as informações pessoais, os links e as configurações das integrações.
+  Para utilizar o projeto como referência para seu próprio portfólio,
+  substitua os textos, imagens, documentos, links e configurações
+  pelos seus dados.
 </p>
 
 <ul>
-  <li><strong>GitHub:</strong> configure o usuário usado nas consultas de atividade.</li>
-  <li><strong>WakaTime:</strong> configure seus links de compartilhamento público.</li>
-  <li><strong>Spotify:</strong> substitua os links das músicas e da playlist.</li>
-  <li><strong>Formspree:</strong> configure o endereço de envio do seu formulário.</li>
-  <li>
-    <strong>Canvas:</strong> configure as variáveis de ambiente exigidas
-    pelo script em um arquivo <code>.env</code> na raiz do projeto.
-    Execute <code>node scripts/canvas.mjs</code> para atualizar
-    o arquivo de dados consumido pela página.
-  </li>
+  <li>Atualize as informações pessoais em <code>src/data/</code>.</li>
+  <li>Substitua imagens, certificados e currículo em <code>public/</code>.</li>
+  <li>Configure seu usuário do GitHub e seus compartilhamentos do WakaTime.</li>
+  <li>Atualize as músicas e os links do Spotify.</li>
+  <li>Configure seu próprio endpoint do Formspree.</li>
+  <li>Atualize os textos correspondentes nos dois idiomas.</li>
 </ul>
 
+<h3>Atualização dos dados do Canvas</h3>
+
 <p>
-  O arquivo <code>.env</code> não deve ser enviado ao GitHub.
-  Tokens privados devem permanecer no ambiente de execução dos scripts,
-  sem serem incluídos no código entregue ao navegador.
+  A página utiliza os dados gerados pelo script
+  <code>scripts/canvas.mjs</code>.
+  Para coletar seus próprios dados, configure no arquivo
+  <code>.env</code>, na raiz, as variáveis exigidas pelo script.
 </p>
 
-<h2>Publicação</h2>
+<pre><code>node scripts/canvas.mjs</code></pre>
 
 <p>
-  O portfólio está hospedado na Vercel, conectado ao repositório do GitHub,
-  com domínio personalizado registrado na Name.com.
+  Depois da atualização, os arquivos gerados devem acompanhar
+  a publicação para que o site exiba as novas informações.
+  O site publicado não executa esse script automaticamente.
 </p>
 
 <p>
-  Ao enviar alterações para a branch de produção, a Vercel executa
-  o build e, caso ele seja concluído com sucesso, publica a nova versão.
+  <strong>Importante:</strong>
+  não envie o arquivo <code>.env</code> nem tokens privados
+  ao repositório. Variáveis com prefixo <code>VITE_</code>
+  ficam acessíveis no código entregue ao navegador
+  e não devem guardar segredos.
+</p>
+
+<hr />
+
+<h2>☁️ Hospedagem</h2>
+
+<p>
+  O projeto utiliza a Vercel para hospedagem, com o domínio
+  personalizado <a href="https://arthurmoraes.dev">arthurmoraes.dev</a>.
+</p>
+
+<p>
+  O fluxo de atualização consiste em alterar os arquivos,
+  registrar as mudanças com Git e enviá-las ao GitHub.
+  A Vercel executa o build e publica a nova versão
+  quando ele é concluído com sucesso.
+</p>
+
+<hr />
+
+<h2>📚 Referência</h2>
+
+<p>
+  O portfólio de
+  <a href="https://github.com/joaopauloaramuni/joaopauloaramuni-portfolio">
+    João Paulo Aramuni
+  </a>
+  foi utilizado como referência de estudo para integrações
+  e organização da documentação.
+  A identidade visual deste projeto tem como tema a música
+  e os discos de vinil.
 </p>
 
 <hr />
 
 <div align="center">
-  <p>Desenvolvido por <strong>Arthur Moraes Braga Araujo</strong>.</p>
+  <h3>Arthur Moraes Braga Araujo</h3>
 
-  <a href="https://github.com/ArthurMoraesBraga">GitHub</a>
-  |
-  <a href="https://www.linkedin.com/in/arthur-moraes-4b00b8306/">LinkedIn</a>
-  |
-  <a href="https://arthurmoraes.dev">Portfólio</a>
+  <p>Estudante de Engenharia de Software — PUC Minas</p>
+
+  <p>
+    <a href="https://arthurmoraes.dev">Portfólio</a>
+    ·
+    <a href="https://github.com/ArthurMoraesBraga">GitHub</a>
+    ·
+    <a href="https://www.linkedin.com/in/arthur-moraes-4b00b8306/">LinkedIn</a>
+  </p>
 </div>
