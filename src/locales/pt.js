@@ -51,7 +51,7 @@ const pt = {
         musicas: { titulo: 'Músicas', descricao: 'Minhas favoritas, com play' },
         canvas: {
             titulo: 'Canvas',
-            descricao: 'Espaço aonde fica minhas notas e estatisticas escolares',
+            descricao: 'Espaço onde fica minhas notas e estatisticas escolares',
         },
         GitHub: { titulo: 'GitHub', descricao: 'Minhas contribuições no gitHub' },
         contato: { titulo: 'Contato', descricao: 'Redes sociais e mensagem' },
@@ -136,7 +136,7 @@ const pt = {
         motociclismo: {
             titulo: 'Motos e tecnologia',
             descricao:
-                'ambém gosto de motos e tenho curiosidade sobre a tecnologia presente nelas. Vejo uma oportunidade de conectar esse interesse à programação, explorando ideias de aplicações para acompanhar manutenções e organizar informações sobre uma moto.',
+                'Também gosto de motos e tenho curiosidade sobre a tecnologia presente nelas. Vejo uma oportunidade de conectar esse interesse à programação, explorando ideias de aplicações para acompanhar manutenções e organizar informações sobre uma moto.',
         },
     },
 
