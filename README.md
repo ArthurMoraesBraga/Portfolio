@@ -10,6 +10,19 @@
     </a>
   </p>
   
+  <img
+    src="https://komarev.com/ghpvc/?username=ArthurMoraesBraga-Portfolio&label=Visitas&color=8fa3ad&style=flat"
+    alt="Contador de visitas ao README"
+  />
+
+  <br />
+
+  <img
+    src="https://skillicons.dev/icons?i=react,vite,js,html,css,git,github,vercel"
+    alt="React, Vite, JavaScript, HTML, CSS, Git, GitHub e Vercel"
+  />
+
+
   <h2>🎨 Protótipo no Figma</h2>
 
 <p>
@@ -23,23 +36,8 @@
   </a>
 </p>
 
-
-  <img
-    src="https://komarev.com/ghpvc/?username=ArthurMoraesBraga-Portfolio&label=Visitas&color=8fa3ad&style=flat"
-    alt="Contador de visitas ao README"
-  />
-
-  <br />
-  <br />
-
-  <img
-    src="https://skillicons.dev/icons?i=react,vite,js,html,css,git,github,vercel"
-    alt="React, Vite, JavaScript, HTML, CSS, Git, GitHub e Vercel"
-  />
-</div>
-
 <hr />
-
+</div>
 <h2>💿 Sobre o projeto</h2>
 
 <p>
