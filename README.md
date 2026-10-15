@@ -31,7 +31,7 @@
 </p>
 
 <p>
-  <a href="https://www.figma.com/make/R0QEr0h5Vdb5YuAX4IpM4h/Wireframe-Baixa-Fidelidade-Portf%25C3%25B3lio?t=fjAjl1XLbjaMDJWD-0">
+  <a href="https://www.figma.com/make/R0QEr0h5Vdb5YuAX4IpM4h/Wireframe-Baixa-Fidelidade-Portf%C3%B3lio?t=NpynK6kcayl6AoKM-1">
     Acessar o protótipo no Figma
   </a>
 </p>
