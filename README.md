@@ -4,29 +4,40 @@
   <p>
     Cada projeto, uma nova faixa.
   </p>
-
   <p>
     <a href="https://arthurmoraes.dev">
       <strong>🌐 Acesse o portfólio</strong>
     </a>
   </p>
-
+  
   <img
     src="https://komarev.com/ghpvc/?username=ArthurMoraesBraga-Portfolio&label=Visitas&color=8fa3ad&style=flat"
     alt="Contador de visitas ao README"
   />
 
   <br />
-  <br />
 
   <img
     src="https://skillicons.dev/icons?i=react,vite,js,html,css,git,github,vercel"
     alt="React, Vite, JavaScript, HTML, CSS, Git, GitHub e Vercel"
   />
-</div>
+
+
+  <h2>🎨 Protótipo no Figma</h2>
+
+<p>
+  Wireframes do portfólio com a organização das páginas,
+  navegação e versões para computador e celular.
+</p>
+
+<p>
+  <a href="https://www.figma.com/make/R0QEr0h5Vdb5YuAX4IpM4h/Wireframe-Baixa-Fidelidade-Portf%C3%B3lio?t=NpynK6kcayl6AoKM-1">
+    Acessar o protótipo no Figma
+  </a>
+</p>
 
 <hr />
-
+</div>
 <h2>💿 Sobre o projeto</h2>
 
 <p>
@@ -378,7 +389,7 @@ cd Portfolio</code></pre>
 <h2>📚 Referência</h2>
 
 <p>
-  O portfólio de
+  O portfólio do meu professor
   <a href="https://github.com/joaopauloaramuni/joaopauloaramuni-portfolio">
     João Paulo Aramuni
   </a>
