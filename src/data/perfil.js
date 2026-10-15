@@ -5,7 +5,9 @@ const fotoPerfil = 'images/Imagem_minha_portfolio.png'
 export const perfil = {
     nome: 'Arthur Moraes',
     iniciais: 'AM',
-    curriculo: '/curriculo.pdf',
+    // Arquivos em /public. Para ter um currículo em inglês, salve-o como curriculo-en.pdf
+    // e troque o caminho de `en` abaixo.
+    curriculo: { pt: 'Certificados/Curriculo.pdf', en: 'Certificados/Curriculo.pdf' },
     foto: fotoPerfil,
 
     // O id liga cada item aos textos de perfil.formacao.<id> nos arquivos de tradução.

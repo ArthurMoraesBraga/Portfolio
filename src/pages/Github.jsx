@@ -16,7 +16,7 @@ import {
     CORES_LINGUAGENS,
     COR_OUTRAS,
     METODOLOGIA,
-} from '../data/github'
+} from '../data/Github'
 import {
     GitHubLimiteError,
     agruparOutras,

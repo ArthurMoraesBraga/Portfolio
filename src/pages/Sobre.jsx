@@ -2,13 +2,17 @@ import { useTranslation } from 'react-i18next'
 import { perfil } from '../data/perfil'
 import { experiencias } from '../data/experiencias'
 import { interesses } from '../data/interesses'
+import CurriculoViewer from '../components/CurriculoViewer'
 import { publico } from '../utils/publico'
-import { comoLista } from '../utils/localizacao'
+import { comoLista, idiomaAtual } from '../utils/localizacao'
+import { useArquivoDisponivel } from '../utils/useArquivoDisponivel'
 import './Sobre.css'
 
 function Sobre() {
     const { t } = useTranslation()
     const paragrafos = comoLista(t('perfil.sobre', { returnObjects: true }))
+    const urlCurriculo = publico(perfil.curriculo[idiomaAtual()])
+    const situacaoCurriculo = useArquivoDisponivel(urlCurriculo)
     return (
     <article className="pagina container">
         <header className="pagina-topo">
@@ -32,9 +36,7 @@ function Sobre() {
             </figcaption>
             </figure>
 
-            <a href={publico(perfil.curriculo)} download className="botao botao--primario">
-            {t('sobre.baixarCurriculo')}
-            </a>
+        <CurriculoViewer url={urlCurriculo} situacao={situacaoCurriculo} />
         </aside>
 
         <div className="sobre-conteudo">
@@ -97,6 +99,7 @@ function Sobre() {
                 <p>{t('perfil.objetivos')}</p>
             </div>
             </section>
+
         </div>
         </div>
     </article>

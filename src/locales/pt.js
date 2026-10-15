@@ -51,9 +51,9 @@ const pt = {
         musicas: { titulo: 'Músicas', descricao: 'Minhas favoritas, com play' },
         canvas: {
             titulo: 'Canvas',
-            descricao: 'Espaço onde ficam minhas notas e estatísticas escolares',
+            descricao: 'Espaço aonde fica minhas notas e estatisticas escolares',
         },
-        GitHub: { titulo: 'GitHub', descricao: 'Minhas contribuições no GitHub' },
+        GitHub: { titulo: 'GitHub', descricao: 'Minhas contribuições no gitHub' },
         contato: { titulo: 'Contato', descricao: 'Redes sociais e mensagem' },
     },
 
@@ -84,7 +84,7 @@ const pt = {
         fotoAlt: 'Ilustração em pixel art',
         lema: 'Cada projeto, uma nova faixa.',
         sobre: [
-            'Sou o Arthur Moraes Braga Araujo, tenho 18 anos e estou no 2º período do curso de Engenharia de Software na Pontifícia Universidade Católica de Minas Gerais (PUC Minas). Tenho interesse na área desde os 14 anos, quando participei de um projeto de robótica da FLL no SESI Alvimar Carneiro de Rezende. Na ocasião, integrei a equipe de robótica Harry Blocks e tive meu primeiro contato com programação. Interessei-me pela área e, desde então, almejo me tornar um profissional de tecnologia. Além disso, em 2023, fiz um curso profissionalizante de Manutenção de Máquinas Industriais no SENAI, onde aprendi a trabalhar com máquinas industriais e em grupo, e também me aprofundei em pesquisas técnicas.',
+            'Sou o Arthur Moraes Braga Araujo, tenho 18 anos e estou no 2° periodo do curso de Engenharia de Software na Pontifícia Universidade Católica de Minas Gerais (Puc Minas). Tenho interesse na área desde os meus 14 anos, quando participei de um projeto de robótica de FLL no SESI ALVIMAR CARNEIRO DE REZENDE, na ocasião participei da equipe de robótica Harry Blocks e tive meu primeiro contato com programação, me interessei na área e desde então almejo me tornar um profissional de tecnologia. Além disso no ano de 2023 fiz um curso profissionalizante de Manutenção de Máquinas Industriais no SENAI, onde aprendi a trabalhar com máquinas industriais, onde aprendi a trabalhar em grupo e também adentrei mais nas pesquisas técnicas.',
             'A música também faz parte dos meus interesses pessoais, e quis trazer esse lado para o meu portfólio. A ideia dos discos de vinil une meu gosto musical ao aprendizado de desenvolvimento web, criando um espaço que apresenta tanto meus projetos quanto um pouco da minha personalidade. Desenvolver esse portfólio em React é uma oportunidade de explorar novas ferramentas e transformar uma ideia criativa em uma experiência interativa.',
         ],
         formacao: {
@@ -94,26 +94,26 @@ const pt = {
             },
             puc: {
                 curso: 'Engenharia de Software',
-                periodo: '2026 — atual',
+                periodo: '2026 — ',
             },
         },
         objetivos:
-            'Meu objetivo é me tornar um profissional qualificado em cibersegurança, a área da tecnologia que mais despertou meu interesse. Busco aprofundar meus conhecimentos em proteção de sistemas, análise de vulnerabilidades e implementação de soluções de segurança robustas. Paralelamente, desenvolvi grande afinidade com o back-end de aplicações web, especialmente com Java e Spring Boot, na implementação de arquiteturas escaláveis e na integração de sistemas com bancos de dados. Minha meta é unir essas duas competências para desenvolver aplicações que sejam não apenas funcionais e eficientes, mas também seguras desde a concepção, aplicando boas práticas de desenvolvimento seguro e contribuindo para um ambiente digital mais protegido contra ameaças cibernéticas.',
+            'Meu objetivo é me tornar um profissional qualificado em cibersegurança, a área da tecnologia que mais despertou meu interesse. Busco aprofundar meus conhecimentos em proteção de sistemas, análise de vulnerabilidades e implementação de soluções de segurança robustas. Paralelamente, desenvolvi grande afinidade com o back-end de aplicações web, especialmente utilizando Java e Spring Boot, implementar arquiteturas escaláveis e integrar sistemas com bancos de dados. Minha meta é unir essas duas competências para desenvolver aplicações que sejam não apenas funcionais e eficientes, mas também seguras desde a concepção, aplicando boas práticas de desenvolvimento seguro e contribuindo para um ambiente digital mais protegido contra ameaças cibernéticas.',
     },
 
     experiencias: {
         'exp-1': {
             cargo: 'FLL, robótica e programação',
-            periodo: 'Janeiro/2022 – Junho/2023',
+            periodo: 'Janeiro/2022 - Junho/2023',
             atividades: [
-                'Era o programador principal da minha equipe juntamente com meu colega Rafael, responsável pela programação do robô para executar as missões da FIRST LEGO League.',
+                'Era o programador principal da minha equipe juntamente com meu colega Rafael, responsável programação do robô para executar as missões da FIRST LEGO League.',
             ],
             aprendizados:
                 'Desenvolvi habilidades de programação, raciocínio lógico e resolução de problemas, além de aprender a trabalhar em equipe para superar os desafios das missões.',
         },
         'exp-2': {
             cargo: 'Manutenção de máquinas',
-            periodo: 'Janeiro/2023 – Dezembro/2023',
+            periodo: 'Janeiro/2023-Dezembro/2023',
             atividades: [
                 'Realizei atividades relacionadas à manutenção de máquinas industriais, colocando em prática os conhecimentos adquiridos no SENAI.',
             ],
@@ -136,13 +136,18 @@ const pt = {
         motociclismo: {
             titulo: 'Motos e tecnologia',
             descricao:
-                'Também gosto de motos e tenho curiosidade sobre a tecnologia presente nelas. Vejo uma oportunidade de conectar esse interesse à programação, explorando ideias de aplicações para acompanhar manutenções e organizar informações sobre uma moto.',
+                'ambém gosto de motos e tenho curiosidade sobre a tecnologia presente nelas. Vejo uma oportunidade de conectar esse interesse à programação, explorando ideias de aplicações para acompanhar manutenções e organizar informações sobre uma moto.',
         },
     },
 
     sobre: {
         titulo: 'Sobre mim',
         baixarCurriculo: 'Baixar currículo',
+        curriculoTitulo: 'Currículo de {{nome}} (PDF)',
+        verCurriculo: 'Ver currículo',
+        fecharCurriculo: 'Fechar',
+        curriculoIndisponivel: 'O currículo ainda não está disponível. Volte em breve.',
+        curriculoArquivo: 'Curriculo-Arthur-Moraes.pdf',
         trajetoria: 'Trajetória',
         formacao: 'Formação',
         experiencias: 'Experiências',
@@ -169,7 +174,7 @@ const pt = {
             grupo: 'Em grupo',
         },
         reconhecimentos: {
-            'wms-2026-1': 'Vencedor do We Make Software do primeiro período, no primeiro semestre de 2026.',
+            'wms-2026-1': 'Vencedor do We Make Software do primeiro semestre do primeiro periodo de 2026.',
         },
         itens: {
             'estagi-on': {
@@ -203,14 +208,14 @@ const pt = {
         listaFaixas: 'Lista de faixas',
         selecionar: 'Selecionar {{titulo}}, de {{artista}}',
         selecionarPlaylist: 'Selecionar a playlist {{titulo}}',
-        tituloPlaylists: 'Minhas playlists',
+        tituloPlaylists: 'Minhas playlist',
         comentarios: {
             'musica-1':
                 'Uma música que me inspira a continuar buscando meus objetivos, mesmo diante das dificuldades.',
-            'musica-2': 'Escutava essa música com meu pai quando era criança. Representa muito para mim.',
+            'musica-2': 'Escutava essa música quando era criança juntamente com meu pai, representa muito para mim',
             'musica-3': 'Minha música preferida do meu artista favorito.',
         },
-        comentarioPlaylist: 'Melhores músicas',
+        comentarioPlaylist: 'Melhores musicas',
     },
 
     spotify: {
@@ -374,7 +379,7 @@ const pt = {
             resumo: { rotulo: 'Resumo', descricao: 'Perfil e números gerais' },
             linguagens: {
                 rotulo: 'Linguagens',
-                descricao: 'Linguagens mais usadas e estatísticas do WakaTime',
+                descricao: 'Linguagens mais usadas e estatísticas do wakatime',
             },
             atividade: { rotulo: 'Atividade', descricao: 'Contribuições ao longo do tempo' },
             horarios: { rotulo: 'Horários', descricao: 'Quando os commits acontecem' },

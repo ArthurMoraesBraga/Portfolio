@@ -111,3 +111,13 @@
 @media (max-width: 640px) {
     .exp-item { grid-template-columns: 1fr; gap: 4px; }
 }
+.curriculo-preview {
+    display: block;
+    width: 100%;
+    height: 75vh;
+    min-height: 400px;
+    margin-top: 24px;
+    border: 1px solid var(--papel-borda);
+    border-radius: 8px;
+    background: var(--papel);
+}

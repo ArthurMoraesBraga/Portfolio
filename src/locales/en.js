@@ -84,7 +84,7 @@ const en = {
         fotoAlt: 'Pixel art illustration',
         lema: 'Every project, a new track.',
         sobre: [
-            "I'm Arthur Moraes Braga Araujo, I'm 18 years old and I'm in the 2nd term of the Software Engineering program at the Pontifícia Universidade Católica de Minas Gerais (PUC Minas). I've been interested in the field since I was 14, when I took part in a FLL robotics project at SESI ALVIMAR CARNEIRO DE REZENDE. On that occasion I was on the robotics team Harry Blocks and had my first contact with programming. I became interested in the field and have wanted to become a technology professional ever since. In addition, in 2023 I took a vocational course in Industrial Machinery Maintenance at SENAI, where I learned to work with industrial machines, learned to work in a group and also got deeper into technical research.",
+            "I'm Arthur Moraes Braga Araujo, I'm 18 years old and I'm in the 2nd term of the Software Engineering program at the Pontifícia Universidade Católica de Minas Gerais (Puc Minas). I've been interested in the field since I was 14, when I took part in a FLL robotics project at SESI ALVIMAR CARNEIRO DE REZENDE. On that occasion I was on the robotics team Harry Blocks and had my first contact with programming. I became interested in the field and have wanted to become a technology professional ever since. In addition, in 2023 I took a vocational course in Industrial Machinery Maintenance at SENAI, where I learned to work with industrial machines, learned to work in a group and also got deeper into technical research.",
             "Music is also part of my personal interests, and I wanted to bring that side into my portfolio. The vinyl record idea combines my taste in music with what I'm learning about web development, creating a space that presents both my projects and a bit of my personality. Building this portfolio in React is an opportunity to explore new tools and turn a creative idea into an interactive experience.",
         ],
         formacao: {
@@ -104,7 +104,7 @@ const en = {
     experiencias: {
         'exp-1': {
             cargo: 'FLL, robotics and programming',
-            periodo: 'January/2022 – June/2023',
+            periodo: 'January/2022 - June/2023',
             atividades: [
                 'I was the main programmer of my team, together with my teammate Rafael, responsible for programming the robot to carry out the FIRST LEGO League missions.',
             ],
@@ -113,7 +113,7 @@ const en = {
         },
         'exp-2': {
             cargo: 'Machinery maintenance',
-            periodo: 'January/2023 – December/2023',
+            periodo: 'January/2023-December/2023',
             atividades: [
                 'I carried out activities related to the maintenance of industrial machinery, putting into practice the knowledge I gained at SENAI.',
             ],
@@ -143,6 +143,11 @@ const en = {
     sobre: {
         titulo: 'About me',
         baixarCurriculo: 'Download résumé',
+        curriculoTitulo: "{{nome}}'s résumé (PDF)",
+        verCurriculo: 'View résumé',
+        fecharCurriculo: 'Close',
+        curriculoIndisponivel: "The résumé isn't available yet. Please check back soon.",
+        curriculoArquivo: 'Resume-Arthur-Moraes.pdf',
         trajetoria: 'Background',
         formacao: 'Education',
         experiencias: 'Experience',
