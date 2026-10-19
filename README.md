@@ -10,11 +10,12 @@
     </a>
   </p>
   
+<p align="center">
   <img
-    src="https://komarev.com/ghpvc/?username=ArthurMoraesBraga-Portfolio&label=Visitas&color=8fa3ad&style=flat"
-    alt="Contador de visitas ao README"
+    src="https://visitor-badge.laobi.icu/badge?page_id=ArthurMoreasBraga.Portfolio"
+    alt="Contador de visitas ao Portfólio"
   />
-
+</p>
   <br />
 
   <img
