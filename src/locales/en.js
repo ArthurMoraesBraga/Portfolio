@@ -166,6 +166,19 @@ const en = {
         tecnologias: 'Technologies',
         verGithub: 'View on GitHub',
         verDemo: 'View demo',
+        detalhes: {
+            ver: 'View details',
+            verDe: 'of the project {{titulo}}',
+            fechar: 'Close',
+            demonstracaoAlt: 'Recording showing how {{titulo}} works',
+            descricao: 'Description',
+            problema: 'Problem',
+            objetivo: 'Goal',
+            links: 'Links',
+            semLinks: 'No links available yet.',
+            semDemo: 'The online demo is not available yet.',
+            emConstrucao: 'This project is still under construction. The information below describes the proposal and may change until the final version.',
+        },
         status: {
             concluido: 'Completed',
             em_desenvolvimento: 'In development',
@@ -180,12 +193,24 @@ const en = {
             'estagi-on': {
                 descricao:
                     'Estagi.ON is a web platform built to centralize and streamline internship recruiting, connecting university students and companies. The solution offers standardized academic profiles and a smart search system with filters by program, term and skills.',
+                detalheDescricao:
+                    'Estagi.ON is a web platform that connects university students and companies in internship recruiting. Students have standardized academic profiles, and the job search offers filters by program, term and skills. The job listing lets users search, filter, sort alphabetically, favorite opportunities and spot the newest ones.',
+                problema:
+                    'Internship recruiting needed to be centralized and faster, bringing students and companies closer together and making it easier to find opportunities that match each student’s program, term and skills.',
+                objetivo:
+                    'To centralize and streamline internship recruiting, connecting university students and companies through standardized academic profiles and a search with filters.',
                 contribuicao:
                     'I built the job listing interface, with search, filters and alphabetical sorting. I implemented the favorites feature and the highlighting of new opportunities, and also contributed to the interactive prototyping and the project documentation.',
             },
             'meu-bolso': {
                 descricao:
                     'MeuBolso is a web application built to help young people organize their personal finances. The platform lets users track expenses, manage wallets and set financial goals, encouraging more conscious decisions and a more secure financial future.',
+                detalheDescricao:
+                    'MeuBolso is a web application designed to help young people organize their personal finances. The idea is for the platform to let users track expenses, manage wallets and set financial goals.',
+                problema:
+                    'The difficulty behind the project is how young people organize their personal finances: they need a way to keep track of their spending and plan their goals.',
+                objetivo:
+                    'To help young people organize their finances, encouraging more conscious decisions and a more secure financial future.',
                 contribuicao: "In charge of the application's front end.",
             },
         },

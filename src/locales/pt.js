@@ -166,6 +166,19 @@ const pt = {
         tecnologias: 'Tecnologias',
         verGithub: 'Ver no GitHub',
         verDemo: 'Ver demonstração',
+        detalhes: {
+            ver: 'Ver detalhes',
+            verDe: 'do projeto {{titulo}}',
+            fechar: 'Fechar',
+            demonstracaoAlt: 'Gravação da demonstração do funcionamento do {{titulo}}',
+            descricao: 'Descrição',
+            problema: 'Problema',
+            objetivo: 'Objetivo',
+            links: 'Links',
+            semLinks: 'Nenhum link disponível por enquanto.',
+            semDemo: 'A demonstração online ainda não está disponível.',
+            emConstrucao: 'Este projeto ainda está em construção. As informações abaixo descrevem a proposta e podem mudar até a versão final.',
+        },
         status: {
             concluido: 'Concluído',
             em_desenvolvimento: 'Em desenvolvimento',
@@ -174,18 +187,30 @@ const pt = {
             grupo: 'Em grupo',
         },
         reconhecimentos: {
-            'wms-2026-1': 'Vencedor do We Make Software do primeiro semestre do primeiro periodo de 2026.',
+            'wms-2026-1': 'Vencedor  do We Make Software do primeiro semestre do primeiro periodo de 2026.',
         },
         itens: {
             'estagi-on': {
                 descricao:
                     'O Estagi.ON é uma plataforma web desenvolvida para centralizar e otimizar o recrutamento de estágios, conectando estudantes universitários e empresas. A solução oferece perfis acadêmicos padronizados e um sistema de busca inteligente com filtros por curso, período e competências.',
+                detalheDescricao:
+                    'O Estagi.ON é uma plataforma web que conecta estudantes universitários e empresas no recrutamento de estágios. Os estudantes têm perfis acadêmicos padronizados, e a busca por vagas conta com filtros por curso, período e competências. A listagem de vagas permite pesquisar, filtrar, ordenar em ordem alfabética, favoritar oportunidades e identificar as mais novas.',
+                problema:
+                    'O recrutamento de estágios precisava ser centralizado e mais ágil, aproximando estudantes e empresas e facilitando a busca por oportunidades compatíveis com o curso, o período e as competências de cada estudante.',
+                objetivo:
+                    'Centralizar e otimizar o recrutamento de estágios, conectando estudantes universitários e empresas por meio de perfis acadêmicos padronizados e de uma busca com filtros.',
                 contribuicao:
                     'Desenvolvi a interface de listagem de vagas, com busca, filtros e ordenação alfabética. Implementei a funcionalidade de favoritos e a identificação de novas oportunidades, além de contribuir para a prototipação interativa e a documentação do projeto.',
             },
             'meu-bolso': {
                 descricao:
                     'O MeuBolso é uma aplicação web desenvolvida para ajudar jovens a organizar suas finanças pessoais. A plataforma permite controlar gastos, gerenciar carteiras e estabelecer metas financeiras, incentivando decisões mais conscientes e um futuro financeiro mais seguro.',
+                detalheDescricao:
+                    'O MeuBolso é uma aplicação web pensada para ajudar jovens a organizar suas finanças pessoais. A proposta é que a plataforma permita controlar gastos, gerenciar carteiras e estabelecer metas financeiras.',
+                problema:
+                    'A dificuldade que motivou o projeto é a organização das finanças pessoais por parte dos jovens, que precisam de uma forma de acompanhar seus gastos e planejar seus objetivos.',
+                objetivo:
+                    'Ajudar jovens a organizar suas finanças, incentivando decisões mais conscientes e um futuro financeiro mais seguro.',
                 contribuicao: 'Responsável pelo front-end da aplicação.',
             },
         },
