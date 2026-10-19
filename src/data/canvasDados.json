@@ -1,7 +1,7 @@
 {
   "versao": 1,
   "status": "ok",
-  "atualizadoEm": "2026-10-15T17:53:02.691Z",
+  "atualizadoEm": "2026-10-19T14:29:22.044Z",
   "fonte": "Canvas LMS (API oficial)",
   "turmas": [
     {
@@ -209,21 +209,21 @@
       "atividadesDisponiveis": true
     },
     {
-      "id": "290581",
+      "id": "290583",
       "nome": "Programação Modular - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-      "codigo": "(8149101) Programação Modular",
+      "codigo": "(8149100) Programação Modular",
       "periodo": "Graduação Presencial Síncrona - 2026/2",
       "periodoInicio": "2026-08-03T03:00:00Z",
       "notaCanvas": {
-        "pontuacao": null,
+        "pontuacao": 48,
         "conceito": null
       },
       "atividadesDisponiveis": true
     },
     {
-      "id": "290583",
+      "id": "290581",
       "nome": "Programação Modular - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-      "codigo": "(8149100) Programação Modular",
+      "codigo": "(8149101) Programação Modular",
       "periodo": "Graduação Presencial Síncrona - 2026/2",
       "periodoInicio": "2026-08-03T03:00:00Z",
       "notaCanvas": {
@@ -3149,6 +3149,40 @@
       }
     },
     {
+      "id": "1412756",
+      "turmaId": "290581",
+      "nome": "Prática 4",
+      "prazo": "2026-10-26T15:20:00Z",
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1412762",
+      "turmaId": "290581",
+      "nome": "Sprint 2",
+      "prazo": "2026-11-10T02:59:59Z",
+      "pontos": 10,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
       "id": "1412751",
       "turmaId": "290581",
       "nome": "Atividade Avaliativa 2",
@@ -3241,12 +3275,12 @@
       "pontos": 25,
       "avaliativa": true,
       "entregaOnline": false,
-      "entrega": "nao_entregue",
+      "entrega": "avaliada",
       "entregueEm": null,
       "atrasada": false,
       "nota": {
-        "publicada": false,
-        "pontos": null,
+        "publicada": true,
+        "pontos": 12,
         "conceito": null
       }
     },
@@ -3254,7 +3288,7 @@
       "id": "1412716",
       "turmaId": "290583",
       "nome": "Lista 2",
-      "prazo": "2026-10-21T11:50:00Z",
+      "prazo": "2026-10-26T11:50:00Z",
       "pontos": 1,
       "avaliativa": true,
       "entregaOnline": false,
@@ -3271,7 +3305,7 @@
       "id": "1412719",
       "turmaId": "290583",
       "nome": "Prova 2",
-      "prazo": "2026-10-26T11:50:00Z",
+      "prazo": "2026-10-28T11:50:00Z",
       "pontos": 25,
       "avaliativa": true,
       "entregaOnline": false,
