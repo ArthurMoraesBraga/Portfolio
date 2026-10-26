@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "canvas": "node scripts/canvas.mjs",
+    "wakatime:oauth": "node scripts/wakatime-oauth.mjs",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

@@ -369,6 +369,42 @@ cd Portfolio</code></pre>
   e não devem guardar segredos.
 </p>
 
+<h3>WakaTime: “Codando agora”</h3>
+
+<p>
+  O cartão consulta os heartbeats privados do WakaTime por meio da função
+  serverless <code>/api/codando</code>. Copie <code>.env.example</code> para
+  <code>.env.local</code>, preencha o App ID e o App Secret de um app criado no
+  WakaTime com a Redirect URI <code>http://localhost:8787/callback</code> e gere
+  tokens novos. O script solicita somente o escopo <code>read_heartbeats</code>:
+</p>
+
+<pre><code>cp .env.example .env.local
+npm run wakatime:oauth</code></pre>
+
+<p>
+  Cole o access token e o refresh token gerados no <code>.env.local</code> e
+  cadastre <code>WAKATIME_ACCESS_TOKEN</code>,
+  <code>WAKATIME_REFRESH_TOKEN</code>, <code>WAKATIME_APP_ID</code> e
+  <code>WAKATIME_APP_SECRET</code> nas Environment Variables da Vercel. Faça um
+  novo deploy depois de salvar as variáveis. Nenhuma delas pode ter o prefixo
+  <code>VITE_</code>.
+</p>
+
+<p>
+  Por privacidade, apenas o projeto <code>Portfolio</code> aparece pelo nome.
+  Use <code>WAKATIME_PUBLIC_PROJECTS</code>, com nomes separados por vírgula,
+  para liberar outros projetos públicos. Credenciais publicadas ou enviadas em
+  mensagens devem ser revogadas e substituídas antes da configuração.
+</p>
+
+<p>
+  Implementação adaptada do exemplo
+  <a href="https://github.com/joaopauloaramuni/desenvolvimento-e-integracao-de-aplicacoes-web/tree/main/PROJETOS/React/WakaTimeAPI">
+    WakaTimeAPI de João Paulo Aramuni
+  </a>.
+</p>
+
 <hr />
 
 <h2>☁️ Hospedagem</h2>

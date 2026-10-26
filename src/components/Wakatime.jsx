@@ -7,6 +7,7 @@ import {
     formatPercent,
 } from '../utils/Wakatime'
 import { paraPlural } from '../utils/localizacao'
+import CodingNow from './CodingNow'
 import {
     FaJsSquare,
     FaJava,
@@ -145,26 +146,37 @@ function WakaTime() {
 
     if (erro) {
         return (
-            <div className="gh-estado papel" role="alert">
-                <p>{t('wakatime.erro')}</p>
+            <section className="waka" aria-label={t('wakatime.rotulo')}>
+                <CodingNow />
 
-                <button
-                    type="button"
-                    className="botao botao--secundario"
-                    onClick={tentarNovamente}
-                >
-                    {t('comum.tentarNovamente')}
-                </button>
-            </div>
+                <div className="gh-estado papel" role="alert">
+                    <p>{t('wakatime.erro')}</p>
+
+                    <button
+                        type="button"
+                        className="botao botao--secundario"
+                        onClick={tentarNovamente}
+                    >
+                        {t('comum.tentarNovamente')}
+                    </button>
+                </div>
+            </section>
         )
     }
 
     if (!dados) {
-        return <p role="status">{t('wakatime.carregando')}</p>
+        return (
+            <section className="waka" aria-label={t('wakatime.rotulo')}>
+                <CodingNow />
+                <p role="status">{t('wakatime.carregando')}</p>
+            </section>
+        )
     }
 
     return (
         <section className="waka" aria-label={t('wakatime.rotulo')}>
+            <CodingNow />
+
             <p className="gh-resumo">
                 {t('wakatime.resumo')}
             </p>
