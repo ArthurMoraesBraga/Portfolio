@@ -8,7 +8,8 @@
     "canvas": "node scripts/canvas.mjs",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "wakatime:oauth": "node scripts/wakatime-oauth.mjs"
   },
   "dependencies": {
     "i18next": "^26.4.2",

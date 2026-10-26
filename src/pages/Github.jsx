@@ -29,6 +29,7 @@ import {
 import './Github.css'
 
 import Wakatime from '../components/Wakatime'
+import CodingNow from '../components/CodingNow'
 import { comoLista, formatadorData, formatadorNumero, paraPlural } from '../utils/localizacao'
 
 
@@ -645,6 +646,15 @@ function PorAno({ anos, hoje }) {
 }
 
 function Atividade() {
+        return (
+        <>
+            <CodingNow />
+            <AtividadeGithub />
+        </>
+    )
+}
+
+function AtividadeGithub() {
     const { t } = useTranslation()
     const contribuicoes = useFonte(contribuicoesFonte)
     if (contribuicoes.status !== 'pronto') return <Estado estado={contribuicoes} />
@@ -663,8 +673,9 @@ function Atividade() {
     )
 }
 
+
 /* =====================================================================
-   Horários: commits por hora, dia da semana e período do dia
+    Horários: commits por hora, dia da semana e período do dia
    ===================================================================== */
 
 function HorariosConteudo({ dados }) {
