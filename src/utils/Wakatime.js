@@ -1,5 +1,6 @@
 import { localeAtual } from './localizacao'
 import { FUSO_HORARIO } from '../i18n'
+import WAKATIME_CONFIG from '../config/WakatimeConfig'
 
 const URL_ESTATISTICAS =
     'https://wakatime.com/share/@a0d04abd-cfe7-4836-bb0e-b44ee9a1aebf/4695fd9f-9287-4e71-af5c-166de9739c66.json'
@@ -195,4 +196,92 @@ export function formatDate(value, locale = localeAtual()) {
         dateStyle: 'medium',
         timeZone: FUSO_HORARIO,
     }).format(date)
+}
+
+
+const textoCodingNow = (valor, limite = 120) => {
+    if (typeof valor !== 'string') return null
+    const texto = valor.trim()
+    return texto ? texto.slice(0, limite) : null
+}
+
+const numeroCodingNow = (valor) => {
+    if (valor == null) return null
+    const numero = Number(valor)
+    return Number.isFinite(numero) ? numero : null
+}
+
+function normalizarUltimoHeartbeat(valor) {
+    if (!valor || typeof valor !== 'object') return null
+
+    const at = numeroCodingNow(valor.at)
+    const sessionStart = numeroCodingNow(valor.sessionStart)
+    if (at == null || sessionStart == null) return null
+
+    return {
+        isPublic: valor.isPublic === true,
+        project: textoCodingNow(valor.project),
+        branch: textoCodingNow(valor.branch, 100),
+        language: textoCodingNow(valor.language, 60),
+        editor: textoCodingNow(valor.editor, 60),
+        at,
+        sessionStart,
+        projectTodaySeconds:
+            Math.max(0, numeroCodingNow(valor.projectTodaySeconds) ?? 0),
+    }
+}
+
+function normalizarCodingNow(valor) {
+    if (!valor || typeof valor.active !== 'boolean') return null
+
+    const last = valor.last == null
+        ? null
+        : normalizarUltimoHeartbeat(valor.last)
+
+    if (valor.last != null && !last) return null
+    if (valor.active && !last) return null
+
+    return {
+        active: valor.active,
+        todaySeconds: Math.max(
+            0,
+            numeroCodingNow(valor.todaySeconds) ?? 0,
+        ),
+        last,
+    }
+}
+
+export async function fetchCodingNow({ signal } = {}) {
+    let resposta
+
+    try {
+        resposta = await fetch(WAKATIME_CONFIG.CODING_NOW.API_PATH, {
+            headers: { Accept: 'application/json' },
+            signal,
+        })
+    } catch (erro) {
+        return erro?.name === 'AbortError'
+            ? { status: 'aborted' }
+            : { status: 'error' }
+    }
+
+    const tipo = resposta.headers.get('content-type') ?? ''
+    if (!tipo.includes('application/json')) {
+        return { status: 'unavailable' }
+    }
+
+    if (resposta.status === 503) return { status: 'unavailable' }
+    if (!resposta.ok) return { status: 'error' }
+
+    let corpo
+    try {
+        corpo = await resposta.json()
+    } catch {
+        return { status: 'error' }
+    }
+
+    const dados = normalizarCodingNow(corpo)
+    return dados
+        ? { status: 'ok', data: dados }
+        : { status: 'error' }
 }

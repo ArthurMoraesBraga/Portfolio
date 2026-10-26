@@ -714,3 +714,150 @@
     object-fit: contain;
     mix-blend-mode: multiply;
 }
+
+
+/* Status de atividade atual, alimentado pelos heartbeats do WakaTime. */
+.github .waka-now {
+    --waka-live: var(--salvia-escuro);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 0 28px;
+    padding: 20px 22px;
+    border-left: 6px solid var(--waka-live);
+    box-shadow: var(--sombra-capa);
+}
+
+.github .waka-now-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 16px;
+}
+
+.github .waka-now-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--waka-live);
+    font-family: var(--fonte-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.github .waka-now-dot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.github .waka-now--active .waka-now-dot::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: currentColor;
+    animation: waka-pulso 1.6s ease-out infinite;
+}
+
+@keyframes waka-pulso {
+    from { opacity: 0.55; transform: scale(1); }
+    to { opacity: 0; transform: scale(2.6); }
+}
+
+.github .waka-now-ago,
+.github .waka-now-idle-text,
+.github .waka-now-meta {
+    color: var(--texto-suave);
+    font-size: 14px;
+}
+
+.github .waka-now-project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    margin: 0;
+    font-size: clamp(18px, 3vw, 22px);
+}
+
+.github .waka-now-name,
+.github .waka-now-branch,
+.github .waka-now-meta li {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.github .waka-now-name {
+    min-width: 0;
+    max-width: 100%;
+    color: var(--salvia-escuro);
+}
+
+.github .waka-now-name svg,
+.github .waka-now-meta svg {
+    flex: 0 0 auto;
+    color: var(--azul-escuro);
+}
+
+.github .waka-now-name strong {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.github .waka-now-branch {
+    max-width: 100%;
+    padding: 2px 10px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: var(--azul-claro);
+    color: var(--azul-escuro);
+    font-family: var(--fonte-mono);
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.github .waka-now-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.github .waka-now--idle {
+    --waka-live: var(--texto-suave);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 14px;
+    padding-block: 14px;
+    border-left-color: var(--papel-borda);
+    box-shadow: none;
+}
+
+.github .waka-now-idle-text strong {
+    color: var(--texto);
+    font-weight: 600;
+}
+
+@media (max-width: 520px) {
+    .github .waka-grade { grid-template-columns: 1fr; }
+    .github .waka-now { padding: 16px; }
+    .github .waka-now-head { align-items: flex-start; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .github .waka-now--active .waka-now-dot::after { animation: none; }
+}
