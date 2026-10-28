@@ -1,7 +1,7 @@
 {
   "versao": 1,
   "status": "ok",
-  "atualizadoEm": "2026-10-28T16:39:50.948Z",
+  "atualizadoEm": "2026-10-28T16:57:43.252Z",
   "fonte": "Canvas LMS (API oficial)",
   "turmas": [
     {
@@ -4193,8 +4193,8 @@
       "pontos": 10,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "nao_entregue",
-      "entregueEm": null,
+      "entrega": "entregue",
+      "entregueEm": "2026-10-28T16:50:48Z",
       "atrasada": false,
       "nota": {
         "publicada": false,
