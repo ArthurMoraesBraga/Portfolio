@@ -1,7 +1,7 @@
 {
   "versao": 1,
   "status": "ok",
-  "atualizadoEm": "2026-10-28T16:57:43.252Z",
+  "atualizadoEm": "2026-10-29T20:30:47.308Z",
   "fonte": "Canvas LMS (API oficial)",
   "turmas": [
     {
@@ -2969,8 +2969,8 @@
       "pontos": 25,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "nao_entregue",
-      "entregueEm": null,
+      "entrega": "entregue",
+      "entregueEm": "2026-10-29T15:14:16Z",
       "atrasada": false,
       "nota": {
         "publicada": false,
@@ -3302,6 +3302,23 @@
       }
     },
     {
+      "id": "1466145",
+      "turmaId": "290581",
+      "nome": "Introdução à Linguagem de Programação Java [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
       "id": "1412714",
       "turmaId": "290583",
       "nome": "ADA",
@@ -3441,6 +3458,23 @@
       "id": "1461823",
       "turmaId": "290583",
       "nome": "UDA - Projeto Modular e Qualidade de Código [Avaliação]",
+      "prazo": null,
+      "pontos": 0,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1466144",
+      "turmaId": "290583",
+      "nome": "Introdução à Linguagem de Programação Java [Avaliação]",
       "prazo": null,
       "pontos": 0,
       "avaliativa": true,
