@@ -165,7 +165,7 @@ const en = {
         contribuicao: 'My contribution',
         tecnologias: 'Technologies',
         verGithub: 'View on GitHub',
-        verDemo: 'View demo',
+        verDemo: 'Visit Application',
         detalhes: {
             ver: 'View details',
             verDe: 'of the project {{titulo}}',

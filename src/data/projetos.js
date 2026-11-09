@@ -44,8 +44,8 @@ export const projetos = [
     cor: '#000000',
     capa: logoAluguelCar,
     demonstracao: '/images/aluguelcar.gif',
-    repositorio: 'https://github.com/ArthurMoraesBraga/DevLabs/tree/main/React%2BSpring-boot/aluguel-carros',
-    demo: null,
+    repositorio: 'https://github.com/ArthurMoraesBraga/DevLabs/tree/main/Full_stack/aluguel-carros',
+    demo: 'https://driveflow-aluguel.vercel.app/',
     },
 
 ]

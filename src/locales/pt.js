@@ -165,7 +165,7 @@ const pt = {
         contribuicao: 'Minha contribuição',
         tecnologias: 'Tecnologias',
         verGithub: 'Ver no GitHub',
-        verDemo: 'Ver demonstração',
+        verDemo: 'Visitar aplicação',
         detalhes: {
             ver: 'Ver detalhes',
             verDe: 'do projeto {{titulo}}',
