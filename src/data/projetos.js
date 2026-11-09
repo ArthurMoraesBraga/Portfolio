@@ -1,5 +1,6 @@
 const logoEstagiOn = 'images/Logo_estagiOn.png'
 const LogoMeuBolso = 'images/Logo_meu_bolso.png'
+const logoAluguelCar = 'images/logo-aluguelcar.svg'
 // Título, tecnologias, links e cores são fixos. `status`, `tipo` e `reconhecimento` são códigos
 // e, junto com a descrição e a contribuição, os textos ficam em src/locales, em projetos.*
 export const projetos = [
@@ -31,6 +32,20 @@ export const projetos = [
     repositorio:'https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2026-2-ti2-8183100-meu-bolso',
     demo: null,
 
+    },
+    {
+    id: 'driveflow',
+    titulo: 'DriveFlow',
+    status: 'em_desenvolvimento',
+    ano: '2026',
+    tipo: 'individual',
+    reconhecimento: null,
+    tecnologias: ['React', 'Vite', 'Java', 'Spring Boot', 'Spring Data JPA', 'PostgreSQL', 'Supabase'],
+    cor: '#dbe7ff',
+    capa: logoAluguelCar,
+    demonstracao: '/images/aluguelcar.gif',
+    repositorio: 'https://github.com/ArthurMoraesBraga/DevLabs/tree/main/React%2BSpring-boot/aluguel-carros',
+    demo: null,
     },
 
 ]

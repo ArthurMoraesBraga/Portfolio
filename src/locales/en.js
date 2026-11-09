@@ -185,6 +185,7 @@ const en = {
         },
         tipo: {
             grupo: 'Group project',
+            individual: 'Individual project',
         },
         reconhecimentos: {
             'wms-2026-1': 'Winner of We Make Software in the first term of the first semester of 2026.',
@@ -212,6 +213,18 @@ const en = {
                 objetivo:
                     'To help young people organize their finances, encouraging more conscious decisions and a more secure financial future.',
                 contribuicao: "In charge of the application's front end.",
+            },
+            'driveflow': {
+                descricao:
+                    'DriveFlow is a web platform for car rentals where customers create and track requests in real time and agents (companies and banks) run the financial analysis and execute contracts, with optional bank credit. Spring Boot (MVC) back end and React + Vite front end, with persistence on Supabase (PostgreSQL).',
+                detalheDescricao:
+                    'DriveFlow is a web platform to create, modify, check and cancel car rental requests over the Internet. Registered customers create requests and track their status in real time; agents (companies and banks) analyze each request from a financial standpoint and, with a positive assessment, execute the contract, define who the car is registered to and, if needed, attach a credit contract. The layered architecture (Model, Controller, Service, Repository, DTO) follows the MVC pattern, with Bearer token authentication and BCrypt-hashed passwords. Built in Laboratory 02 of the Web Application Development and Integration (DIAW) course in the Software Engineering program at PUC Minas.',
+                problema:
+                    'Without a single system, rental requests, credit analyses and contracts end up scattered across email, phone and spreadsheets, with no status visible to the customer.',
+                objetivo:
+                    'To centralize the full rental cycle, from request to contract, keeping the status visible to the customer at all times and letting agents assess each request and execute contracts with optional bank credit.',
+                contribuicao:
+                    'Individual project: I built the Spring Boot back end (Web MVC, Security and Data JPA) and the React + Vite front end, including Bearer token authentication, the customer and car CRUD, the full request lifecycle and persistence on Supabase (PostgreSQL).',
             },
         },
     },

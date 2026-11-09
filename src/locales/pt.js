@@ -185,6 +185,7 @@ const pt = {
         },
         tipo: {
             grupo: 'Em grupo',
+            individual: 'Individual',
         },
         reconhecimentos: {
             'wms-2026-1': 'Vencedor  do We Make Software do primeiro semestre do primeiro periodo de 2026.',
@@ -212,6 +213,18 @@ const pt = {
                 objetivo:
                     'Ajudar jovens a organizar suas finanças, incentivando decisões mais conscientes e um futuro financeiro mais seguro.',
                 contribuicao: 'Responsável pelo front-end da aplicação.',
+            },
+            'driveflow': {
+                descricao:
+                    'O DriveFlow é uma plataforma web de aluguel de carros em que clientes criam e acompanham pedidos em tempo real e agentes (empresas e bancos) fazem a análise financeira e executam contratos, com crédito bancário opcional. Back-end em Spring Boot (MVC) e front-end em React + Vite, com persistência no Supabase (PostgreSQL).',
+                detalheDescricao:
+                    'O DriveFlow é uma plataforma web para efetuar, modificar, consultar e cancelar pedidos de aluguel de automóveis pela Internet. Clientes cadastrados criam pedidos e acompanham o status em tempo real; agentes (empresas e bancos) analisam cada pedido do ponto de vista financeiro e, com parecer positivo, executam o contrato, definem a quem o automóvel fica registrado e, se necessário, associam um contrato de crédito. A arquitetura em camadas (Model, Controller, Service, Repository, DTO) segue o padrão MVC, com autenticação por token Bearer e senhas em BCrypt. Desenvolvido no Laboratório 02 da disciplina Desenvolvimento e Integração de Aplicações Web (DIAW) do curso de Engenharia de Software da PUC Minas.',
+                problema:
+                    'Sem um sistema único, pedidos de aluguel, análises de crédito e contratos ficam espalhados entre e-mail, telefone e planilhas, sem o status visível para o cliente.',
+                objetivo:
+                    'Centralizar o ciclo completo do aluguel, do pedido ao contrato, deixando o status visível para o cliente o tempo todo e permitindo que agentes avaliem cada pedido e executem contratos com crédito bancário opcional.',
+                contribuicao:
+                    'Projeto individual: desenvolvi o back-end em Spring Boot (Web MVC, Security e Data JPA) e o front-end em React + Vite, incluindo a autenticação por token Bearer, o CRUD de clientes e automóveis, o ciclo completo de pedidos e a persistência no Supabase (PostgreSQL).',
             },
         },
     },
