@@ -41,7 +41,7 @@ export const projetos = [
     tipo: 'individual',
     reconhecimento: null,
     tecnologias: ['React', 'Vite', 'Java', 'Spring Boot', 'Spring Data JPA', 'PostgreSQL', 'Supabase'],
-    cor: '#dbe7ff',
+    cor: '#000000',
     capa: logoAluguelCar,
     demonstracao: '/images/aluguelcar.gif',
     repositorio: 'https://github.com/ArthurMoraesBraga/DevLabs/tree/main/React%2BSpring-boot/aluguel-carros',
