@@ -1,7 +1,7 @@
 {
   "versao": 1,
   "status": "ok",
-  "atualizadoEm": "2026-10-29T20:30:47.308Z",
+  "atualizadoEm": "2026-11-09T17:06:48.925Z",
   "fonte": "Canvas LMS (API oficial)",
   "turmas": [
     {
@@ -35,7 +35,7 @@
       "periodo": "Graduação Presencial Síncrona - 2026/2",
       "periodoInicio": "2026-08-03T03:00:00Z",
       "notaCanvas": {
-        "pontuacao": 46.24,
+        "pontuacao": 59.12,
         "conceito": null
       },
       "atividadesDisponiveis": true
@@ -65,6 +65,18 @@
       "atividadesDisponiveis": true
     },
     {
+      "id": "290578",
+      "nome": "Desenvolvimento e Integração de Aplicações Web - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
+      "codigo": "(8148102) Desenvolvimento e Integração de Aplicações Web",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": 53.71,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
       "id": "292752",
       "nome": "Desenvolvimento e Integração de Aplicações Web - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
       "codigo": "(8148100) Desenvolvimento e Integração de Aplicações Web",
@@ -72,18 +84,6 @@
       "periodoInicio": "2026-08-03T03:00:00Z",
       "notaCanvas": {
         "pontuacao": null,
-        "conceito": null
-      },
-      "atividadesDisponiveis": true
-    },
-    {
-      "id": "290578",
-      "nome": "Desenvolvimento e Integração de Aplicações Web - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-      "codigo": "(8148102) Desenvolvimento e Integração de Aplicações Web",
-      "periodo": "Graduação Presencial Síncrona - 2026/2",
-      "periodoInicio": "2026-08-03T03:00:00Z",
-      "notaCanvas": {
-        "pontuacao": 69.47,
         "conceito": null
       },
       "atividadesDisponiveis": true
@@ -143,7 +143,7 @@
       "periodo": "Graduação Presencial Síncrona - 2026/2",
       "periodoInicio": "2026-08-03T03:00:00Z",
       "notaCanvas": {
-        "pontuacao": 67.37,
+        "pontuacao": 73.02,
         "conceito": null
       },
       "atividadesDisponiveis": true
@@ -191,7 +191,7 @@
       "periodo": "Graduação Presencial Síncrona - 2026/2",
       "periodoInicio": "2026-08-03T03:00:00Z",
       "notaCanvas": {
-        "pontuacao": 100,
+        "pontuacao": 86.88,
         "conceito": null
       },
       "atividadesDisponiveis": true
@@ -200,6 +200,18 @@
       "id": "292767",
       "nome": "Metodologias de Extensão Universitária - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
       "codigo": "(8177100) Metodologias de Extensão Universitária",
+      "periodo": "Graduação Presencial Síncrona - 2026/2",
+      "periodoInicio": "2026-08-03T03:00:00Z",
+      "notaCanvas": {
+        "pontuacao": null,
+        "conceito": null
+      },
+      "atividadesDisponiveis": true
+    },
+    {
+      "id": "290581",
+      "nome": "Programação Modular - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
+      "codigo": "(8149101) Programação Modular",
       "periodo": "Graduação Presencial Síncrona - 2026/2",
       "periodoInicio": "2026-08-03T03:00:00Z",
       "notaCanvas": {
@@ -221,25 +233,13 @@
       "atividadesDisponiveis": true
     },
     {
-      "id": "290581",
-      "nome": "Programação Modular - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
-      "codigo": "(8149101) Programação Modular",
-      "periodo": "Graduação Presencial Síncrona - 2026/2",
-      "periodoInicio": "2026-08-03T03:00:00Z",
-      "notaCanvas": {
-        "pontuacao": null,
-        "conceito": null
-      },
-      "atividadesDisponiveis": true
-    },
-    {
       "id": "292771",
       "nome": "Trabalho Interdisciplinar: Desenvolvimento Centrado no Usuário - Engenharia de Software - Campus Coração Eucarístico - PMG - Manhã - 2026/2",
       "codigo": "(8183100) Trabalho Interdisciplinar: Desenvolvimento Centrado no Usuário",
       "periodo": "Graduação Presencial Síncrona - 2026/2",
       "periodoInicio": "2026-08-03T03:00:00Z",
       "notaCanvas": {
-        "pontuacao": 87.33,
+        "pontuacao": 95.06,
         "conceito": null
       },
       "atividadesDisponiveis": true
@@ -2745,7 +2745,7 @@
       "turmaId": "290569",
       "nome": "Exercício 1 - Qualidades de Uso em IHC",
       "prazo": "2026-08-17T02:59:59Z",
-      "pontos": 1,
+      "pontos": 3,
       "avaliativa": true,
       "entregaOnline": true,
       "entrega": "avaliada",
@@ -2753,7 +2753,7 @@
       "atrasada": false,
       "nota": {
         "publicada": true,
-        "pontos": 0.9,
+        "pontos": 2.7,
         "conceito": null
       }
     },
@@ -2779,15 +2779,15 @@
       "turmaId": "290569",
       "nome": "Lista 1",
       "prazo": "2026-09-21T02:59:59Z",
-      "pontos": 2,
+      "pontos": 4,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "entregue",
+      "entrega": "avaliada",
       "entregueEm": "2026-09-20T17:51:58Z",
       "atrasada": false,
       "nota": {
-        "publicada": false,
-        "pontos": null,
+        "publicada": true,
+        "pontos": 3.68,
         "conceito": null
       }
     },
@@ -2799,12 +2799,12 @@
       "pontos": 4,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "nao_entregue",
+      "entrega": "avaliada",
       "entregueEm": null,
       "atrasada": false,
       "nota": {
-        "publicada": false,
-        "pontos": null,
+        "publicada": true,
+        "pontos": 3.2,
         "conceito": null
       }
     },
@@ -2812,16 +2812,16 @@
       "id": "1462172",
       "turmaId": "290569",
       "nome": "2ª Avaliação",
-      "prazo": "2026-11-03T16:00:00Z",
-      "pontos": 18,
+      "prazo": "2026-11-04T16:00:00Z",
+      "pontos": 20,
       "avaliativa": true,
       "entregaOnline": false,
-      "entrega": "nao_entregue",
+      "entrega": "avaliada",
       "entregueEm": null,
       "atrasada": false,
       "nota": {
-        "publicada": false,
-        "pontos": null,
+        "publicada": true,
+        "pontos": 14.3,
         "conceito": null
       }
     },
@@ -2830,7 +2830,24 @@
       "turmaId": "290569",
       "nome": "Lista 2",
       "prazo": "2026-11-09T02:59:59Z",
-      "pontos": 3,
+      "pontos": 4,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-11-08T13:52:33Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1467549",
+      "turmaId": "290569",
+      "nome": "Seminário Temático",
+      "prazo": "2026-11-23T02:59:59Z",
+      "pontos": 18,
       "avaliativa": true,
       "entregaOnline": true,
       "entrega": "nao_entregue",
@@ -2847,7 +2864,7 @@
       "turmaId": "290569",
       "nome": "3ª Avaliação",
       "prazo": "2026-12-02T16:00:00Z",
-      "pontos": 18,
+      "pontos": 20,
       "avaliativa": true,
       "entregaOnline": false,
       "entrega": "nao_entregue",
@@ -2864,9 +2881,43 @@
       "turmaId": "290569",
       "nome": "Reavaliação",
       "prazo": "2026-12-09T16:00:00Z",
-      "pontos": 18,
+      "pontos": 0,
       "avaliativa": true,
       "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1467548",
+      "turmaId": "290569",
+      "nome": "Lista 3",
+      "prazo": null,
+      "pontos": 4,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1467550",
+      "turmaId": "290569",
+      "nome": "ADA",
+      "prazo": null,
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": true,
       "entrega": "nao_entregue",
       "entregueEm": null,
       "atrasada": false,
@@ -2969,12 +3020,12 @@
       "pontos": 25,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "entregue",
+      "entrega": "avaliada",
       "entregueEm": "2026-10-29T15:14:16Z",
       "atrasada": false,
       "nota": {
-        "publicada": false,
-        "pontos": null,
+        "publicada": true,
+        "pontos": 0,
         "conceito": null
       }
     },
@@ -2982,16 +3033,16 @@
       "id": "1434357",
       "turmaId": "290578",
       "nome": "LABORATÓRIO 2",
-      "prazo": "2026-11-06T02:59:59Z",
+      "prazo": "2026-11-07T02:59:59Z",
       "pontos": 15,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "nao_entregue",
-      "entregueEm": null,
+      "entrega": "avaliada",
+      "entregueEm": "2026-11-06T19:20:30Z",
       "atrasada": false,
       "nota": {
-        "publicada": false,
-        "pontos": null,
+        "publicada": true,
+        "pontos": 14,
         "conceito": null
       }
     },
@@ -3240,7 +3291,7 @@
       "prazo": "2026-11-10T02:59:59Z",
       "pontos": 10,
       "avaliativa": true,
-      "entregaOnline": false,
+      "entregaOnline": true,
       "entrega": "nao_entregue",
       "entregueEm": null,
       "atrasada": false,
@@ -3585,8 +3636,8 @@
       "entregueEm": "2026-09-11T18:09:54Z",
       "atrasada": false,
       "nota": {
-        "publicada": false,
-        "pontos": null,
+        "publicada": true,
+        "pontos": 7,
         "conceito": null
       }
     },
@@ -3615,12 +3666,12 @@
       "pontos": 10,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "entregue",
+      "entrega": "avaliada",
       "entregueEm": "2026-10-22T14:06:59Z",
       "atrasada": true,
       "nota": {
-        "publicada": false,
-        "pontos": null,
+        "publicada": true,
+        "pontos": 8.8,
         "conceito": null
       }
     },
@@ -3632,8 +3683,8 @@
       "pontos": 3,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "nao_entregue",
-      "entregueEm": null,
+      "entrega": "entregue",
+      "entregueEm": "2026-11-06T19:24:30Z",
       "atrasada": false,
       "nota": {
         "publicada": false,
@@ -3649,8 +3700,8 @@
       "pontos": 2,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "nao_entregue",
-      "entregueEm": null,
+      "entrega": "entregue",
+      "entregueEm": "2026-11-06T19:23:38Z",
       "atrasada": false,
       "nota": {
         "publicada": false,
@@ -3802,7 +3853,7 @@
       "pontos": 20,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "entregue",
+      "entrega": "avaliada",
       "entregueEm": "2026-09-19T01:37:39Z",
       "atrasada": false,
       "nota": {
@@ -3819,8 +3870,42 @@
       "pontos": 20,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "entregue",
+      "entrega": "avaliada",
       "entregueEm": "2026-10-27T01:49:11Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399988",
+      "turmaId": "292767",
+      "nome": "Atividade 4 - Relatório individual no sistema APC",
+      "prazo": "2026-10-28T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399989",
+      "turmaId": "292767",
+      "nome": "Atividade 5 - Relatório em grupo no sistema APC",
+      "prazo": "2026-10-28T02:59:59Z",
+      "pontos": 5,
+      "avaliativa": true,
+      "entregaOnline": false,
+      "entrega": "nao_entregue",
+      "entregueEm": null,
       "atrasada": false,
       "nota": {
         "publicada": false,
@@ -3850,7 +3935,7 @@
       "turmaId": "292767",
       "nome": "Atividade 7 - Avaliação, impacto e apresentação",
       "prazo": "2026-11-10T02:59:59Z",
-      "pontos": 20,
+      "pontos": 15,
       "avaliativa": true,
       "entregaOnline": true,
       "entrega": "nao_entregue",
@@ -3866,7 +3951,7 @@
       "id": "1399984",
       "turmaId": "292767",
       "nome": "ADA",
-      "prazo": null,
+      "prazo": "2026-11-18T02:59:59Z",
       "pontos": 5,
       "avaliativa": true,
       "entregaOnline": false,
@@ -4108,12 +4193,12 @@
       "pontos": 1,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "entregue",
+      "entrega": "avaliada",
       "entregueEm": "2026-10-08T01:18:55Z",
       "atrasada": false,
       "nota": {
-        "publicada": false,
-        "pontos": null,
+        "publicada": true,
+        "pontos": 1,
         "conceito": null
       }
     },
@@ -4176,12 +4261,12 @@
       "pontos": 1,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "entregue",
+      "entrega": "avaliada",
       "entregueEm": "2026-10-28T02:00:07Z",
       "atrasada": false,
       "nota": {
-        "publicada": false,
-        "pontos": null,
+        "publicada": true,
+        "pontos": 1,
         "conceito": null
       }
     },
@@ -4414,7 +4499,7 @@
       "pontos": 5,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "entregue",
+      "entrega": "avaliada",
       "entregueEm": "2026-10-06T21:37:53Z",
       "atrasada": false,
       "nota": {
@@ -4431,12 +4516,12 @@
       "pontos": 25,
       "avaliativa": true,
       "entregaOnline": false,
-      "entrega": "nao_entregue",
+      "entrega": "avaliada",
       "entregueEm": null,
       "atrasada": false,
       "nota": {
-        "publicada": false,
-        "pontos": null,
+        "publicada": true,
+        "pontos": 18,
         "conceito": null
       }
     },
