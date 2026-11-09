@@ -36,7 +36,7 @@ export const projetos = [
     {
     id: 'driveflow',
     titulo: 'DriveFlow',
-    status: 'em_desenvolvimento',
+    status: 'concluido',
     ano: '2026',
     tipo: 'individual',
     reconhecimento: null,
