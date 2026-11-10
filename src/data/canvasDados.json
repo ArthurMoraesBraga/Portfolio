@@ -1,7 +1,7 @@
 {
   "versao": 1,
   "status": "ok",
-  "atualizadoEm": "2026-11-09T17:06:48.925Z",
+  "atualizadoEm": "2026-11-10T14:35:41.523Z",
   "fonte": "Canvas LMS (API oficial)",
   "turmas": [
     {
@@ -3292,8 +3292,8 @@
       "pontos": 10,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "nao_entregue",
-      "entregueEm": null,
+      "entrega": "entregue",
+      "entregueEm": "2026-11-09T21:51:55Z",
       "atrasada": false,
       "nota": {
         "publicada": false,
@@ -3863,23 +3863,6 @@
       }
     },
     {
-      "id": "1399987",
-      "turmaId": "292767",
-      "nome": "Atividade 3 - Planejamento, execução e validação da ação extensionista",
-      "prazo": "2026-10-27T02:59:59Z",
-      "pontos": 20,
-      "avaliativa": true,
-      "entregaOnline": true,
-      "entrega": "avaliada",
-      "entregueEm": "2026-10-27T01:49:11Z",
-      "atrasada": false,
-      "nota": {
-        "publicada": false,
-        "pontos": null,
-        "conceito": null
-      }
-    },
-    {
       "id": "1399988",
       "turmaId": "292767",
       "nome": "Atividade 4 - Relatório individual no sistema APC",
@@ -3914,15 +3897,32 @@
       }
     },
     {
-      "id": "1399990",
+      "id": "1399987",
       "turmaId": "292767",
-      "nome": "Atividade 6 - Resumo expandido ou relato de experiência",
-      "prazo": "2026-11-10T02:59:59Z",
+      "nome": "Atividade 3 - Planejamento, execução e validação da ação extensionista",
+      "prazo": "2026-11-14T02:59:59Z",
       "pontos": 20,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "nao_entregue",
-      "entregueEm": null,
+      "entrega": "avaliada",
+      "entregueEm": "2026-10-27T01:49:11Z",
+      "atrasada": false,
+      "nota": {
+        "publicada": false,
+        "pontos": null,
+        "conceito": null
+      }
+    },
+    {
+      "id": "1399990",
+      "turmaId": "292767",
+      "nome": "Atividade 6 - Resumo expandido ou relato de experiência",
+      "prazo": "2026-11-14T02:59:59Z",
+      "pontos": 20,
+      "avaliativa": true,
+      "entregaOnline": true,
+      "entrega": "entregue",
+      "entregueEm": "2026-11-09T21:23:16Z",
       "atrasada": false,
       "nota": {
         "publicada": false,
@@ -3934,12 +3934,12 @@
       "id": "1399991",
       "turmaId": "292767",
       "nome": "Atividade 7 - Avaliação, impacto e apresentação",
-      "prazo": "2026-11-10T02:59:59Z",
+      "prazo": "2026-11-14T02:59:59Z",
       "pontos": 15,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "nao_entregue",
-      "entregueEm": null,
+      "entrega": "entregue",
+      "entregueEm": "2026-11-10T02:08:42Z",
       "atrasada": false,
       "nota": {
         "publicada": false,
@@ -4329,8 +4329,8 @@
       "pontos": 10,
       "avaliativa": true,
       "entregaOnline": true,
-      "entrega": "nao_entregue",
-      "entregueEm": null,
+      "entrega": "entregue",
+      "entregueEm": "2026-11-10T00:53:07Z",
       "atrasada": false,
       "nota": {
         "publicada": false,
