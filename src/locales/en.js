@@ -128,11 +128,6 @@ const en = {
             descricao:
                 'It is the area of technology that has sparked my interest the most. I want to understand how to identify vulnerabilities and protect systems and information, building the knowledge I need to become a good cybersecurity professional.',
         },
-        backend: {
-            titulo: 'Backend Development',
-            descricao:
-                'I like understanding what happens behind the pages and how systems process information. I am interested in developing APIs, working with databases and building the logic that makes an application work.',
-        },
     },
 
     sobre: {

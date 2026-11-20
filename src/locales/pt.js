@@ -128,11 +128,6 @@ const pt = {
             descricao:
                 'É a área da tecnologia que mais despertou meu interesse. Quero compreender como identificar vulnerabilidades e proteger sistemas e informações, desenvolvendo os conhecimentos necessários para me tornar um bom profissional de cibersegurança.',
         },
-        backend: {
-            titulo: 'Desenvolvimento Backend',
-            descricao:
-                'Gosto de entender o que acontece por trás das páginas e como os sistemas processam informações. Tenho interesse em desenvolver APIs, trabalhar com bancos de dados e construir a lógica que faz uma aplicação funcionar.',
-        },
     },
 
     sobre: {
