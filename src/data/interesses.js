@@ -2,5 +2,4 @@
 export const interesses = [
     { id: 'ciberseguranca' },
     { id: 'backend' },
-    { id: 'motociclismo' },
 ]

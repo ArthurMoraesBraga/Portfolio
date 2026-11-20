@@ -133,11 +133,6 @@ const en = {
             descricao:
                 'I like understanding what happens behind the pages and how systems process information. I am interested in developing APIs, working with databases and building the logic that makes an application work.',
         },
-        motociclismo: {
-            titulo: 'Motorcycles and technology',
-            descricao:
-                'I also like motorcycles and I am curious about the technology in them. I see an opportunity to connect this interest with programming, exploring ideas for applications to keep track of maintenance and organize information about a motorcycle.',
-        },
     },
 
     sobre: {
